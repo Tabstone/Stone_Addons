@@ -1,5 +1,10 @@
 # Changelog
 
+## 7.1.29-1
+
+- Sync upstream image to v7.1.29.
+
+
 ## 7.1.25-1
 
 - Sync upstream image to v7.1.25.
