@@ -1,5 +1,5 @@
 name: drpy-node
-version: "1.4.5-1"
+version: "1.4.6-1"
 slug: drpy-node
 description: drpyS Node.js server wrapped for Home Assistant with persistent configuration and sources
 url: https://github.com/Tabstone/ha_addons/tree/main/drpy-node
