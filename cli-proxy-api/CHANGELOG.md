@@ -1,5 +1,10 @@
 # Changelog
 
+## 7.1.58-2
+
+- Fix wrapper build on non-Alpine upstream images by installing `jq` with the available package manager.
+
+
 ## 7.1.58-1
 
 - Sync upstream image to v7.1.58.
