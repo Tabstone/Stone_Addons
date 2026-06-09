@@ -2,7 +2,7 @@ name: atvloadly
 version: "0.4.4-1"
 slug: atvloadly
 description: atvloadly Apple TV sideloading service wrapped for Home Assistant
-url: https://github.com/Tabstone/ha_addons/tree/main/atvloadly
+url: https://github.com/Tabstone/Stone_Addons/tree/main/atvloadly
 arch:
   - amd64
   - aarch64

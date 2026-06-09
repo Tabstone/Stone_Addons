@@ -2,7 +2,7 @@ name: Metapi
 version: "sha-1"
 slug: metapi
 description: Metapi upstream image wrapped for Home Assistant with persistent app data
-url: https://github.com/Tabstone/ha_addons/tree/main/metapi
+url: https://github.com/Tabstone/Stone_Addons/tree/main/metapi
 arch:
   - amd64
   - aarch64

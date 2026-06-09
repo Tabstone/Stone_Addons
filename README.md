@@ -1,29 +1,45 @@
-# Tabstone Home Assistant Add-ons
+# Stone_Addons
 
-这个仓库收口了一些原本需要单独用 Docker 或 docker-compose 部署的服务。因为不想在 Home Assistant 之外再维护太多独立容器，所以把这些服务迁移成了 Home Assistant add-ons，统一在 HA 内安装、配置和升级。
+English | [中文](README_CN.md)
 
-仓库中的 add-on 采用薄封装思路：尽量直接复用上游镜像和启动逻辑，只补 Home Assistant 所需的目录映射、配置注入、启动包装和文档。这里的迁移与适配代码由 AI 协助完成，但各项目的核心实现、版权和发布仍归原始上游仓库或镜像维护者所有。
+A Home Assistant add-on repository for services that are usually deployed with Docker or docker-compose.
+
+This repository follows a thin-wrapper approach: each add-on reuses the upstream image and runtime behavior as much as possible, then adds the Home Assistant-specific directory mappings, option injection, startup wrapper, documentation, icons, and version synchronization.
+
+The add-on wrappers in this repository are maintained here. The core applications, trademarks, copyrights, and release artifacts belong to their upstream projects and image maintainers.
+
+## Installation
+
+1. Open Home Assistant.
+2. Go to **Settings** -> **Add-ons** -> **Add-on Store**.
+3. Open the top-right menu and choose **Repositories**.
+4. Add this repository URL:
+
+```text
+https://github.com/Tabstone/Stone_Addons
+```
 
 ## Add-ons
 
-| Add-on | 目录 | 说明 | 上游项目地址 | 上游镜像地址 |
+| Add-on | Directory | Description | Upstream project | Upstream image |
 | --- | --- | --- | --- | --- |
-| TrendRadar | `trendradar/` | 趋势分析服务，提供 Web UI 与通知能力 | [sansan0/TrendRadar](https://github.com/sansan0/TrendRadar) | [wantcat/trendradar](https://hub.docker.com/r/wantcat/trendradar) |
-| TrendRadar MCP | `trendradar-mcp/` | TrendRadar 的 MCP 服务，复用主 add-on 数据 | [sansan0/TrendRadar](https://github.com/sansan0/TrendRadar) | [wantcat/trendradar-mcp](https://hub.docker.com/r/wantcat/trendradar-mcp) |
-| CLI Proxy API | `cli-proxy-api/` | CLI Proxy API 服务，保留配置与鉴权目录 | [router-for-me/CLIProxyAPI](https://github.com/router-for-me/CLIProxyAPI) | [eceasy/cli-proxy-api](https://hub.docker.com/r/eceasy/cli-proxy-api) |
-| CPA Manager Plus Full | `cpa-manager-plus-full/` | CPA Manager Plus 完整 Docker/Manager Server 模式，提供 SQLite 请求统计、模型价格和内置面板 | [seakee/CPA-Manager-Plus](https://github.com/seakee/CPA-Manager-Plus) | [seakee/cpa-manager-plus](https://hub.docker.com/r/seakee/cpa-manager-plus) |
-| CPA Manager Plus Panel | `cpa-manager-plus-panel/` | CPA Manager Plus 的 CPA panel 模式辅助 add-on，用于区分纯 CPA 自托管面板，不运行 Manager Server | [seakee/CPA-Manager-Plus](https://github.com/seakee/CPA-Manager-Plus) | [seakee/cpa-manager-plus](https://hub.docker.com/r/seakee/cpa-manager-plus) |
-| AxonHub | `axonhub/` | AI 网关与模型代理平台，默认 SQLite 单容器封装 | [looplj/axonhub](https://github.com/looplj/axonhub) | [looplj/axonhub](https://hub.docker.com/r/looplj/axonhub) |
-| atvloadly | `atvloadly/` | Apple TV IPA 侧载与自动刷新服务，保留配对和签名数据 | [bitxeno/atvloadly](https://github.com/bitxeno/atvloadly) | [ghcr.io/bitxeno/atvloadly](https://github.com/bitxeno/atvloadly/pkgs/container/atvloadly) |
-| drpy-node | `drpy-node/` | drpyS Node.js 服务，保留配置、订阅、源文件和缓存目录 | [hjdhnx/drpy-node](https://github.com/hjdhnx/drpy-node) | [ghcr.io/hjdhnx/drpy-node](https://github.com/users/hjdhnx/packages/container/package/drpy-node) |
-| Microsoft Rewards Script | `microsoft-rewards-script/` | Microsoft Rewards 自动任务脚本，后台 cron 运行并保留配置与浏览器会话 | [hex-ci/Microsoft-Rewards-Script](https://github.com/hex-ci/Microsoft-Rewards-Script) | [ghcr.io/thenetsky/microsoft-rewards-script](https://github.com/TheNetsky/Microsoft-Rewards-Script/pkgs/container/microsoft-rewards-script) |
-| Mihomo | `mihomo/` | Mihomo 核心，保留配置目录并映射宿主网络能力 | [MetaCubeX/mihomo](https://github.com/MetaCubeX/mihomo) | [metacubex/mihomo](https://hub.docker.com/r/metacubex/mihomo) |
-| MetaCubeXD | `metacubexd/` | Mihomo 的 Web UI | [MetaCubeX/metacubexd](https://github.com/MetaCubeX/metacubexd) | [ghcr.io/metacubex/metacubexd](https://github.com/MetaCubeX/metacubexd/pkgs/container/metacubexd) |
-| Metapi | `metapi/` | Metapi AI API 聚合管理与统一代理，默认持久化 SQLite 数据目录 | [cita-777/metapi](https://github.com/cita-777/metapi) | [1467078763/metapi](https://hub.docker.com/r/1467078763/metapi) |
-| Sub2API | `sub2api/` | Sub2API 独立网关封装，依赖外部 PostgreSQL 与 Redis | [Wei-Shaw/sub2api](https://github.com/Wei-Shaw/sub2api) | [weishaw/sub2api](https://hub.docker.com/r/weishaw/sub2api) |
+| TrendRadar | `trendradar/` | Trend analysis service with Web UI and notification support | [sansan0/TrendRadar](https://github.com/sansan0/TrendRadar) | [wantcat/trendradar](https://hub.docker.com/r/wantcat/trendradar) |
+| TrendRadar MCP | `trendradar-mcp/` | MCP service for TrendRadar, sharing the main add-on data | [sansan0/TrendRadar](https://github.com/sansan0/TrendRadar) | [wantcat/trendradar-mcp](https://hub.docker.com/r/wantcat/trendradar-mcp) |
+| CLI Proxy API | `cli-proxy-api/` | CLI Proxy API service with persistent config and auth directories | [router-for-me/CLIProxyAPI](https://github.com/router-for-me/CLIProxyAPI) | [eceasy/cli-proxy-api](https://hub.docker.com/r/eceasy/cli-proxy-api) |
+| CPA Manager Plus Full | `cpa-manager-plus-full/` | Full CPA Manager Plus Docker/Manager Server mode with SQLite analytics, model prices, and hosted panel | [seakee/CPA-Manager-Plus](https://github.com/seakee/CPA-Manager-Plus) | [seakee/cpa-manager-plus](https://hub.docker.com/r/seakee/cpa-manager-plus) |
+| CPA Manager Plus Panel | `cpa-manager-plus-panel/` | CPA Manager Plus panel helper add-on for standalone CPA panel hosting without Manager Server analytics | [seakee/CPA-Manager-Plus](https://github.com/seakee/CPA-Manager-Plus) | [seakee/cpa-manager-plus](https://hub.docker.com/r/seakee/cpa-manager-plus) |
+| AxonHub | `axonhub/` | AI gateway and model proxy platform, wrapped as a single-container SQLite deployment | [looplj/axonhub](https://github.com/looplj/axonhub) | [looplj/axonhub](https://hub.docker.com/r/looplj/axonhub) |
+| atvloadly | `atvloadly/` | Apple TV IPA sideloading and refresh service with persistent pairing and signing data | [bitxeno/atvloadly](https://github.com/bitxeno/atvloadly) | [ghcr.io/bitxeno/atvloadly](https://github.com/bitxeno/atvloadly/pkgs/container/atvloadly) |
+| drpy-node | `drpy-node/` | drpyS Node.js service with persistent config, subscriptions, source files, and cache | [hjdhnx/drpy-node](https://github.com/hjdhnx/drpy-node) | [ghcr.io/hjdhnx/drpy-node](https://github.com/users/hjdhnx/packages/container/package/drpy-node) |
+| Microsoft Rewards Script | `microsoft-rewards-script/` | Microsoft Rewards automation script running on cron with persistent config and browser sessions | [TheNetsky/Microsoft-Rewards-Script](https://github.com/TheNetsky/Microsoft-Rewards-Script) | [ghcr.io/thenetsky/microsoft-rewards-script](https://github.com/TheNetsky/Microsoft-Rewards-Script/pkgs/container/microsoft-rewards-script) |
+| Mihomo | `mihomo/` | Mihomo core with persistent config directory and host networking capabilities | [MetaCubeX/mihomo](https://github.com/MetaCubeX/mihomo) | [metacubex/mihomo](https://hub.docker.com/r/metacubex/mihomo) |
+| MetaCubeXD | `metacubexd/` | Web UI for Mihomo | [MetaCubeX/metacubexd](https://github.com/MetaCubeX/metacubexd) | [ghcr.io/metacubex/metacubexd](https://github.com/MetaCubeX/metacubexd/pkgs/container/metacubexd) |
+| Metapi | `metapi/` | Metapi AI API aggregation and unified proxy with persistent SQLite app data | [cita-777/metapi](https://github.com/cita-777/metapi) | [1467078763/metapi](https://hub.docker.com/r/1467078763/metapi) |
+| Sub2API | `sub2api/` | Standalone Sub2API gateway wrapper using external PostgreSQL and Redis services | [Wei-Shaw/sub2api](https://github.com/Wei-Shaw/sub2api) | [weishaw/sub2api](https://hub.docker.com/r/weishaw/sub2api) |
 
-## 维护方式
+## Maintenance
 
-- 每个 add-on 都尽量跟随上游镜像版本，不重写上游业务逻辑。
-- 仓库级 GitHub Actions 会检查上游镜像版本，并自动同步 `build.yaml`、`config.yaml.version` 与 `CHANGELOG.md`。
-- 具体的使用方式、目录映射和配置项说明，请直接查看各 add-on 目录下的 `DOCS.md`。
+- Each add-on follows its upstream image version where possible and avoids rewriting upstream business logic.
+- The repository-level GitHub Actions workflow checks upstream image versions and updates `build.yaml`, `config.yaml.version`, and `CHANGELOG.md`.
+- Changelog entries generated by the sync workflow now try to include upstream release or tag links. When upstream release notes are unavailable, the entry falls back to the upstream project and image links.
+- For usage details, persistent directories, ports, and options, see each add-on's `DOCS.md`.

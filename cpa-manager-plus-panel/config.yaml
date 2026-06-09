@@ -2,7 +2,7 @@ name: CPA Manager Plus Panel
 version: "1.2.1-1"
 slug: cpa-manager-plus-panel
 description: CPA Manager Plus CPA panel mode helper; serves the release panel asset without Manager Server analytics
-url: https://github.com/Tabstone/ha_addons/tree/main/cpa-manager-plus-panel
+url: https://github.com/Tabstone/Stone_Addons/tree/main/cpa-manager-plus-panel
 arch:
   - amd64
   - aarch64
