@@ -1,5 +1,18 @@
 # Changelog
 
+## 7.1.61-1
+
+- Sync upstream image [eceasy/cli-proxy-api:v7.1.61](https://hub.docker.com/r/eceasy/cli-proxy-api).
+- Upstream project: [router-for-me/CLIProxyAPI](https://github.com/router-for-me/CLIProxyAPI).
+- Upstream release: [v7.1.61](https://github.com/router-for-me/CLIProxyAPI/releases/tag/v7.1.61).
+- Upstream changelog summary:
+  - `CLIProxyAPI_<version>_linux_<arch>.tar.gz` is the default Linux build. It supports dynamic library plugins and is built against a GLIBC 2.17 baseline.
+  - `CLIProxyAPI_<version>_linux_<arch>_no-plugin.tar.gz` is the portable Linux build for musl-based or older systems such as OpenWrt. It does not support dynamic library plugins.
+  - fix(logging): track Codex backend request IDs by @shoucandanghehe in https://github.com/router-for-me/CLIProxyAPI/pull/3788
+  - @shoucandanghehe made their first contribution in https://github.com/router-for-me/CLIProxyAPI/pull/3788
+  - **Full Changelog**: https://github.com/router-for-me/CLIProxyAPI/compare/v7.1.60...v7.1.61
+
+
 ## 7.1.58-2
 
 - Fix wrapper build on non-Alpine upstream images by installing `jq` with the available package manager.
