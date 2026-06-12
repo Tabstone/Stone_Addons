@@ -1,5 +1,19 @@
 # Changelog
 
+## 1.4.1-1
+
+- Sync upstream image [seakee/cpa-manager-plus:v1.4.1](https://hub.docker.com/r/seakee/cpa-manager-plus).
+- Upstream project: [seakee/CPA-Manager-Plus](https://github.com/seakee/CPA-Manager-Plus).
+- Upstream release: [v1.4.1](https://github.com/seakee/CPA-Manager-Plus/releases/tag/v1.4.1).
+- Upstream changelog summary:
+  - > 9 commits · 23 files changed · +3691 / -603
+  - > [English ->](./v1.4.1-en.md)
+  - 本次发布在 v1.4.0 的基础上收尾账号动作自动停用的诊断与可观测细节，统一 auth file 解析路径，并补齐 quota cooldown 的配置文档。AI Providers 的新增/编辑交互顺势合并到 drawer 与 tab 联动的流程中，进一步减少冗余入口切换；worker 与 collector...
+  - AI Providers 新增/编辑配置改为 drawer 形式，并在已选中 provider tab 时支持直接新增，减少冗余入口切换。(`ai-providers`)
+  - 账号动作 opt-in 自动停用补齐诊断日志，覆盖命中/跳过/成功/失败路径，便于复盘。(`account-actions`)
+  - 监控账号状态停止跨 provider 串扰 auth file 元数据，provider 切换时身份信息保持一致。(`monitoring`)
+
+
 ## 1.3.0-1
 
 - Sync upstream image [seakee/cpa-manager-plus:v1.3.0](https://hub.docker.com/r/seakee/cpa-manager-plus).
