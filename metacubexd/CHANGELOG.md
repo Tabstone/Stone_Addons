@@ -1,5 +1,14 @@
 # Changelog
 
+## 1.255.0-1
+
+- Sync upstream image [ghcr.io/metacubex/metacubexd:v1.255.0](https://github.com/MetaCubeX/metacubexd/pkgs/container/metacubexd).
+- Upstream project: [MetaCubeX/metacubexd](https://github.com/MetaCubeX/metacubexd).
+- Upstream release: [v1.255.0](https://github.com/MetaCubeX/metacubexd/releases/tag/v1.255.0).
+- Upstream changelog summary:
+  - **rules:** add quick filters and sorting to the rules list page ([e9b5a3f](https://github.com/MetaCubeX/metacubexd/commit/e9b5a3fcf6e6aaf2a011fc1b64b8edb3d9cf4f57))
+
+
 ## 1.252.0-1
 
 - Sync upstream image [ghcr.io/metacubex/metacubexd:v1.252.0](https://github.com/MetaCubeX/metacubexd/pkgs/container/metacubexd).
