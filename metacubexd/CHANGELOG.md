@@ -1,5 +1,14 @@
 # Changelog
 
+## 1.255.2-1
+
+- Sync upstream image [ghcr.io/metacubex/metacubexd:v1.255.2](https://github.com/MetaCubeX/metacubexd/pkgs/container/metacubexd).
+- Upstream project: [MetaCubeX/metacubexd](https://github.com/MetaCubeX/metacubexd).
+- Upstream release: [v1.255.2](https://github.com/MetaCubeX/metacubexd/releases/tag/v1.255.2).
+- Upstream changelog summary:
+  - **rules:** align filter toolbar chips with adjacent controls ([160480e](https://github.com/MetaCubeX/metacubexd/commit/160480e59410888856bdd1c4887c7ce265d50ec1))
+
+
 ## 1.255.0-1
 
 - Sync upstream image [ghcr.io/metacubex/metacubexd:v1.255.0](https://github.com/MetaCubeX/metacubexd/pkgs/container/metacubexd).
