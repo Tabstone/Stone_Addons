@@ -1,5 +1,19 @@
 # Changelog
 
+## 1.6.0-1
+
+- Sync upstream image [seakee/cpa-manager-plus:v1.6.0](https://hub.docker.com/r/seakee/cpa-manager-plus).
+- Upstream project: [seakee/CPA-Manager-Plus](https://github.com/seakee/CPA-Manager-Plus).
+- Upstream release: [v1.6.0](https://github.com/seakee/CPA-Manager-Plus/releases/tag/v1.6.0).
+- Upstream changelog summary:
+  - > 18 commits · 98 files changed · +2310 / -2233
+  - > [English ->](https://github.com/seakee/CPA-Manager-Plus/blob/v1.6.0/docs/release-notes/v1.6.0-en.md)
+  - 本次发布聚焦 CPA Manager Plus 的 API 表面收敛与插件生态安全加固:后端清理了无效的短路径回退与多余的 worker helper,前端将第三方插件安装改为强制确认,同时新增 Codex 提供商联通性测试与 Claude 模型发现恢复,统一了出站 HTTP 超时。配套移除了 ampcode 提供商集成,文档同步更新。
+  - 日志增量拉取支持 cursor 分页(`web/logs`)。
+  - Codex 提供商联通性测试(编辑页)(`web/codex`)。
+  - 第三方插件安装需输入 repo slug / plugin id 强制确认(`web/plugins`)。
+
+
 ## 1.4.2-1
 
 - Sync upstream image [seakee/cpa-manager-plus:v1.4.2](https://hub.docker.com/r/seakee/cpa-manager-plus).
