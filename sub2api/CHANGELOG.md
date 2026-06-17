@@ -1,5 +1,19 @@
 # Changelog
 
+## 0.1.137-1
+
+- Sync upstream image [weishaw/sub2api:0.1.137](https://hub.docker.com/r/weishaw/sub2api).
+- Upstream project: [Wei-Shaw/sub2api](https://github.com/Wei-Shaw/sub2api).
+- Upstream release: [Sub2API 0.1.137](https://github.com/Wei-Shaw/sub2api/releases/tag/v0.1.137).
+- Upstream changelog summary:
+  - > AI API Gateway Platform - 将 AI 订阅配额分发和管理
+  - 新增 OpenAI 账号重置次数查询/触发重置、cyber_policy 硬阻断全链路透传。
+  - OpenAI 账号重置次数：admin 端查询剩余重置次数、触发 rate-limit credit 消费
+  - OpenAI cyber_policy：硬阻断响应全链路原样透传，异步审计/计费/会话拦截
+  - Claude OAuth：可配置 system prompt blocks 注入
+  - 国产 LLM 兜底定价：GLM 13 款、Kimi K 系列 4 款、MiniMax M 系列 6 款、DeepSeek V4 Pro/Flash
+
+
 ## 0.1.136-1
 
 - Sync upstream image [weishaw/sub2api:0.1.136](https://hub.docker.com/r/weishaw/sub2api).
