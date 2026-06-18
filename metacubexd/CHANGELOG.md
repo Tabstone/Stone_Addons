@@ -1,5 +1,14 @@
 # Changelog
 
+## 1.256.0-1
+
+- Sync upstream image [ghcr.io/metacubex/metacubexd:v1.256.0](https://github.com/MetaCubeX/metacubexd/pkgs/container/metacubexd).
+- Upstream project: [MetaCubeX/metacubexd](https://github.com/MetaCubeX/metacubexd).
+- Upstream release: [v1.256.0](https://github.com/MetaCubeX/metacubexd/releases/tag/v1.256.0).
+- Upstream changelog summary:
+  - **connections:** resolve client & destination hostnames via reverse DNS ([#2036](https://github.com/MetaCubeX/metacubexd/issues/2036))...
+
+
 ## 1.255.2-1
 
 - Sync upstream image [ghcr.io/metacubex/metacubexd:v1.255.2](https://github.com/MetaCubeX/metacubexd/pkgs/container/metacubexd).
