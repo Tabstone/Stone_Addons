@@ -1,5 +1,19 @@
 # Changelog
 
+## 1.7.0-1
+
+- Sync upstream image [seakee/cpa-manager-plus:v1.7.0](https://hub.docker.com/r/seakee/cpa-manager-plus).
+- Upstream project: [seakee/CPA-Manager-Plus](https://github.com/seakee/CPA-Manager-Plus).
+- Upstream release: [v1.7.0](https://github.com/seakee/CPA-Manager-Plus/releases/tag/v1.7.0).
+- Upstream changelog summary:
+  - > 72 commits · 103 files changed · +23372 / -1083
+  - > [English ->](https://github.com/seakee/CPA-Manager-Plus/blob/v1.7.0/docs/release-notes/v1.7.0-en.md)
+  - 本次发布围绕监控与用量分析展开:新增完整的 Usage Analytics 工作区,将模型、API Key、凭证、热力图与异常明细统一到可钻取的分析视图中;后端同步扩展监控聚合、筛选、时区与执行上下文能力。Codex 检查、账号处理策略与仪表盘统计也获得了多项可用性和准确性修复。
+  - 新增用量分析工作区,支持概览、趋势、模型、API Key、凭证与热力图钻取(`web/usage-analytics`)。
+  - 用量分析筛选器、当前 tab 与 drilldown 状态可持久化,跨刷新保留分析上下文(`web/usage-analytics`)。
+  - 引入共享 ECharts 渲染层,为监控与用量分析提供更丰富的图表呈现(`web/charts`)。
+
+
 ## 1.6.0-1
 
 - Sync upstream image [seakee/cpa-manager-plus:v1.6.0](https://hub.docker.com/r/seakee/cpa-manager-plus).
