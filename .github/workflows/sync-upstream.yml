@@ -133,6 +133,10 @@ jobs:
           echo "microsoft_rewards_script_tag=$MRS_TAG" >> "$GITHUB_OUTPUT"
           echo "microsoft_rewards_script=${MRS_TAG#v}" >> "$GITHUB_OUTPUT"
 
+          CCH_TAG=$(get_ghcr_latest "ding113/claude-code-hub")
+          echo "claude_code_hub_tag=$CCH_TAG" >> "$GITHUB_OUTPUT"
+          echo "claude_code_hub=${CCH_TAG#v}" >> "$GITHUB_OUTPUT"
+
           MIHOMO_TAG=$(get_dockerhub_latest "metacubex/mihomo")
           echo "mihomo_tag=$MIHOMO_TAG" >> "$GITHUB_OUTPUT"
           echo "mihomo=${MIHOMO_TAG#v}" >> "$GITHUB_OUTPUT"
@@ -168,6 +172,8 @@ jobs:
           ATVLOADLY_TAG: ${{ steps.upstream.outputs.atvloadly_tag }}
           MICROSOFT_REWARDS_SCRIPT_VERSION: ${{ steps.upstream.outputs.microsoft_rewards_script }}
           MICROSOFT_REWARDS_SCRIPT_TAG: ${{ steps.upstream.outputs.microsoft_rewards_script_tag }}
+          CLAUDE_CODE_HUB_VERSION: ${{ steps.upstream.outputs.claude_code_hub }}
+          CLAUDE_CODE_HUB_TAG: ${{ steps.upstream.outputs.claude_code_hub_tag }}
           MIHOMO_VERSION: ${{ steps.upstream.outputs.mihomo }}
           MIHOMO_TAG: ${{ steps.upstream.outputs.mihomo_tag }}
           METACUBEXD_VERSION: ${{ steps.upstream.outputs.metacubexd }}

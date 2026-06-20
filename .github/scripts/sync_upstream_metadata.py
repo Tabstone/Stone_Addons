@@ -30,6 +30,7 @@ UPDATES = [
     AddonUpdate("drpy-node", "ghcr.io/hjdhnx/drpy-node", "DRPY_NODE_VERSION", "DRPY_NODE_TAG", "hjdhnx/drpy-node", "https://github.com/users/hjdhnx/packages/container/package/drpy-node"),
     AddonUpdate("atvloadly", "ghcr.io/bitxeno/atvloadly", "ATVLOADLY_VERSION", "ATVLOADLY_TAG", "bitxeno/atvloadly", "https://github.com/bitxeno/atvloadly/pkgs/container/atvloadly"),
     AddonUpdate("microsoft-rewards-script", "ghcr.io/thenetsky/microsoft-rewards-script", "MICROSOFT_REWARDS_SCRIPT_VERSION", "MICROSOFT_REWARDS_SCRIPT_TAG", "TheNetsky/Microsoft-Rewards-Script", "https://github.com/TheNetsky/Microsoft-Rewards-Script/pkgs/container/microsoft-rewards-script"),
+    AddonUpdate("claude-code-hub", "ghcr.io/ding113/claude-code-hub", "CLAUDE_CODE_HUB_VERSION", "CLAUDE_CODE_HUB_TAG", "ding113/claude-code-hub", "https://github.com/ding113/claude-code-hub/pkgs/container/claude-code-hub"),
     AddonUpdate("cli-proxy-api", "eceasy/cli-proxy-api", "CLI_PROXY_API_VERSION", "CLI_PROXY_API_TAG", "router-for-me/CLIProxyAPI"),
     AddonUpdate("mihomo", "metacubex/mihomo", "MIHOMO_VERSION", "MIHOMO_TAG", "MetaCubeX/mihomo"),
     AddonUpdate("metacubexd", "ghcr.io/metacubex/metacubexd", "METACUBEXD_VERSION", "METACUBEXD_TAG", "MetaCubeX/metacubexd", "https://github.com/MetaCubeX/metacubexd/pkgs/container/metacubexd"),

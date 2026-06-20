@@ -1,0 +1,78 @@
+name: Claude Code Hub
+version: "0.8.7-1"
+slug: claude-code-hub
+description: Claude Code and Codex API proxy service wrapped for Home Assistant
+url: https://github.com/Tabstone/Stone_Addons/tree/main/claude-code-hub
+arch:
+  - amd64
+  - aarch64
+init: false
+ingress: true
+ingress_port: 3000
+map:
+  - addon_config:rw
+ports:
+  3000/tcp: 23000
+ports_description:
+  3000/tcp: Claude Code Hub web UI and API
+webui: http://[HOST]:[PORT:3000]/
+options:
+  TZ: Asia/Shanghai
+  ADMIN_TOKEN: change-me
+  DSN: ""
+  REDIS_URL: ""
+  APP_URL: ""
+  AUTO_MIGRATE: true
+  ENABLE_RATE_LIMIT: true
+  ENABLE_SECURE_COOKIES: false
+  AUTH_SESSION_TTL_SECONDS: 604800
+  SESSION_TTL: 300
+  DB_POOL_MAX: 20
+  DB_POOL_IDLE_TIMEOUT: 20
+  DB_POOL_CONNECT_TIMEOUT: 10
+  MESSAGE_REQUEST_WRITE_MODE: async
+  MESSAGE_REQUEST_ASYNC_FLUSH_INTERVAL_MS: 250
+  MESSAGE_REQUEST_ASYNC_BATCH_SIZE: 200
+  MESSAGE_REQUEST_ASYNC_MAX_PENDING: 5000
+  ENABLE_API_KEY_VACUUM_FILTER: true
+  ENABLE_API_KEY_REDIS_CACHE: true
+  API_KEY_AUTH_CACHE_TTL_SECONDS: 60
+  API_TEST_TIMEOUT_MS: 15000
+  MAX_RETRY_ATTEMPTS_DEFAULT: 2
+  LANGFUSE_PUBLIC_KEY: ""
+  LANGFUSE_SECRET_KEY: ""
+  LANGFUSE_BASE_URL: https://cloud.langfuse.com
+  LANGFUSE_SAMPLE_RATE: 1.0
+  LANGFUSE_DEBUG: false
+  env_vars: []
+schema:
+  TZ: str?
+  ADMIN_TOKEN: password
+  DSN: str
+  REDIS_URL: str
+  APP_URL: str?
+  AUTO_MIGRATE: bool
+  ENABLE_RATE_LIMIT: bool
+  ENABLE_SECURE_COOKIES: bool
+  AUTH_SESSION_TTL_SECONDS: int
+  SESSION_TTL: int
+  DB_POOL_MAX: int
+  DB_POOL_IDLE_TIMEOUT: int
+  DB_POOL_CONNECT_TIMEOUT: int
+  MESSAGE_REQUEST_WRITE_MODE: list(async|sync)
+  MESSAGE_REQUEST_ASYNC_FLUSH_INTERVAL_MS: int
+  MESSAGE_REQUEST_ASYNC_BATCH_SIZE: int
+  MESSAGE_REQUEST_ASYNC_MAX_PENDING: int
+  ENABLE_API_KEY_VACUUM_FILTER: bool
+  ENABLE_API_KEY_REDIS_CACHE: bool
+  API_KEY_AUTH_CACHE_TTL_SECONDS: int
+  API_TEST_TIMEOUT_MS: int
+  MAX_RETRY_ATTEMPTS_DEFAULT: int
+  LANGFUSE_PUBLIC_KEY: str?
+  LANGFUSE_SECRET_KEY: password?
+  LANGFUSE_BASE_URL: str?
+  LANGFUSE_SAMPLE_RATE: float
+  LANGFUSE_DEBUG: bool
+  env_vars:
+    - name: match(^[A-Za-z0-9_]+$)
+      value: str?
