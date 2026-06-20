@@ -1,5 +1,19 @@
 # Changelog
 
+## 7.2.22-1
+
+- Sync upstream image [eceasy/cli-proxy-api:v7.2.22](https://hub.docker.com/r/eceasy/cli-proxy-api).
+- Upstream project: [router-for-me/CLIProxyAPI](https://github.com/router-for-me/CLIProxyAPI).
+- Upstream release: [v7.2.22](https://github.com/router-for-me/CLIProxyAPI/releases/tag/v7.2.22).
+- Upstream changelog summary:
+  - `CLIProxyAPI_<version>_linux_<arch>.tar.gz` is the default Linux build. It supports dynamic library plugins and is built against a GLIBC 2.17 baseline.
+  - `CLIProxyAPI_<version>_linux_<arch>_no-plugin.tar.gz` is the portable Linux build for musl-based or older systems such as OpenWrt. It does not support dynamic library plugins.
+  - `CLIProxyAPI_<version>_freebsd_aarch64_no-plugin.tar.gz` is the FreeBSD arm64 build. It is built without CGO and does not support dynamic library plugins.
+  - fix(registry): Conform Claude models listing to Anthropic API schema (f5484b09)
+  - fix(registry): Emit Claude model created_at as RFC 3339 string (e3301ecc)
+  - feat(api): Route Anthropic /v1/models requests to the Claude format (c354f88f)
+
+
 ## 7.2.20-1
 
 - Sync upstream image [eceasy/cli-proxy-api:v7.2.20](https://hub.docker.com/r/eceasy/cli-proxy-api).

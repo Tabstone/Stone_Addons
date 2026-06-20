@@ -1,5 +1,12 @@
 # Changelog
 
+## 6.10.0-1
+
+- Sync upstream image [wantcat/trendradar:6.10.0](https://hub.docker.com/r/wantcat/trendradar).
+- Upstream project: [sansan0/TrendRadar](https://github.com/sansan0/TrendRadar).
+- Upstream tag: [v6.10.0](https://github.com/sansan0/TrendRadar/tree/v6.10.0).
+
+
 ## 6.9.1-1
 
 - Sync upstream image to 6.9.1.
