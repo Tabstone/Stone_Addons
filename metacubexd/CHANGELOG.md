@@ -1,5 +1,14 @@
 # Changelog
 
+## 1.258.4-1
+
+- Sync upstream image [ghcr.io/metacubex/metacubexd:v1.258.4](https://github.com/MetaCubeX/metacubexd/pkgs/container/metacubexd).
+- Upstream project: [MetaCubeX/metacubexd](https://github.com/MetaCubeX/metacubexd).
+- Upstream release: [v1.258.4](https://github.com/MetaCubeX/metacubexd/releases/tag/v1.258.4).
+- Upstream changelog summary:
+  - **proxies:** require long-press for node tooltip on mobile so tap only selects ([5205b43](https://github.com/MetaCubeX/metacubexd/commit/5205b437e6967d8ba61304f5ee2ede2e906afc12))
+
+
 ## 1.256.0-1
 
 - Sync upstream image [ghcr.io/metacubex/metacubexd:v1.256.0](https://github.com/MetaCubeX/metacubexd/pkgs/container/metacubexd).
