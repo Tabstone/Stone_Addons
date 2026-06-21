@@ -1,5 +1,5 @@
 name: Claude Code Hub
-version: "0.8.7-1"
+version: "0.1.49-1"
 slug: claude-code-hub
 description: Claude Code and Codex API proxy service wrapped for Home Assistant
 url: https://github.com/Tabstone/Stone_Addons/tree/main/claude-code-hub
