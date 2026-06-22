@@ -1,5 +1,15 @@
 # Changelog
 
+## 1.260.0-1
+
+- Sync upstream image [ghcr.io/metacubex/metacubexd:v1.260.0](https://github.com/MetaCubeX/metacubexd/pkgs/container/metacubexd).
+- Upstream project: [MetaCubeX/metacubexd](https://github.com/MetaCubeX/metacubexd).
+- Upstream release: [v1.260.0](https://github.com/MetaCubeX/metacubexd/releases/tag/v1.260.0).
+- Upstream changelog summary:
+  - **ui:** add useGeneralConfig composable for the general config seam ([f811a10](https://github.com/MetaCubeX/metacubexd/commit/f811a10c277157f427748f10b4d19ce0b1ee8888))
+  - **ui:** localize listener-port labels + final-review cleanups ([9f5b92f](https://github.com/MetaCubeX/metacubexd/commit/9f5b92f0db54e44d744bc6119efa2ceb8a20937a))
+
+
 ## 1.258.4-1
 
 - Sync upstream image [ghcr.io/metacubex/metacubexd:v1.258.4](https://github.com/MetaCubeX/metacubexd/pkgs/container/metacubexd).

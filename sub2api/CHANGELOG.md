@@ -1,5 +1,19 @@
 # Changelog
 
+## 0.1.138-1
+
+- Sync upstream image [weishaw/sub2api:0.1.138](https://hub.docker.com/r/weishaw/sub2api).
+- Upstream project: [Wei-Shaw/sub2api](https://github.com/Wei-Shaw/sub2api).
+- Upstream release: [Sub2API 0.1.138](https://github.com/Wei-Shaw/sub2api/releases/tag/v0.1.138).
+- Upstream changelog summary:
+  - > AI API Gateway Platform - 将 AI 订阅配额分发和管理
+  - 新增订阅推广返利与"优先最快重置账号"调度策略；适配新版 Claude Code CLI，并修复多家上游（Vertex / Gemini / OpenAI / GLM / 图像生成）的兼容性问题。
+  - 订阅支付应用推广返利（affiliate rebate）
+  - 账号调度支持「优先最快重置」可选策略
+  - 更新 CC Switch 的 OpenAI 默认模型
+  - 用量页显示缓存 Token 明细
+
+
 ## 0.1.137-1
 
 - Sync upstream image [weishaw/sub2api:0.1.137](https://hub.docker.com/r/weishaw/sub2api).
