@@ -1,5 +1,14 @@
 # Changelog
 
+## 1.261.3-1
+
+- Sync upstream image [ghcr.io/metacubex/metacubexd:v1.261.3](https://github.com/MetaCubeX/metacubexd/pkgs/container/metacubexd).
+- Upstream project: [MetaCubeX/metacubexd](https://github.com/MetaCubeX/metacubexd).
+- Upstream release: [v1.261.3](https://github.com/MetaCubeX/metacubexd/releases/tag/v1.261.3).
+- Upstream changelog summary:
+  - **server:** auto-start bundled mihomo on boot and bind MIXED_PORT ([de883e3](https://github.com/MetaCubeX/metacubexd/commit/de883e3b42445825f1acd534b579a5c37af9927e)), closes...
+
+
 ## 1.260.0-1
 
 - Sync upstream image [ghcr.io/metacubex/metacubexd:v1.260.0](https://github.com/MetaCubeX/metacubexd/pkgs/container/metacubexd).
