@@ -1,5 +1,19 @@
 # Changelog
 
+## 1.8.1-1
+
+- Sync upstream image [seakee/cpa-manager-plus:v1.8.1](https://hub.docker.com/r/seakee/cpa-manager-plus).
+- Upstream project: [seakee/CPA-Manager-Plus](https://github.com/seakee/CPA-Manager-Plus).
+- Upstream release: [v1.8.1](https://github.com/seakee/CPA-Manager-Plus/releases/tag/v1.8.1).
+- Upstream changelog summary:
+  - > 12 commits · 38 files changed · +1651 / -336
+  - > [English ->](https://github.com/seakee/CPA-Manager-Plus/blob/v1.8.1/docs/release-notes/v1.8.1-en.md)
+  - 本次发布改善 quota、实时监控与认证文件体验:新增 quota 账号与通知遮罩,让敏感账号信息更适合截图和共享;实时监控补充 reasoning token 展示并修复失败提示溢出;OpenAI provider、Antigravity 订阅和 reauth 检查结果也获得了更稳定的状态处理。
+  - 新增 quota 账号遮罩,并在 quota 页面提供遮罩状态控制,降低截图或展示时暴露账号信息的风险(`web/quota`)。
+  - 新增 quota 通知遮罩,让 quota 区块中的通知信息也能按当前隐私设置隐藏(`web/quota`)。
+  - 为 reauth 检查结果增加显式删除入口,便于清理不再需要的检查记录(`web/monitoring`)。
+
+
 ## 1.7.0-1
 
 - Sync upstream image [seakee/cpa-manager-plus:v1.7.0](https://hub.docker.com/r/seakee/cpa-manager-plus).
