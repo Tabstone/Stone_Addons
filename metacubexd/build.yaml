@@ -1,3 +1,3 @@
 build_from:
-  amd64: ghcr.io/metacubex/metacubexd:v1.261.3
-  aarch64: ghcr.io/metacubex/metacubexd:v1.261.3
+  amd64: ghcr.io/metacubex/metacubexd:v1.261.4
+  aarch64: ghcr.io/metacubex/metacubexd:v1.261.4
