@@ -1,5 +1,14 @@
 # Changelog
 
+## 1.261.4-1
+
+- Sync upstream image [ghcr.io/metacubex/metacubexd:v1.261.4](https://github.com/MetaCubeX/metacubexd/pkgs/container/metacubexd).
+- Upstream project: [MetaCubeX/metacubexd](https://github.com/MetaCubeX/metacubexd).
+- Upstream release: [v1.261.4](https://github.com/MetaCubeX/metacubexd/releases/tag/v1.261.4).
+- Upstream changelog summary:
+  - persist UI config changes to the active profile ([#2070](https://github.com/MetaCubeX/metacubexd/issues/2070))...
+
+
 ## 1.261.3-1
 
 - Sync upstream image [ghcr.io/metacubex/metacubexd:v1.261.3](https://github.com/MetaCubeX/metacubexd/pkgs/container/metacubexd).
