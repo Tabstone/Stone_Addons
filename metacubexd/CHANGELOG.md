@@ -1,5 +1,14 @@
 # Changelog
 
+## 1.261.8-1
+
+- Sync upstream image [ghcr.io/metacubex/metacubexd:v1.261.8](https://github.com/MetaCubeX/metacubexd/pkgs/container/metacubexd).
+- Upstream project: [MetaCubeX/metacubexd](https://github.com/MetaCubeX/metacubexd).
+- Upstream release: [v1.261.8](https://github.com/MetaCubeX/metacubexd/releases/tag/v1.261.8).
+- Upstream changelog summary:
+  - **ui:** use neutral border for proxy group cards instead of theme secondary ([dd30e22](https://github.com/MetaCubeX/metacubexd/commit/dd30e22d85f9a91b0fc38e6005d12c5c293fe369))
+
+
 ## 1.261.4-1
 
 - Sync upstream image [ghcr.io/metacubex/metacubexd:v1.261.4](https://github.com/MetaCubeX/metacubexd/pkgs/container/metacubexd).
