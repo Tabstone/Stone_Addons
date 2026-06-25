@@ -1,5 +1,18 @@
 # Changelog
 
+## 7.2.37-1
+
+- Sync upstream image [eceasy/cli-proxy-api:v7.2.37](https://hub.docker.com/r/eceasy/cli-proxy-api).
+- Upstream project: [router-for-me/CLIProxyAPI](https://github.com/router-for-me/CLIProxyAPI).
+- Upstream release: [v7.2.37](https://github.com/router-for-me/CLIProxyAPI/releases/tag/v7.2.37).
+- Upstream changelog summary:
+  - `CLIProxyAPI_<version>_linux_<arch>.tar.gz` is the default Linux build. It supports dynamic library plugins and is built against a GLIBC 2.17 baseline.
+  - `CLIProxyAPI_<version>_linux_<arch>_no-plugin.tar.gz` is the portable Linux build for musl-based or older systems such as OpenWrt. It does not support dynamic library plugins.
+  - `CLIProxyAPI_<version>_freebsd_aarch64_no-plugin.tar.gz` is the FreeBSD arm64 build. It is built without CGO and does not support dynamic library plugins.
+  - refactor(pluginhost): replace `Snapshot().records` with `activeRecords` for improved filtering (b53d1e95)
+  - **Full Changelog**: https://github.com/router-for-me/CLIProxyAPI/compare/v7.2.36...v7.2.37
+
+
 ## 7.2.32-1
 
 - Sync upstream image [eceasy/cli-proxy-api:v7.2.32](https://hub.docker.com/r/eceasy/cli-proxy-api).
