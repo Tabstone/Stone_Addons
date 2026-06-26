@@ -1,5 +1,19 @@
 # Changelog
 
+## 1.9.1-1
+
+- Sync upstream image [seakee/cpa-manager-plus:v1.9.1](https://hub.docker.com/r/seakee/cpa-manager-plus).
+- Upstream project: [seakee/CPA-Manager-Plus](https://github.com/seakee/CPA-Manager-Plus).
+- Upstream release: [v1.9.1](https://github.com/seakee/CPA-Manager-Plus/releases/tag/v1.9.1).
+- Upstream changelog summary:
+  - > 2 commits · 21 files changed · +1567 / -140
+  - > [English ->](https://github.com/seakee/CPA-Manager-Plus/blob/v1.9.1/docs/release-notes/v1.9.1-en.md)
+  - 本次补丁发布修复 Codex quota 在手动刷新、页面重载和多 auth file 场景下的状态持久化与隔离问题。前端现在会保留成功的手动 quota 刷新结果,并避免旧的 usage header 或检查结果覆盖更新、更准确的 quota 状态。
+  - 持久化成功的手动 Codex quota 刷新结果,页面完整刷新后仍可复用最近一次有效结果(`web/quota`)。
+  - 按 auth file identity 与 auth index 隔离 Codex quota 状态,避免同名文件或不同账号复用过期、错配的 quota 结果(`web/auth-files`)。
+  - 当存在更新的 quota 或 header 数据时,抑制较旧的 Codex inspection 与 usage-header quota 信号,减少过期限额状态误报(`web/auth-files`, `web/quota`)。
+
+
 ## 1.8.1-1
 
 - Sync upstream image [seakee/cpa-manager-plus:v1.8.1](https://hub.docker.com/r/seakee/cpa-manager-plus).
