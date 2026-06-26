@@ -1,5 +1,14 @@
 # Changelog
 
+## 1.261.10-1
+
+- Sync upstream image [ghcr.io/metacubex/metacubexd:v1.261.10](https://github.com/MetaCubeX/metacubexd/pkgs/container/metacubexd).
+- Upstream project: [MetaCubeX/metacubexd](https://github.com/MetaCubeX/metacubexd).
+- Upstream release: [v1.261.10](https://github.com/MetaCubeX/metacubexd/releases/tag/v1.261.10).
+- Upstream changelog summary:
+  - **ui:** use oklab for color-mix to stop hue degradation in packaged builds ([1ff63a2](https://github.com/MetaCubeX/metacubexd/commit/1ff63a2bb2e8481523d1483075f8cea5c7224fe4)),...
+
+
 ## 1.261.8-1
 
 - Sync upstream image [ghcr.io/metacubex/metacubexd:v1.261.8](https://github.com/MetaCubeX/metacubexd/pkgs/container/metacubexd).
