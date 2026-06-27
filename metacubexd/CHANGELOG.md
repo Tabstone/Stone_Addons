@@ -1,5 +1,15 @@
 # Changelog
 
+## 1.263.0-1
+
+- Sync upstream image [ghcr.io/metacubex/metacubexd:v1.263.0](https://github.com/MetaCubeX/metacubexd/pkgs/container/metacubexd).
+- Upstream project: [MetaCubeX/metacubexd](https://github.com/MetaCubeX/metacubexd).
+- Upstream release: [v1.263.0](https://github.com/MetaCubeX/metacubexd/releases/tag/v1.263.0).
+- Upstream changelog summary:
+  - **proxies:** add core-controlled latency test url source ([#2082](https://github.com/MetaCubeX/metacubexd/issues/2082))...
+  - **ui:** fetch frontend release list from upstream repo, not a fork ([fa7b15b](https://github.com/MetaCubeX/metacubexd/commit/fa7b15b0eeb29ff2b1ff4c073064813c1b29b384))
+
+
 ## 1.261.10-1
 
 - Sync upstream image [ghcr.io/metacubex/metacubexd:v1.261.10](https://github.com/MetaCubeX/metacubexd/pkgs/container/metacubexd).
