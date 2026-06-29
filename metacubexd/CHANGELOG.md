@@ -1,5 +1,15 @@
 # Changelog
 
+## 1.264.0-1
+
+- Sync upstream image [ghcr.io/metacubex/metacubexd:v1.264.0](https://github.com/MetaCubeX/metacubexd/pkgs/container/metacubexd).
+- Upstream project: [MetaCubeX/metacubexd](https://github.com/MetaCubeX/metacubexd).
+- Upstream release: [v1.264.0](https://github.com/MetaCubeX/metacubexd/releases/tag/v1.264.0).
+- Upstream changelog summary:
+  - **docker:** publish the standalone metacubexd panel image again ([#2091](https://github.com/MetaCubeX/metacubexd/issues/2091))...
+  - **ui:** spin only the refresh icon and unify the two overview refresh buttons ([#2090](https://github.com/MetaCubeX/metacubexd/issues/2090))...
+
+
 ## 1.263.0-1
 
 - Sync upstream image [ghcr.io/metacubex/metacubexd:v1.263.0](https://github.com/MetaCubeX/metacubexd/pkgs/container/metacubexd).

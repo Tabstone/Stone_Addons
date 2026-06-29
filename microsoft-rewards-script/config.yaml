@@ -1,5 +1,5 @@
 name: Microsoft Rewards Script
-version: "3.1.6-1"
+version: "4.0.1-1"
 slug: microsoft-rewards-script
 description: Microsoft Rewards automation script wrapped for Home Assistant
 url: https://github.com/Tabstone/Stone_Addons/tree/main/microsoft-rewards-script

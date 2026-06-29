@@ -1,5 +1,19 @@
 # Changelog
 
+## 1.9.2-1
+
+- Sync upstream image [seakee/cpa-manager-plus:v1.9.2](https://hub.docker.com/r/seakee/cpa-manager-plus).
+- Upstream project: [seakee/CPA-Manager-Plus](https://github.com/seakee/CPA-Manager-Plus).
+- Upstream release: [v1.9.2](https://github.com/seakee/CPA-Manager-Plus/releases/tag/v1.9.2).
+- Upstream changelog summary:
+  - > 15 commits · 52 files changed · +1925 / -524
+  - > [English ->](https://github.com/seakee/CPA-Manager-Plus/blob/v1.9.2/docs/release-notes/v1.9.2-en.md)
+  - 本次发布聚焦 AI Providers 配置体验与 Codex quota 可观测性:新增 reset credits 展示、Codex 连通性测试和跨 provider 的 disableCooling 配置开关,同时优化模型发现去重、插件 OAuth provider 识别和监控过滤器结构。
+  - 在 Codex quota 状态中展示可用的 rate limit reset credits,并在专用接口不可用时保留 usage payload 计数回退(`web/quota`)。
+  - 为 Claude、Codex、Gemini 和 OpenAI provider 增加 disableCooling 编辑字段与详情页快捷开关,支持乐观更新和失败回滚(`web/ai-providers`)。
+  - 在 Codex provider 编辑抽屉中新增连通性测试,可选择测试模型并通过 `/v1/responses` 验证当前配置(`web/ai-providers`)。
+
+
 ## 1.9.1-1
 
 - Sync upstream image [seakee/cpa-manager-plus:v1.9.1](https://hub.docker.com/r/seakee/cpa-manager-plus).
