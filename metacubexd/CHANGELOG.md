@@ -1,5 +1,14 @@
 # Changelog
 
+## 1.264.1-1
+
+- Sync upstream image [ghcr.io/metacubex/metacubexd:v1.264.1](https://github.com/MetaCubeX/metacubexd/pkgs/container/metacubexd).
+- Upstream project: [MetaCubeX/metacubexd](https://github.com/MetaCubeX/metacubexd).
+- Upstream release: [v1.264.1](https://github.com/MetaCubeX/metacubexd/releases/tag/v1.264.1).
+- Upstream changelog summary:
+  - **i18n:** unify latency terminology in Russian locale ([#2093](https://github.com/MetaCubeX/metacubexd/issues/2093))...
+
+
 ## 1.264.0-1
 
 - Sync upstream image [ghcr.io/metacubex/metacubexd:v1.264.0](https://github.com/MetaCubeX/metacubexd/pkgs/container/metacubexd).
