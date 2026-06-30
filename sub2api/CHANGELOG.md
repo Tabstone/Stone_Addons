@@ -1,5 +1,19 @@
 # Changelog
 
+## 0.1.140-1
+
+- Sync upstream image [weishaw/sub2api:0.1.140](https://hub.docker.com/r/weishaw/sub2api).
+- Upstream project: [Wei-Shaw/sub2api](https://github.com/Wei-Shaw/sub2api).
+- Upstream release: [Sub2API 0.1.140](https://github.com/Wei-Shaw/sub2api/releases/tag/v0.1.140).
+- Upstream changelog summary:
+  - > AI API Gateway Platform - 将 AI 订阅配额分发和管理
+  - 新增 Grok CLI 兼容路由、API 密钥列表列设置与 OpenAI quota headroom 调度权重，
+  - 并修复退款 pending、订阅金额显示、OpenAI 计费等多处问题。
+  - Grok CLI 兼容：新增 Grok CLI 路由及 messages 兼容性支持
+  - OAuth 邮箱补全：完善 OAuth 注册时的邮箱补全流程
+  - API 密钥列表列设置：支持自定义显示列
+
+
 ## 0.1.139-1
 
 - Sync upstream image [weishaw/sub2api:0.1.139](https://hub.docker.com/r/weishaw/sub2api).
