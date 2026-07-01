@@ -1,5 +1,14 @@
 # Changelog
 
+## 1.264.3-1
+
+- Sync upstream image [ghcr.io/metacubex/metacubexd:v1.264.3](https://github.com/MetaCubeX/metacubexd/pkgs/container/metacubexd).
+- Upstream project: [MetaCubeX/metacubexd](https://github.com/MetaCubeX/metacubexd).
+- Upstream release: [v1.264.3](https://github.com/MetaCubeX/metacubexd/releases/tag/v1.264.3).
+- Upstream changelog summary:
+  - **agent:** poll loopback, not the 0.0.0.0 bind host, for kernel readiness ([9153075](https://github.com/MetaCubeX/metacubexd/commit/9153075389bbcd9abfb02cdd9f630cf81bb336d8)),...
+
+
 ## 1.264.1-1
 
 - Sync upstream image [ghcr.io/metacubex/metacubexd:v1.264.1](https://github.com/MetaCubeX/metacubexd/pkgs/container/metacubexd).
