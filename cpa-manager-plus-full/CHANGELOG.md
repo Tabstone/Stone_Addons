@@ -1,5 +1,19 @@
 # Changelog
 
+## 1.10.0-1
+
+- Sync upstream image [seakee/cpa-manager-plus:v1.10.0](https://hub.docker.com/r/seakee/cpa-manager-plus).
+- Upstream project: [seakee/CPA-Manager-Plus](https://github.com/seakee/CPA-Manager-Plus).
+- Upstream release: [v1.10.0](https://github.com/seakee/CPA-Manager-Plus/releases/tag/v1.10.0).
+- Upstream changelog summary:
+  - > 33 commits · 167 files changed · +22962 / -2971
+  - > [English ->](https://github.com/seakee/CPA-Manager-Plus/blob/v1.10.0/docs/release-notes/v1.10.0-en.md)
+  - 本次发布聚焦部署落地、公开文档和可试用体验:新增引导式 CPAMP 部署脚本、双语文档站和隔离 demo runtime,同时补齐插件商店认证能力、Codex quota reset credit 展示以及 quota/监控 header 时序修复。
+  - 新增引导式 CPAMP 部署脚本,覆盖 Docker full-stack、CPAMP-only Docker 和 native package 部署,并包含生成密钥、dry-run、重复执行、写入预检和启动健康检查(`installer`)。
+  - 新增前端 mock demo runtime,复用真实页面和本地 fixture 数据,并将 demo build 限定在 `/demo` 路由下运行(`web/demo`)。
+  - 插件商店支持版本选择、认证状态、平台 metadata 和 `plugins.store-auth` 可视化配置,安装指定旧版本时会等待用户显式选择(`web/plugins`)。
+
+
 ## 1.9.2-1
 
 - Sync upstream image [seakee/cpa-manager-plus:v1.9.2](https://hub.docker.com/r/seakee/cpa-manager-plus).

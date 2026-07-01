@@ -1,5 +1,19 @@
 # Changelog
 
+## 0.1.141-1
+
+- Sync upstream image [weishaw/sub2api:0.1.141](https://hub.docker.com/r/weishaw/sub2api).
+- Upstream project: [Wei-Shaw/sub2api](https://github.com/Wei-Shaw/sub2api).
+- Upstream release: [Sub2API 0.1.141](https://github.com/Wei-Shaw/sub2api/releases/tag/v0.1.141).
+- Upstream changelog summary:
+  - > AI API Gateway Platform - 将 AI 订阅配额分发和管理
+  - 用户用量分析对齐管理员：用户端 UsageView 重构为与管理员视角一致的统计指标、分组维度（端点/分组/模型分布）和图表展示
+  - 修复订阅支付金额显示错误
+  - **Docker:**
+  - ```bash
+  - docker pull weishaw/sub2api:0.1.141
+
+
 ## 0.1.140-1
 
 - Sync upstream image [weishaw/sub2api:0.1.140](https://hub.docker.com/r/weishaw/sub2api).
