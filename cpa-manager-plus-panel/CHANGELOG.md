@@ -1,5 +1,19 @@
 # Changelog
 
+## 1.10.1-1
+
+- Sync upstream image [seakee/cpa-manager-plus:v1.10.1](https://hub.docker.com/r/seakee/cpa-manager-plus).
+- Upstream project: [seakee/CPA-Manager-Plus](https://github.com/seakee/CPA-Manager-Plus).
+- Upstream release: [v1.10.1](https://github.com/seakee/CPA-Manager-Plus/releases/tag/v1.10.1).
+- Upstream changelog summary:
+  - > 17 commits · 36 files changed · +3084 / -174
+  - > [English ->](https://github.com/seakee/CPA-Manager-Plus/blob/v1.10.1/docs/release-notes/v1.10.1-en.md)
+  - 本次发布聚焦 native package 的后台控制能力、配额提供商适配和计费聚合准确性。原生包新增并加固后台启动/停止脚本,Antigravity 与 Codex quota 展示覆盖更多边界场景,Manager Server 也会在模型别名场景下回退到请求模型价格,避免通道聚合成本显示为 0。
+  - 新增 native package 后台控制脚本,为 Unix 和 Windows 原生部署提供启动、停止、状态检查和 PID 文件管理能力(`native`)。
+  - Antigravity quota 优先读取 summary 数据,并在 quota 卡片中展示订阅套餐信息,缺失 summary 时仍可回退到可用模型数据(`web/quota`)。
+  - 批量 provider quota 刷新改为有界并发队列,降低分页或全量刷新时对上游 provider 的瞬时请求压力(`web/quota`)。
+
+
 ## 1.10.0-1
 
 - Sync upstream image [seakee/cpa-manager-plus:v1.10.0](https://hub.docker.com/r/seakee/cpa-manager-plus).

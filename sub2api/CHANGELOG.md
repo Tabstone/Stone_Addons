@@ -1,5 +1,19 @@
 # Changelog
 
+## 0.1.142-1
+
+- Sync upstream image [weishaw/sub2api:0.1.142](https://hub.docker.com/r/weishaw/sub2api).
+- Upstream project: [Wei-Shaw/sub2api](https://github.com/Wei-Shaw/sub2api).
+- Upstream release: [Sub2API 0.1.142](https://github.com/Wei-Shaw/sub2api/releases/tag/v0.1.142).
+- Upstream changelog summary:
+  - > AI API Gateway Platform - 将 AI 订阅配额分发和管理
+  - OpenAI Spark 影子账号：链接型影子账号（parent_account_id）复用母账号凭据/代理，独立走 spark 配额维度与用量窗口，一母一影强约束、母账号 429 与影子互不连坐
+  - 适配 Claude Sonnet 5：模型白名单与 dateline 归一化路径打通
+  - 抹除 Anthropic OAuth 请求中客户端 dateline 隐写指纹：对 /v1/messages 的 OAuth/setup-token 账号请求做 dateline 归一化，抹除撇号 / 日期分隔符隐写位；默认开启，可在系统设置切换
+  - Grok 媒体（图像）路由：识别官方 grok 媒体模型 ID、路由 grok media 端点，并支持图像编辑上传转换
+  - 用户使用记录列表默认显示“推理强度”列
+
+
 ## 0.1.141-1
 
 - Sync upstream image [weishaw/sub2api:0.1.141](https://hub.docker.com/r/weishaw/sub2api).

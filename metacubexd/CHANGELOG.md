@@ -1,5 +1,14 @@
 # Changelog
 
+## 1.265.0-1
+
+- Sync upstream image [ghcr.io/metacubex/metacubexd:v1.265.0](https://github.com/MetaCubeX/metacubexd/pkgs/container/metacubexd).
+- Upstream project: [MetaCubeX/metacubexd](https://github.com/MetaCubeX/metacubexd).
+- Upstream release: [v1.265.0](https://github.com/MetaCubeX/metacubexd/releases/tag/v1.265.0).
+- Upstream changelog summary:
+  - **setup:** instrument-console connect readout, auth-error diagnosis, a11y ([a4f630d](https://github.com/MetaCubeX/metacubexd/commit/a4f630d3cb8317037f5cc0bbbe8d60092f1b2eb6))
+
+
 ## 1.264.3-1
 
 - Sync upstream image [ghcr.io/metacubex/metacubexd:v1.264.3](https://github.com/MetaCubeX/metacubexd/pkgs/container/metacubexd).
