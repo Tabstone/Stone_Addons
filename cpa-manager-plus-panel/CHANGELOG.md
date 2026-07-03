@@ -1,5 +1,19 @@
 # Changelog
 
+## 1.10.2-1
+
+- Sync upstream image [seakee/cpa-manager-plus:v1.10.2](https://hub.docker.com/r/seakee/cpa-manager-plus).
+- Upstream project: [seakee/CPA-Manager-Plus](https://github.com/seakee/CPA-Manager-Plus).
+- Upstream release: [v1.10.2](https://github.com/seakee/CPA-Manager-Plus/releases/tag/v1.10.2).
+- Upstream changelog summary:
+  - > 8 commits · 15 files changed · +1579 / -104
+  - > [English ->](https://github.com/seakee/CPA-Manager-Plus/blob/v1.10.2/docs/release-notes/v1.10.2-en.md)
+  - 本次补丁发布聚焦 auth files 和管理面板可读性的稳定性修复。Manager Server 在 CPA auth-files 大响应场景下改为流式定位目标账号，避免读取被截断影响 quota 和账号操作；前端会在 Codex cooldown 恢复或过期 usage header 检测后主动刷新 quota，并补齐导航、日志、监控和 auth...
+  - Manager Server 的 quota 与账号操作路径改为流式查找 CPA auth-files 目标账号，并在新版 CPA 状态更新中传递 `auth_index`，避免大体积 auth-files 响应被截断后误判账号状态（`manager-server/auth-files`）。
+  - Codex auth file quota 会在 CPAMP cooldown 恢复或 usage header 过期后自动刷新，避免 quota badge 继续显示旧窗口数据，同时保持 `authIndex` 隔离（`web/auth-files`）。
+  - 展开的侧边栏恢复显示完整导航标签，短标签仍保留给紧凑导航场景使用（`web/navigation`）。
+
+
 ## 1.10.1-1
 
 - Sync upstream image [seakee/cpa-manager-plus:v1.10.1](https://hub.docker.com/r/seakee/cpa-manager-plus).
