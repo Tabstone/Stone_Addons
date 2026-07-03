@@ -1,5 +1,19 @@
 # Changelog
 
+## 0.1.143-1
+
+- Sync upstream image [weishaw/sub2api:0.1.143](https://hub.docker.com/r/weishaw/sub2api).
+- Upstream project: [Wei-Shaw/sub2api](https://github.com/Wei-Shaw/sub2api).
+- Upstream release: [Sub2API 0.1.143](https://github.com/Wei-Shaw/sub2api/releases/tag/v0.1.143).
+- Upstream changelog summary:
+  - > AI API Gateway Platform - 将 AI 订阅配额分发和管理
+  - 订阅分组新增高峰时段倍率能力；OpenAI WebSocket 新增 http_bridge ingress 模式。
+  - 订阅分组高峰时段倍率：支持为分组配置高峰时段与倍率，倍率信息全链路透传至可用渠道、支付计划与结算信息
+  - OpenAI WebSocket 新增 http_bridge ingress 模式及账号级 WS 选择器
+  - 支持恢复已撤销的订阅
+  - 用量记录新增 IP 地理位置查询与展示
+
+
 ## 0.1.142-1
 
 - Sync upstream image [weishaw/sub2api:0.1.142](https://hub.docker.com/r/weishaw/sub2api).
