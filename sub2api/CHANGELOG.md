@@ -1,5 +1,19 @@
 # Changelog
 
+## 0.1.144-1
+
+- Sync upstream image [weishaw/sub2api:0.1.144](https://hub.docker.com/r/weishaw/sub2api).
+- Upstream project: [Wei-Shaw/sub2api](https://github.com/Wei-Shaw/sub2api).
+- Upstream release: [Sub2API 0.1.144](https://github.com/Wei-Shaw/sub2api/releases/tag/v0.1.144).
+- Upstream changelog summary:
+  - > AI API Gateway Platform - 将 AI 订阅配额分发和管理
+  - 修复高并发下用量日志静默丢失导致的对账缺口问题；新增 Anthropic Fable 专属 7d_oi 窗口的模型级限流支持，触发限流不再误伤整个账号。
+  - Anthropic 账号支持 Fable 专属 7d_oi 限流窗口：仅该窗口触发 429 时按模型级限流处理（其他模型正常调度），账号列表新增 "7d F" 用量进度条
+  - 错误请求列表全面对齐用量明细：支持排序、筛选、列设置，新增分类过滤（管理端与用户端）
+  - Codex 图像工具策略：账号级四态控制（跟随渠道/强制注入/不注入/全部拦截），支持剥离图像生成工具
+  - 数据库迁移超时时间支持配置
+
+
 ## 0.1.143-1
 
 - Sync upstream image [weishaw/sub2api:0.1.143](https://hub.docker.com/r/weishaw/sub2api).
