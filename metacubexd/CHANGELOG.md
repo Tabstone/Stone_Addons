@@ -1,5 +1,14 @@
 # Changelog
 
+## 1.265.1-1
+
+- Sync upstream image [ghcr.io/metacubex/metacubexd:v1.265.1](https://github.com/MetaCubeX/metacubexd/pkgs/container/metacubexd).
+- Upstream project: [MetaCubeX/metacubexd](https://github.com/MetaCubeX/metacubexd).
+- Upstream release: [v1.265.1](https://github.com/MetaCubeX/metacubexd/releases/tag/v1.265.1).
+- Upstream changelog summary:
+  - **ui:** restore the monaco-editor 0.52.2 pin and slim monaco imports ([1373d25](https://github.com/MetaCubeX/metacubexd/commit/1373d25d9bd2ad88b3b2205de868d63ce9010752)), closes...
+
+
 ## 1.265.0-1
 
 - Sync upstream image [ghcr.io/metacubex/metacubexd:v1.265.0](https://github.com/MetaCubeX/metacubexd/pkgs/container/metacubexd).
