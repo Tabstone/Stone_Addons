@@ -1,0 +1,56 @@
+name: TVBox Auxiliary
+version: "1.0.0-1"
+slug: tvbox-auxiliary
+description: TVBox JSON formatter and automation helper wrapped for Home Assistant
+url: https://github.com/Tabstone/Stone_Addons/tree/main/tvbox-auxiliary
+arch:
+  - amd64
+  - aarch64
+  - armv7
+init: false
+ingress: true
+ingress_port: 5678
+ingress_entry: /status
+map:
+  - addon_config:rw
+ports:
+  5678/tcp: 5678
+ports_description:
+  5678/tcp: TVBox Auxiliary web UI and API
+webui: http://[HOST]:[PORT:5678]/status
+options:
+  TZ: Asia/Shanghai
+  ADMIN_TOKEN: change-me
+  BASE_URL: ""
+  CRON_SCHEDULE: ""
+  REFRESH_TOKEN: ""
+  VERBOSE: false
+  SPEED_TIMEOUT_MS: 5000
+  SITE_TIMEOUT_MS: 3000
+  FETCH_TIMEOUT_MS: 30000
+  SCRAPE_SOURCE_URL: ""
+  SCRAPE_SOURCE_REFERER: ""
+  MACCMS_API_URL: ""
+  MACCMS_AES_KEY: ""
+  MACCMS_AES_IV: ""
+  ZBAPE_API_KEY: ""
+  env_vars: []
+schema:
+  TZ: str?
+  ADMIN_TOKEN: password
+  BASE_URL: str?
+  CRON_SCHEDULE: str?
+  REFRESH_TOKEN: password?
+  VERBOSE: bool
+  SPEED_TIMEOUT_MS: int
+  SITE_TIMEOUT_MS: int
+  FETCH_TIMEOUT_MS: int
+  SCRAPE_SOURCE_URL: str?
+  SCRAPE_SOURCE_REFERER: str?
+  MACCMS_API_URL: str?
+  MACCMS_AES_KEY: password?
+  MACCMS_AES_IV: password?
+  ZBAPE_API_KEY: password?
+  env_vars:
+    - name: match(^[A-Za-z0-9_]+$)
+      value: str?

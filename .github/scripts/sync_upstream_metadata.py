@@ -31,6 +31,7 @@ UPDATES = [
     AddonUpdate("atvloadly", "ghcr.io/bitxeno/atvloadly", "ATVLOADLY_VERSION", "ATVLOADLY_TAG", "bitxeno/atvloadly", "https://github.com/bitxeno/atvloadly/pkgs/container/atvloadly"),
     AddonUpdate("microsoft-rewards-script", "ghcr.io/thenetsky/microsoft-rewards-script", "MICROSOFT_REWARDS_SCRIPT_VERSION", "MICROSOFT_REWARDS_SCRIPT_TAG", "TheNetsky/Microsoft-Rewards-Script", "https://github.com/TheNetsky/Microsoft-Rewards-Script/pkgs/container/microsoft-rewards-script"),
     AddonUpdate("claude-code-hub", "ghcr.io/ding113/claude-code-hub", "CLAUDE_CODE_HUB_VERSION", "CLAUDE_CODE_HUB_TAG", "ding113/claude-code-hub", "https://github.com/ding113/claude-code-hub/pkgs/container/claude-code-hub"),
+    AddonUpdate("tvbox-auxiliary", "ghcr.io/nuu987/tvbox-auxiliary", "TVBOX_AUXILIARY_VERSION", "TVBOX_AUXILIARY_TAG", "nuu987/tvbox-auxiliary", "https://github.com/nuu987/tvbox-auxiliary/pkgs/container/tvbox-auxiliary"),
     AddonUpdate("cli-proxy-api", "eceasy/cli-proxy-api", "CLI_PROXY_API_VERSION", "CLI_PROXY_API_TAG", "router-for-me/CLIProxyAPI"),
     AddonUpdate("mihomo", "metacubex/mihomo", "MIHOMO_VERSION", "MIHOMO_TAG", "MetaCubeX/mihomo"),
     AddonUpdate("metacubexd", "ghcr.io/metacubex/metacubexd", "METACUBEXD_VERSION", "METACUBEXD_TAG", "MetaCubeX/metacubexd", "https://github.com/MetaCubeX/metacubexd/pkgs/container/metacubexd"),
@@ -70,10 +71,13 @@ def image_url(update: AddonUpdate) -> str:
 def version_candidates(image_tag: str, upstream: str) -> list[str]:
     values = [image_tag, upstream]
     for value in (image_tag, upstream):
+        stripped = value[1:] if value.startswith("v") else value
         if value.startswith("v"):
             values.append(value[1:])
         elif re.match(r"^\d+\.\d+\.\d+", value):
             values.append(f"v{value}")
+        if re.match(r"^\d+\.\d+$", stripped):
+            values.extend([f"{stripped}.0", f"v{stripped}.0"])
     unique = []
     for value in values:
         if value and value not in unique:
@@ -167,8 +171,18 @@ def current_addon_version(config_text: str) -> str:
     return match.group(1) if match else ""
 
 
-def next_wrapper_version(current_version: str, upstream: str, bump_wrapper: bool) -> str:
+def normalize_wrapper_base_version(upstream: str) -> str:
     base_version = upstream.split("-", 1)[0]
+    if base_version.startswith("v"):
+        base_version = base_version[1:]
+    partial = re.match(r"^(\d+)\.(\d+)$", base_version)
+    if partial:
+        return f"{partial.group(1)}.{partial.group(2)}.0"
+    return base_version
+
+
+def next_wrapper_version(current_version: str, upstream: str, bump_wrapper: bool) -> str:
+    base_version = normalize_wrapper_base_version(upstream)
     current_base, current_suffix = (current_version.split("-", 1) + [None])[:2] if current_version else ("", None)
     current_suffix_num = int(current_suffix) if current_suffix and current_suffix.isdigit() else None
     if base_version == current_base:
