@@ -28,6 +28,16 @@ class SyncUpstreamMetadataTests(unittest.TestCase):
             "7.1.59-1",
         )
 
+    def test_wrapper_version_normalizes_partial_upstream_version(self):
+        self.assertEqual(
+            sync_upstream_metadata.next_wrapper_version("1.0.0-1", "1.0", False),
+            "1.0.0-1",
+        )
+        self.assertEqual(
+            sync_upstream_metadata.next_wrapper_version("1.0.0-1", "v1.1", False),
+            "1.1.0-1",
+        )
+
     def test_changelog_entry_links_upstream_release_without_wrapper_suffix(self):
         update = sync_upstream_metadata.AddonUpdate(
             "cli-proxy-api",

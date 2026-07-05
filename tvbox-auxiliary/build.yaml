@@ -1,0 +1,4 @@
+build_from:
+  amd64: ghcr.io/nuu987/tvbox-auxiliary:v1.0
+  aarch64: ghcr.io/nuu987/tvbox-auxiliary:v1.0
+  armv7: ghcr.io/nuu987/tvbox-auxiliary:v1.0

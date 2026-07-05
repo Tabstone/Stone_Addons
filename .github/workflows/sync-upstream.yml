@@ -37,24 +37,25 @@ jobs:
             curl -fsSL "https://hub.docker.com/v2/repositories/${repo}/tags/?page_size=50&ordering=last_updated" | python3 -c "
           import sys, json, re
           data = json.load(sys.stdin)
-          tags = [r['name'] for r in data.get('results', []) if r['name'] not in ('latest', 'dev', 'nightly', 'beta')]
+          tags = [
+              r['name']
+              for r in data.get('results', [])
+              if r['name'] not in ('latest', 'dev', 'nightly', 'beta')
+              and not r['name'].endswith('.sig')
+          ]
 
-          def parse_full(tag):
+          def parse_semver(tag):
             m = re.match(r'^v?(\d+)\.(\d+)\.(\d+)$', tag)
-            return (int(m.group(1)), int(m.group(2)), int(m.group(3))) if m else None
-
-          def parse_partial(tag):
+            if m:
+              return (int(m.group(1)), int(m.group(2)), int(m.group(3)), 1)
             m = re.match(r'^v?(\d+)\.(\d+)$', tag)
-            return (int(m.group(1)), int(m.group(2)), 0) if m else None
+            if m:
+              return (int(m.group(1)), int(m.group(2)), 0, 0)
+            return None
 
-          full = [(parse_full(t), t) for t in tags if parse_full(t)]
-          if full:
-            print(max(full, key=lambda item: item[0])[1])
-            raise SystemExit(0)
-
-          partial = [(parse_partial(t), t) for t in tags if parse_partial(t)]
-          if partial:
-            print(max(partial, key=lambda item: item[0])[1])
+          semver = [(parse_semver(t), t) for t in tags if parse_semver(t)]
+          if semver:
+            print(max(semver, key=lambda item: item[0])[1])
             raise SystemExit(0)
 
           print(tags[0] if tags else '')
@@ -86,15 +87,25 @@ jobs:
             curl -fsSL -H "Authorization: Bearer ${token}" "https://ghcr.io/v2/${image}/tags/list" | python3 -c "
           import sys, json, re
           data = json.load(sys.stdin)
-          tags = [t for t in data.get('tags', []) if t not in ('latest', 'main', 'dev', 'nightly', 'beta')]
+          tags = [
+              t
+              for t in data.get('tags', [])
+              if t not in ('latest', 'main', 'dev', 'nightly', 'beta')
+              and not t.endswith('.sig')
+          ]
 
-          def parse_full(tag):
+          def parse_semver(tag):
             m = re.match(r'^v?(\d+)\.(\d+)\.(\d+)$', tag)
-            return (int(m.group(1)), int(m.group(2)), int(m.group(3))) if m else None
+            if m:
+              return (int(m.group(1)), int(m.group(2)), int(m.group(3)), 1)
+            m = re.match(r'^v?(\d+)\.(\d+)$', tag)
+            if m:
+              return (int(m.group(1)), int(m.group(2)), 0, 0)
+            return None
 
-          full = [(parse_full(t), t) for t in tags if parse_full(t)]
-          if full:
-            print(max(full, key=lambda item: item[0])[1])
+          semver = [(parse_semver(t), t) for t in tags if parse_semver(t)]
+          if semver:
+            print(max(semver, key=lambda item: item[0])[1])
             raise SystemExit(0)
 
           print(tags[-1] if tags else '')
@@ -137,6 +148,10 @@ jobs:
           echo "claude_code_hub_tag=$CCH_TAG" >> "$GITHUB_OUTPUT"
           echo "claude_code_hub=${CCH_TAG#v}" >> "$GITHUB_OUTPUT"
 
+          TVBOX_AUXILIARY_TAG=$(get_ghcr_latest "nuu987/tvbox-auxiliary")
+          echo "tvbox_auxiliary_tag=$TVBOX_AUXILIARY_TAG" >> "$GITHUB_OUTPUT"
+          echo "tvbox_auxiliary=${TVBOX_AUXILIARY_TAG#v}" >> "$GITHUB_OUTPUT"
+
           MIHOMO_TAG=$(get_dockerhub_latest "metacubex/mihomo")
           echo "mihomo_tag=$MIHOMO_TAG" >> "$GITHUB_OUTPUT"
           echo "mihomo=${MIHOMO_TAG#v}" >> "$GITHUB_OUTPUT"
@@ -174,6 +189,8 @@ jobs:
           MICROSOFT_REWARDS_SCRIPT_TAG: ${{ steps.upstream.outputs.microsoft_rewards_script_tag }}
           CLAUDE_CODE_HUB_VERSION: ${{ steps.upstream.outputs.claude_code_hub }}
           CLAUDE_CODE_HUB_TAG: ${{ steps.upstream.outputs.claude_code_hub_tag }}
+          TVBOX_AUXILIARY_VERSION: ${{ steps.upstream.outputs.tvbox_auxiliary }}
+          TVBOX_AUXILIARY_TAG: ${{ steps.upstream.outputs.tvbox_auxiliary_tag }}
           MIHOMO_VERSION: ${{ steps.upstream.outputs.mihomo }}
           MIHOMO_TAG: ${{ steps.upstream.outputs.mihomo_tag }}
           METACUBEXD_VERSION: ${{ steps.upstream.outputs.metacubexd }}

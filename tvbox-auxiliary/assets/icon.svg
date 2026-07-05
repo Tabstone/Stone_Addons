@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" role="img" aria-label="TVBox Auxiliary">
+  <defs>
+    <linearGradient id="bg" x1="24" y1="24" x2="232" y2="232" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#0f766e"/>
+      <stop offset="0.52" stop-color="#155e75"/>
+      <stop offset="1" stop-color="#172554"/>
+    </linearGradient>
+    <linearGradient id="panel" x1="58" y1="58" x2="198" y2="198" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#ecfeff"/>
+      <stop offset="1" stop-color="#cffafe"/>
+    </linearGradient>
+  </defs>
+  <rect width="256" height="256" rx="54" fill="url(#bg)"/>
+  <path d="M70 73h116c13.25 0 24 10.75 24 24v65c0 13.25-10.75 24-24 24H70c-13.25 0-24-10.75-24-24V97c0-13.25 10.75-24 24-24Z" fill="url(#panel)" opacity="0.96"/>
+  <path d="M88 206h80" stroke="#cffafe" stroke-width="12" stroke-linecap="round" opacity="0.9"/>
+  <path d="M112 186v20m32-20v20" stroke="#cffafe" stroke-width="12" stroke-linecap="round" opacity="0.9"/>
+  <path d="M80 109h96M80 137h66M80 163h88" stroke="#155e75" stroke-width="12" stroke-linecap="round"/>
+  <circle cx="188" cy="110" r="10" fill="#14b8a6"/>
+  <circle cx="188" cy="145" r="10" fill="#22c55e"/>
+</svg>

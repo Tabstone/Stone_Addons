@@ -12,8 +12,12 @@ class AddonMetadataRulesTests(unittest.TestCase):
         self.assertRegex("sha-1", version_re)
 
     def test_sha_image_tag_should_be_allowed(self):
-        tag_re = re.compile(r"^(?:v?\d+\.\d+\.\d+|sha-[0-9a-f]{7,40})$")
+        tag_re = re.compile(r"^(?:v?\d+\.\d+(?:\.\d+)?|sha-[0-9a-f]{7,40})$")
         self.assertRegex("sha-cdb12a9", tag_re)
+
+    def test_upstream_partial_semver_image_tag_should_be_allowed(self):
+        tag_re = re.compile(r"^(?:v?\d+\.\d+(?:\.\d+)?|sha-[0-9a-f]{7,40})$")
+        self.assertRegex("v1.0", tag_re)
 
 
 if __name__ == "__main__":
