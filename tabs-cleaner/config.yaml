@@ -1,0 +1,38 @@
+name: TabS Cleaner
+version: "0.1.0-1"
+slug: tabs-cleaner
+description: CleanMyMac-style storage dashboard and safe cleaner for Home Assistant OS
+url: https://github.com/Tabstone/Stone_Addons/tree/main/tabs-cleaner
+image: ghcr.io/tabstone/stone_addons-tabs-cleaner
+arch:
+  - amd64
+  - aarch64
+init: false
+ingress: true
+ingress_port: 8099
+ingress_entry: /
+hassio_api: true
+hassio_role: admin
+docker_api: true
+map:
+  - addon_config:rw
+  - backup:rw
+  - share:ro
+  - media:ro
+  - ssl:ro
+  - addons:ro
+  - homeassistant_config:ro
+  - all_addon_configs:ro
+ports:
+  8099/tcp: 8099
+ports_description:
+  8099/tcp: TabS Cleaner web UI and API
+webui: http://[HOST]:[PORT:8099]/
+options:
+  TZ: Asia/Shanghai
+  JOURNAL_VACUUM_SIZE: 300M
+  ENABLE_DEEP_CLEAN: true
+schema:
+  TZ: str?
+  JOURNAL_VACUUM_SIZE: match(^[1-9][0-9]*(K|M|G)$)
+  ENABLE_DEEP_CLEAN: bool
