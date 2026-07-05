@@ -23,6 +23,7 @@ https://github.com/Tabstone/Stone_Addons
 
 | Add-on | 目录 | 说明 | 上游项目地址 | 上游镜像地址 |
 | --- | --- | --- | --- | --- |
+| TabS Cleaner | `tabs-cleaner/` | CleanMyMac 风格的 HAOS 存储仪表盘，提供安全自动清理和勾选式深度清理 | [Stone_Addons](https://github.com/Tabstone/Stone_Addons/tree/main/tabs-cleaner) | 基于 Home Assistant base image 构建 |
 | TrendRadar | `trendradar/` | 趋势分析服务，提供 Web UI 与通知能力 | [sansan0/TrendRadar](https://github.com/sansan0/TrendRadar) | [wantcat/trendradar](https://hub.docker.com/r/wantcat/trendradar) |
 | TrendRadar MCP | `trendradar-mcp/` | TrendRadar 的 MCP 服务，复用主 add-on 数据 | [sansan0/TrendRadar](https://github.com/sansan0/TrendRadar) | [wantcat/trendradar-mcp](https://hub.docker.com/r/wantcat/trendradar-mcp) |
 | CLI Proxy API | `cli-proxy-api/` | CLI Proxy API 服务，保留配置与鉴权目录 | [router-for-me/CLIProxyAPI](https://github.com/router-for-me/CLIProxyAPI) | [eceasy/cli-proxy-api](https://hub.docker.com/r/eceasy/cli-proxy-api) |
@@ -42,6 +43,7 @@ https://github.com/Tabstone/Stone_Addons
 ## 维护方式
 
 - 每个 add-on 都尽量跟随上游镜像版本，不重写上游业务逻辑。
+- TabS Cleaner 在本仓库内构建，并通过 `.github/workflows/tabs-cleaner-image.yml` 发布到 GHCR，构建架构以它的 `config.yaml` 为准。
 - 仓库级 GitHub Actions 会检查上游镜像版本，并自动同步 `build.yaml`、`config.yaml.version` 与 `CHANGELOG.md`。
 - 同步 workflow 生成 changelog 时会优先补充上游 release 或 tag 链接；如果上游没有发布说明，则降级写入上游项目地址和镜像地址。
 - 具体的使用方式、持久化目录、端口和配置项说明，请查看各 add-on 目录下的 `DOCS.md`。

@@ -19,6 +19,13 @@ class AddonMetadataRulesTests(unittest.TestCase):
         tag_re = re.compile(r"^(?:v?\d+\.\d+(?:\.\d+)?|sha-[0-9a-f]{7,40})$")
         self.assertRegex("v1.0", tag_re)
 
+    def test_home_assistant_base_latest_should_be_allowed(self):
+        image = "ghcr.io/home-assistant/amd64-base:latest"
+        tag = image.rsplit(":", 1)[1]
+        allow_latest = tag == "latest" and image.startswith("ghcr.io/home-assistant/")
+
+        self.assertTrue(allow_latest)
+
 
 if __name__ == "__main__":
     unittest.main()
