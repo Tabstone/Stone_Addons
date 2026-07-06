@@ -1,5 +1,19 @@
 # Changelog
 
+## 1.10.3-1
+
+- Sync upstream image [seakee/cpa-manager-plus:v1.10.3](https://hub.docker.com/r/seakee/cpa-manager-plus).
+- Upstream project: [seakee/CPA-Manager-Plus](https://github.com/seakee/CPA-Manager-Plus).
+- Upstream release: [v1.10.3](https://github.com/seakee/CPA-Manager-Plus/releases/tag/v1.10.3).
+- Upstream changelog summary:
+  - > 7 commits · 14 files changed · +1067 / -898
+  - > [English ->](https://github.com/seakee/CPA-Manager-Plus/blob/v1.10.3/docs/release-notes/v1.10.3-en.md)
+  - 本次补丁发布聚焦 quota 可见性、管理面板静态文件响应稳定性和用户文案打磨。前端现在能拆分 xAI 月度赠送额度与 pay-as-you-go 用量，Manager Server 为 `/management.html` 补齐 `Content-Length` 和静态文件响应语义，中文 README 也新增 Telegram 社区入口。
+  - xAI quota 摘要和监控账号行现在区分月度赠送额度与按量付费用量，并在配置 on-demand 上限时展示剩余额度；未配置上限时显示禁用状态（`web/quota`）。
+  - Manager Server 的 embedded panel 和 `PANEL_PATH` 管理面板响应补齐 `Content-Length`，`PANEL_PATH` 路径改用 `http.ServeContent`，改善 nginx/反向代理代理大体积 single-file HTML 时的下载稳定性，并覆盖 HEAD、range 和...
+  - 监控账号 quota 条目移除 Kimi amount labels，避免不同 provider 的额度展示混杂（`web/monitoring`）。
+
+
 ## 1.10.2-1
 
 - Sync upstream image [seakee/cpa-manager-plus:v1.10.2](https://hub.docker.com/r/seakee/cpa-manager-plus).
