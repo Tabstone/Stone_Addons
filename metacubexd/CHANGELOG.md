@@ -1,5 +1,14 @@
 # Changelog
 
+## 1.265.2-1
+
+- Sync upstream image [ghcr.io/metacubex/metacubexd:v1.265.2](https://github.com/MetaCubeX/metacubexd/pkgs/container/metacubexd).
+- Upstream project: [MetaCubeX/metacubexd](https://github.com/MetaCubeX/metacubexd).
+- Upstream release: [v1.265.2](https://github.com/MetaCubeX/metacubexd/releases/tag/v1.265.2).
+- Upstream changelog summary:
+  - let proxy group headers scroll with nodes ([f5bce19](https://github.com/MetaCubeX/metacubexd/commit/f5bce197c32fec163e1dfb5e5c28f25b11bcc1f0)), closes...
+
+
 ## 1.265.1-1
 
 - Sync upstream image [ghcr.io/metacubex/metacubexd:v1.265.1](https://github.com/MetaCubeX/metacubexd/pkgs/container/metacubexd).
