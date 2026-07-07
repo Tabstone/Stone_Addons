@@ -1,5 +1,19 @@
 # Changelog
 
+## 0.1.146-1
+
+- Sync upstream image [weishaw/sub2api:0.1.146](https://hub.docker.com/r/weishaw/sub2api).
+- Upstream project: [Wei-Shaw/sub2api](https://github.com/Wei-Shaw/sub2api).
+- Upstream release: [Sub2API 0.1.146](https://github.com/Wei-Shaw/sub2api/releases/tag/v0.1.146).
+- Upstream changelog summary:
+  - > AI API Gateway Platform - 将 AI 订阅配额分发和管理
+  - API Key 并发统计：密钥列表实时展示并发使用情况
+  - 账号请求头覆写：API Key 类型账号支持自定义 Anthropic/OpenAI 请求头（含敏感头禁止覆写防护）
+  - 账号数据导入：支持拖拽上传和批量导入账号数据
+  - 适配 OpenAI 新模型 gpt-5.6-sol/terra/luna，开放 Grok 图像生成计价配置
+  - 订阅套餐编辑器支持预览人民币扣费金额
+
+
 ## 0.1.144-1
 
 - Sync upstream image [weishaw/sub2api:0.1.144](https://hub.docker.com/r/weishaw/sub2api).

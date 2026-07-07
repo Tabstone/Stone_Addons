@@ -1,5 +1,14 @@
 # Changelog
 
+## 1.266.1-1
+
+- Sync upstream image [ghcr.io/metacubex/metacubexd:v1.266.1](https://github.com/MetaCubeX/metacubexd/pkgs/container/metacubexd).
+- Upstream project: [MetaCubeX/metacubexd](https://github.com/MetaCubeX/metacubexd).
+- Upstream release: [v1.266.1](https://github.com/MetaCubeX/metacubexd/releases/tag/v1.266.1).
+- Upstream changelog summary:
+  - **server:** separate refresh/apply endpoints and validate before activate ([c3f56c1](https://github.com/MetaCubeX/metacubexd/commit/c3f56c16e23fc9fbbe4a584bcd6c904e8fe30079))
+
+
 ## 1.265.2-1
 
 - Sync upstream image [ghcr.io/metacubex/metacubexd:v1.265.2](https://github.com/MetaCubeX/metacubexd/pkgs/container/metacubexd).
