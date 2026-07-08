@@ -1,5 +1,19 @@
 # Changelog
 
+## 1.10.4-1
+
+- Sync upstream image [seakee/cpa-manager-plus:v1.10.4](https://hub.docker.com/r/seakee/cpa-manager-plus).
+- Upstream project: [seakee/CPA-Manager-Plus](https://github.com/seakee/CPA-Manager-Plus).
+- Upstream release: [v1.10.4](https://github.com/seakee/CPA-Manager-Plus/releases/tag/v1.10.4).
+- Upstream changelog summary:
+  - > 11 commits · 30 files changed · +2743 / -177
+  - > [English ->](https://github.com/seakee/CPA-Manager-Plus/blob/v1.10.4/docs/release-notes/v1.10.4-en.md)
+  - 本次发布聚焦账号历史统计与 provider 优先级管理。Manager Server 新增基于 SQLite 侧边汇总的账号历史统计能力，为账号级摘要读取提供低延迟数据源；前端则把 provider 优先级调整收敛到表格内直接编辑，并继续打磨监控 quota 信息与中文筛选文案。
+  - Manager Server 新增 `usage_rollup_checkpoints` 和 `usage_account_model_rollups` SQLite 侧边汇总表、repository 与 Store 接入，用 `usage_events` 作为权威来源累计账号/模型历史请求、token、成本与成功率统计（`manager-...
+  - 新增 `/v0/management/monitoring/account-history` API，支持最多 200 个账号目标、可选 catch-up，并返回 checkpoint/pending 状态、总请求数、成功/失败次数、总 token、成本、成功率和首末次出现时间（`manager-server/monitoring`）。
+  - 新增账号历史汇总后台 worker，在服务启动、使用事件进入和定时检查时推进汇总 checkpoint，避免账号摘要读取同步扫描原始事件（`manager-server/worker`）。
+
+
 ## 1.10.3-1
 
 - Sync upstream image [seakee/cpa-manager-plus:v1.10.3](https://hub.docker.com/r/seakee/cpa-manager-plus).
