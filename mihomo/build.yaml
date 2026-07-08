@@ -1,3 +1,3 @@
 build_from:
-  amd64: metacubex/mihomo:v1.19.27
-  aarch64: metacubex/mihomo:v1.19.27
+  amd64: metacubex/mihomo:v1.19.28
+  aarch64: metacubex/mihomo:v1.19.28

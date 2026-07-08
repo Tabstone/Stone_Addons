@@ -1,5 +1,19 @@
 # Changelog
 
+## 1.19.28-1
+
+- Sync upstream image [metacubex/mihomo:v1.19.28](https://hub.docker.com/r/metacubex/mihomo).
+- Upstream project: [MetaCubeX/mihomo](https://github.com/MetaCubeX/mihomo).
+- Upstream release: [v1.19.28](https://github.com/MetaCubeX/mihomo/releases/tag/v1.19.28).
+- Upstream changelog summary:
+  - ea19cda0 feat: add `rematch` outbound type and `REMATCH-NAME` rule type (#2862) by @Peter Solomon
+  - d20e8508 feat: support custom peer-info for openvpn outbound (#2926) by @Easy-Ez
+  - 1686d563 feat: convert support `session-table` and `session-length` for `xhttp-opts` fields (#2889) by @legiz-ru
+  - 01111ffa feat: add `handshake-timeout` for masque by @wwqgtxx
+  - 1c4f7c4d feat: support shadow-tls for snell by @wwqgtxx
+  - 1f80d915 feat: support `session-table` and `session-length` for xhttp client by @wwqgtxx
+
+
 ## 1.19.27-1
 
 - Sync upstream image to v1.19.27.
