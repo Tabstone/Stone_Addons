@@ -1,5 +1,15 @@
 # Changelog
 
+## 1.267.0-1
+
+- Sync upstream image [ghcr.io/metacubex/metacubexd:v1.267.0](https://github.com/MetaCubeX/metacubexd/pkgs/container/metacubexd).
+- Upstream project: [MetaCubeX/metacubexd](https://github.com/MetaCubeX/metacubexd).
+- Upstream release: [v1.267.0](https://github.com/MetaCubeX/metacubexd/releases/tag/v1.267.0).
+- Upstream changelog summary:
+  - **agent:** persist an explicitly applied system-proxy bypass list ([dcd1f33](https://github.com/MetaCubeX/metacubexd/commit/dcd1f33366563f797e790a96cf02f4cb2324813c))
+  - **desktop:** tray/menu overhaul, close-to-tray, on-disk logs, login item, update check...
+
+
 ## 1.266.1-1
 
 - Sync upstream image [ghcr.io/metacubex/metacubexd:v1.266.1](https://github.com/MetaCubeX/metacubexd/pkgs/container/metacubexd).

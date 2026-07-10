@@ -1,5 +1,19 @@
 # Changelog
 
+## 0.1.150-1
+
+- Sync upstream image [weishaw/sub2api:0.1.150](https://hub.docker.com/r/weishaw/sub2api).
+- Upstream project: [Wei-Shaw/sub2api](https://github.com/Wei-Shaw/sub2api).
+- Upstream release: [Sub2API 0.1.150](https://github.com/Wei-Shaw/sub2api/releases/tag/v0.1.150).
+- Upstream changelog summary:
+  - > AI API Gateway Platform - 将 AI 订阅配额分发和管理
+  - GPT-5.6 缓存写入计费：支持 cache write token 独立计价与用量统计
+  - parallel_tool_calls 兼容映射：Chat Completions 与 Responses API 互转时保留该字段（含显式 false）
+  - GPT-5.6 计费与官方定价对齐，显式配置的缓存写入价格优先生效
+  - 升级 Codex 客户端版本至 0.144.1，修复 gpt-5.6-luna 模型请求 404
+  - 加固计费并发与支付恢复流程，防止并发场景下的余额与订阅状态异常
+
+
 ## 0.1.146-1
 
 - Sync upstream image [weishaw/sub2api:0.1.146](https://hub.docker.com/r/weishaw/sub2api).
