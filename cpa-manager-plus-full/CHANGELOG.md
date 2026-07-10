@@ -1,5 +1,19 @@
 # Changelog
 
+## 1.10.5-1
+
+- Sync upstream image [seakee/cpa-manager-plus:v1.10.5](https://hub.docker.com/r/seakee/cpa-manager-plus).
+- Upstream project: [seakee/CPA-Manager-Plus](https://github.com/seakee/CPA-Manager-Plus).
+- Upstream release: [v1.10.5](https://github.com/seakee/CPA-Manager-Plus/releases/tag/v1.10.5).
+- Upstream changelog summary:
+  - > 6 commits · 18 files changed · +1512 / -97
+  - > [English ->](https://github.com/seakee/CPA-Manager-Plus/blob/v1.10.5/docs/release-notes/v1.10.5-en.md)
+  - 本次发布聚焦前端配额可视化与插件安装体验。Quota 视图和监控账号行新增 xAI/Grok 周额度摘要，插件商店支持按 GitHub Release 或手动 tag 安装版本，同时修复 provider 与 quota 状态条在紧凑布局下的重叠和换行问题。
+  - xAI/Grok quota 请求现在会同时获取周额度与月度账单数据，并合并为统一的 quota summary；Quota 卡片和监控账号行会展示周限制与产品用量（`web/quota`）。
+  - 插件商店新增安装版本模式，可在 latest、GitHub Release 列表和手动 tag 之间选择，并支持 prerelease 切换、release 元数据缓存和多语言文案（`web/plugins`）。
+  - 紧凑 quota 状态条改为固定 grid 轨道布局，让 block strip 和 rate badge 在认证文件与 provider 卡片中保持稳定宽度，减少窄卡片中的换行和拥挤（`web/quota`）。
+
+
 ## 1.10.4-1
 
 - Sync upstream image [seakee/cpa-manager-plus:v1.10.4](https://hub.docker.com/r/seakee/cpa-manager-plus).
