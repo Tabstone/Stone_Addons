@@ -1,5 +1,16 @@
 # Changelog
 
+## 4.0.3-1
+
+- Sync upstream image [ghcr.io/thenetsky/microsoft-rewards-script:4.0.3](https://github.com/TheNetsky/Microsoft-Rewards-Script/pkgs/container/microsoft-rewards-script).
+- Upstream project: [TheNetsky/Microsoft-Rewards-Script](https://github.com/TheNetsky/Microsoft-Rewards-Script).
+- Upstream release: [v4.0.3](https://github.com/TheNetsky/Microsoft-Rewards-Script/releases/tag/v4.0.3).
+- Upstream changelog summary:
+  - Add Telegram webhook notifications support by @Ices-Eyes in https://github.com/TheNetsky/Microsoft-Rewards-Script/pull/529
+  - @Ices-Eyes made their first contribution in https://github.com/TheNetsky/Microsoft-Rewards-Script/pull/529
+  - **Full Changelog**: https://github.com/TheNetsky/Microsoft-Rewards-Script/compare/v4.0.2...v4.0.3
+
+
 ## 4.0.2-1
 
 - Sync upstream image [ghcr.io/thenetsky/microsoft-rewards-script:4.0.2](https://github.com/TheNetsky/Microsoft-Rewards-Script/pkgs/container/microsoft-rewards-script).
