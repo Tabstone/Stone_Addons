@@ -1,5 +1,14 @@
 # Changelog
 
+## 1.267.2-1
+
+- Sync upstream image [ghcr.io/metacubex/metacubexd:v1.267.2](https://github.com/MetaCubeX/metacubexd/pkgs/container/metacubexd).
+- Upstream project: [MetaCubeX/metacubexd](https://github.com/MetaCubeX/metacubexd).
+- Upstream release: [v1.267.2](https://github.com/MetaCubeX/metacubexd/releases/tag/v1.267.2).
+- Upstream changelog summary:
+  - **ui:** stop proxies page horizontal overflow in two-column layout ([046658c](https://github.com/MetaCubeX/metacubexd/commit/046658cf0f562487a358448088efa473de2af0c0))
+
+
 ## 1.267.0-1
 
 - Sync upstream image [ghcr.io/metacubex/metacubexd:v1.267.0](https://github.com/MetaCubeX/metacubexd/pkgs/container/metacubexd).
