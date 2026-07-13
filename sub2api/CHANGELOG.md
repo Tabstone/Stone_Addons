@@ -1,5 +1,19 @@
 # Changelog
 
+## 0.1.152-1
+
+- Sync upstream image [weishaw/sub2api:0.1.152](https://hub.docker.com/r/weishaw/sub2api).
+- Upstream project: [Wei-Shaw/sub2api](https://github.com/Wei-Shaw/sub2api).
+- Upstream release: [Sub2API 0.1.152](https://github.com/Wei-Shaw/sub2api/releases/tag/v0.1.152).
+- Upstream changelog summary:
+  - > AI API Gateway Platform - 将 AI 订阅配额分发和管理
+  - Grok 平台能力大幅增强：新增 xAI API Key 账号支持与免费 OAuth 提示词缓存；Codex alpha/search 网页搜索接入转发并支持按次计费。
+  - Grok 支持 xAI API Key 账号：可在管理后台创建/编辑，支持 Responses 转发与连接测试
+  - Grok 免费 OAuth 账号启用提示词缓存，可缓存对话请求自动经 Responses 链路转发
+  - Codex alpha/search 网页搜索端点转发与按次计费：默认 $0.01/次，分组可设覆盖价（0 为免费），实际扣费叠加分组倍率，前端表单实时预览单次价格
+  - Chat 兼容桥支持 tool_search 服务端工具与 custom 工具，Codex exec 与 MCP 工具在 chat-only 上游可正常使用
+
+
 ## 0.1.151-1
 
 - Sync upstream image [weishaw/sub2api:0.1.151](https://hub.docker.com/r/weishaw/sub2api).
