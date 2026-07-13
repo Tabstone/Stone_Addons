@@ -1,5 +1,19 @@
 # Changelog
 
+## 1.11.0-1
+
+- Sync upstream image [seakee/cpa-manager-plus:v1.11.0](https://hub.docker.com/r/seakee/cpa-manager-plus).
+- Upstream project: [seakee/CPA-Manager-Plus](https://github.com/seakee/CPA-Manager-Plus).
+- Upstream release: [v1.11.0](https://github.com/seakee/CPA-Manager-Plus/releases/tag/v1.11.0).
+- Upstream changelog summary:
+  - > 51 commits · 194 files changed · +12966 / -1862
+  - > [English ->](https://github.com/seakee/CPA-Manager-Plus/blob/v1.11.0/docs/release-notes/v1.11.0-en.md)
+  - 本次发布集中提升 Manager Server、Dashboard、Usage Analytics 和 Request Monitoring 的性能与长期运行稳定性，并新增 GPT-5.6 定价、长上下文计费和 xAI 免费额度耗尽后的自动冷却支持。同时修复缓存命中率、模型成本、并发配置保存、插件配置和 OAuth 兼容性问题。
+  - 新增 GPT-5.6 官方定价、长上下文倍率、cache read/write 和 cache creation 成本计算，并支持模型别名与 service tier（`manager-server/pricing`、`web/model-prices`）。
+  - xAI `free-usage-exhausted` 事件可触发受控的 24 小时自动冷却，恢复后自动解除 CPAMP 管理的禁用状态，并在 Auth Files 与自动化配置中展示对应状态（`manager-server/quota-cooldown`、`web/auth-files`）。
+  - 对齐上游 v1.18 auth-files OAuth 兼容行为，并加固插件信任、配置更新和 provider 并发保存（`web/auth-files`、`web/plugins`、`web/providers`）。
+
+
 ## 1.10.5-1
 
 - Sync upstream image [seakee/cpa-manager-plus:v1.10.5](https://hub.docker.com/r/seakee/cpa-manager-plus).
