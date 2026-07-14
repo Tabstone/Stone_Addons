@@ -1,5 +1,19 @@
 # Changelog
 
+## 0.1.153-1
+
+- Sync upstream image [weishaw/sub2api:0.1.153](https://hub.docker.com/r/weishaw/sub2api).
+- Upstream project: [Wei-Shaw/sub2api](https://github.com/Wei-Shaw/sub2api).
+- Upstream release: [Sub2API 0.1.153](https://github.com/Wei-Shaw/sub2api/releases/tag/v0.1.153).
+- Upstream changelog summary:
+  - > AI API Gateway Platform - 将 AI 订阅配额分发和管理
+  - Grok 视频编辑与延长：网关新增视频 edit/extension 端点支持
+  - Apple 容器部署：新增 apple-container.sh 部署脚本及配套文档
+  - 账号编辑弹窗支持手动覆盖 OpenAI 订阅档位 plan_type（仅 OAuth 账号）
+  - API Key 列表最近使用 IP 查询性能优化，并新增数据库索引
+  - 内嵌静态资源设置长效 Cache-Control，直接部署时浏览器不再重复下载控制台资源
+
+
 ## 0.1.152-1
 
 - Sync upstream image [weishaw/sub2api:0.1.152](https://hub.docker.com/r/weishaw/sub2api).
