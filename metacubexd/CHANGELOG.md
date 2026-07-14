@@ -1,5 +1,14 @@
 # Changelog
 
+## 1.268.3-1
+
+- Sync upstream image [ghcr.io/metacubex/metacubexd:v1.268.3](https://github.com/MetaCubeX/metacubexd/pkgs/container/metacubexd).
+- Upstream project: [MetaCubeX/metacubexd](https://github.com/MetaCubeX/metacubexd).
+- Upstream release: [v1.268.3](https://github.com/MetaCubeX/metacubexd/releases/tag/v1.268.3).
+- Upstream changelog summary:
+  - **connections:** align mobile connection details ([9bbab26](https://github.com/MetaCubeX/metacubexd/commit/9bbab261589a5c720f0007f12022c721eee44328))
+
+
 ## 1.267.2-1
 
 - Sync upstream image [ghcr.io/metacubex/metacubexd:v1.267.2](https://github.com/MetaCubeX/metacubexd/pkgs/container/metacubexd).
