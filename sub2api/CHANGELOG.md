@@ -1,5 +1,19 @@
 # Changelog
 
+## 0.1.155-1
+
+- Sync upstream image [weishaw/sub2api:0.1.155](https://hub.docker.com/r/weishaw/sub2api).
+- Upstream project: [Wei-Shaw/sub2api](https://github.com/Wei-Shaw/sub2api).
+- Upstream release: [Sub2API 0.1.155](https://github.com/Wei-Shaw/sub2api/releases/tag/v0.1.155).
+- Upstream changelog summary:
+  - > AI API Gateway Platform - 将 AI 订阅配额分发和管理
+  - Grok 渠道健康监控：监控中心支持 Grok 平台健康检查，新导入的 OAuth 账号自动探活，账号列表显示 Free 计划徽标
+  - Grok Web SSO 批量导入：批量粘贴 SSO key 自动转换为 Build OAuth 账号，失败自动跳过并汇总结果（原账号类型页的 SSO 卡片入口已移除）
+  - 系统日志支持按主机名过滤
+  - 管理后台新增可选开启的服务端耗时指标采集（server timing）
+  - Grok 免费账号配额改用滚动 24 小时估算，并改进免费配额探测与用量展示
+
+
 ## 0.1.153-1
 
 - Sync upstream image [weishaw/sub2api:0.1.153](https://hub.docker.com/r/weishaw/sub2api).
