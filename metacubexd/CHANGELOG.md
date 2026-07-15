@@ -1,5 +1,14 @@
 # Changelog
 
+## 1.268.4-1
+
+- Sync upstream image [ghcr.io/metacubex/metacubexd:v1.268.4](https://github.com/MetaCubeX/metacubexd/pkgs/container/metacubexd).
+- Upstream project: [MetaCubeX/metacubexd](https://github.com/MetaCubeX/metacubexd).
+- Upstream release: [v1.268.4](https://github.com/MetaCubeX/metacubexd/releases/tag/v1.268.4).
+- Upstream changelog summary:
+  - **desktop:** ship Linux icon sizes ([d61af62](https://github.com/MetaCubeX/metacubexd/commit/d61af626eb071bb849948b4471666cae071ea362)), closes...
+
+
 ## 1.268.3-1
 
 - Sync upstream image [ghcr.io/metacubex/metacubexd:v1.268.3](https://github.com/MetaCubeX/metacubexd/pkgs/container/metacubexd).
