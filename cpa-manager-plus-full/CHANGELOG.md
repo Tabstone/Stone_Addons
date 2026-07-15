@@ -1,5 +1,19 @@
 # Changelog
 
+## 1.11.1-1
+
+- Sync upstream image [seakee/cpa-manager-plus:v1.11.1](https://hub.docker.com/r/seakee/cpa-manager-plus).
+- Upstream project: [seakee/CPA-Manager-Plus](https://github.com/seakee/CPA-Manager-Plus).
+- Upstream release: [v1.11.1](https://github.com/seakee/CPA-Manager-Plus/releases/tag/v1.11.1).
+- Upstream changelog summary:
+  - > 12 commits · 30 files changed · +2035 / -144
+  - > [English ->](https://github.com/seakee/CPA-Manager-Plus/blob/v1.11.1/docs/release-notes/v1.11.1-en.md)
+  - 本次发布提升 Usage Analytics 和 Dashboard 在大规模数据下的查询效率，修复细粒度缓存 Token 在统计页面中的展示遗漏，并修复 Windows 环境下 SQLite 数据库路径兼容性。
+  - Usage Analytics 的概览、趋势、模型/API Key/凭据统计改为使用紧凑汇总数据，降低浏览器传输与处理开销（`web/usage-analytics`、`manager-server/usage-analytics`）。
+  - 凭据趋势数据按需加载，避免在未打开明细时执行额外查询（`web/usage-analytics`）。
+  - 在 SQLite 中预聚合凭据时间线和延迟分位数读取，减少历史使用事件扫描（`manager-server/usage-analytics`）。
+
+
 ## 1.11.0-1
 
 - Sync upstream image [seakee/cpa-manager-plus:v1.11.0](https://hub.docker.com/r/seakee/cpa-manager-plus).
