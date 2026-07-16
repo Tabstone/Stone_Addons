@@ -1,5 +1,19 @@
 # Changelog
 
+## 0.1.156-1
+
+- Sync upstream image [weishaw/sub2api:0.1.156](https://hub.docker.com/r/weishaw/sub2api).
+- Upstream project: [Wei-Shaw/sub2api](https://github.com/Wei-Shaw/sub2api).
+- Upstream release: [Sub2API 0.1.156](https://github.com/Wei-Shaw/sub2api/releases/tag/v0.1.156).
+- Upstream changelog summary:
+  - > AI API Gateway Platform - 将 AI 订阅配额分发和管理
+  - OpenAI 账号支持 Codex Agent Identity 认证，前端标明认证模式
+  - 账号管理新增安全的一键复制功能
+  - /keys 与 /admin/groups 列表新增可选 ID 列
+  - Server-Timing 指标扩展至已认证用户 Web API
+  - OpenAI WebSocket 首消息超时支持配置
+
+
 ## 0.1.155-1
 
 - Sync upstream image [weishaw/sub2api:0.1.155](https://hub.docker.com/r/weishaw/sub2api).
