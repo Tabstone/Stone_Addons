@@ -1,5 +1,19 @@
 # Changelog
 
+## 1.11.2-1
+
+- Sync upstream image [seakee/cpa-manager-plus:v1.11.2](https://hub.docker.com/r/seakee/cpa-manager-plus).
+- Upstream project: [seakee/CPA-Manager-Plus](https://github.com/seakee/CPA-Manager-Plus).
+- Upstream release: [v1.11.2](https://github.com/seakee/CPA-Manager-Plus/releases/tag/v1.11.2).
+- Upstream changelog summary:
+  - > 24 commits · 115 files changed · +12881 / -1413
+  - > [English ->](https://github.com/seakee/CPA-Manager-Plus/blob/v1.11.2/docs/release-notes/v1.11.2-en.md)
+  - 本次发布新增 xAI/Grok 账单优先的账号健康巡检与 Sub2API 账号导入，系统性加固账号自动化、CPA 响应处理和缓存 Token 统计口径，并将大库历史迁移改为后台可恢复执行。长窗口 Monitoring 查询也获得显著性能提升。
+  - 新增本地与定时 xAI 账号巡检，通过账单接口检查周/月额度和账号状态，无需调用推理模型；同时支持 xAI OAuth 重新授权和带身份校验的失效凭证删除（`web/inspection`、`manager-server/inspection`）。
+  - 支持直接上传或粘贴官方 Sub2API 账号导出，浏览器会将多个 OpenAI OAuth 账号转换为独立的 CPA Codex 认证文件，并准确报告部分上传失败（`web/auth-files`）。
+  - Auth Files 新增需要重新授权、人工复核、自动禁用和额度冷却状态提示，帮助定位账号自动化决策（`web/auth-files`、`manager-server/account-actions`）。
+
+
 ## 1.11.1-1
 
 - Sync upstream image [seakee/cpa-manager-plus:v1.11.1](https://hub.docker.com/r/seakee/cpa-manager-plus).
