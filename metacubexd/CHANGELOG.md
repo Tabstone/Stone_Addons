@@ -1,5 +1,14 @@
 # Changelog
 
+## 1.269.0-1
+
+- Sync upstream image [ghcr.io/metacubex/metacubexd:v1.269.0](https://github.com/MetaCubeX/metacubexd/pkgs/container/metacubexd).
+- Upstream project: [MetaCubeX/metacubexd](https://github.com/MetaCubeX/metacubexd).
+- Upstream release: [v1.269.0](https://github.com/MetaCubeX/metacubexd/releases/tag/v1.269.0).
+- Upstream changelog summary:
+  - add visual profile configuration editor ([fddcf21](https://github.com/MetaCubeX/metacubexd/commit/fddcf21fd38e0ff0855cca1dde08eded8243d25e))
+
+
 ## 1.268.4-1
 
 - Sync upstream image [ghcr.io/metacubex/metacubexd:v1.268.4](https://github.com/MetaCubeX/metacubexd/pkgs/container/metacubexd).

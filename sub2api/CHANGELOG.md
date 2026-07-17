@@ -1,5 +1,19 @@
 # Changelog
 
+## 0.1.159-1
+
+- Sync upstream image [weishaw/sub2api:0.1.159](https://hub.docker.com/r/weishaw/sub2api).
+- Upstream project: [Wei-Shaw/sub2api](https://github.com/Wei-Shaw/sub2api).
+- Upstream release: [Sub2API 0.1.159](https://github.com/Wei-Shaw/sub2api/releases/tag/v0.1.159).
+- Upstream changelog summary:
+  - > AI API Gateway Platform - 将 AI 订阅配额分发和管理
+  - 修复 v0.1.157 起纯 APIKey 分组无法使用 OpenAI 独立搜索的回归；反向代理部署下审计日志与会话 IP 绑定现在能正确记录真实客户端 IP。
+  - 管理端账号列表：支持从 API Key 账号名称直接跳转到上游站点
+  - Grok Free 账号：/v1/responses 及 WS 桥接携带函数工具时同样启用免费提示词缓存路由，并处理与内置 web_search 工具重名的冲突
+  - 前端 Stripe 支付依赖改为按需加载，未使用支付功能时不再加载相关脚本
+  - 修复 v0.1.157 起纯 APIKey 分组调用 OpenAI 独立搜索时无可用账号的问题；混合分组中不支持该端点的 APIKey 账号遇 404/405 自动切换账号，不再误写账号错误状态
+
+
 ## 0.1.156-1
 
 - Sync upstream image [weishaw/sub2api:0.1.156](https://hub.docker.com/r/weishaw/sub2api).
