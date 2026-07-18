@@ -1,5 +1,19 @@
 # Changelog
 
+## 1.11.3-1
+
+- Sync upstream image [seakee/cpa-manager-plus:v1.11.3](https://hub.docker.com/r/seakee/cpa-manager-plus).
+- Upstream project: [seakee/CPA-Manager-Plus](https://github.com/seakee/CPA-Manager-Plus).
+- Upstream release: [v1.11.3](https://github.com/seakee/CPA-Manager-Plus/releases/tag/v1.11.3).
+- Upstream changelog summary:
+  - > 26 commits · 154 files changed · +10034 / -2403
+  - > [English ->](https://github.com/seakee/CPA-Manager-Plus/blob/v1.11.3/docs/release-notes/v1.11.3-en.md)
+  - 本次发布补齐 xAI API Key Provider 管理与 Claude 模型级周额度展示，并修复付费 xAI OAuth 配额探测、安装器旧卷管理员密钥错配、客户端 API Key 复制和 Dashboard Token 构成等问题。中英文文档也围绕 Lightweight Panel 与 Full Mode 的实际任务完成重组。
+  - 新增完整的 xAI API Key Provider 管理，支持新增、编辑、测试、启停、删除、优先级和运行时开关，并在 Dashboard、Monitoring 与 Usage Analytics 中正确识别 xAI 来源（`web/providers`、`web/monitoring`）。
+  - Claude 配额卡片支持从现有 usage payload 展示模型级周额度，并在顶层账号额度缺失时安全恢复五小时与全模型周额度；重复、部分和异常记录会被稳定隔离和去重（`web/quota`）。
+  - 付费 xAI OAuth 凭证无法访问 Grok CLI 账单接口时，可通过只读官方身份接口展示健康状态；该回退不会虚构额度、调用模型或自动恢复账号，并提供更明确的本地化诊断（`web/quota`、`manager-server/inspection`）。
+
+
 ## 1.11.2-1
 
 - Sync upstream image [seakee/cpa-manager-plus:v1.11.2](https://hub.docker.com/r/seakee/cpa-manager-plus).
