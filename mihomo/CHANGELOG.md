@@ -1,5 +1,19 @@
 # Changelog
 
+## 1.19.29-1
+
+- Sync upstream image [metacubex/mihomo:v1.19.29](https://hub.docker.com/r/metacubex/mihomo).
+- Upstream project: [MetaCubeX/mihomo](https://github.com/MetaCubeX/mihomo).
+- Upstream release: [v1.19.29](https://github.com/MetaCubeX/mihomo/releases/tag/v1.19.29).
+- Upstream changelog summary:
+  - bd749c65 feat: sync anytls v0.0.13 (#2990) by @anytls
+  - e26714a1 feat: support TLS rekey fix, data-ciphers negotiation, tls-crypt-v2 for OpenVPN (#2989) by @Lanlan13-14
+  - 0e7c3c79 feat: support restls for anytls outbound and listener by @wwqgtxx
+  - 2b2bdf6d feat: support jls for shadowsocks outbound and listener by @wwqgtxx
+  - 5677fd38 feat: add `name-cert-verify` to support separate certificate verification name by @wwqgtxx
+  - 611a4481 feat: support jls for vmess/vless/trojan outbound and listener by @wwqgtxx
+
+
 ## 1.19.28-1
 
 - Sync upstream image [metacubex/mihomo:v1.19.28](https://hub.docker.com/r/metacubex/mihomo).
