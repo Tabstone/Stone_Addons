@@ -1,5 +1,19 @@
 # Changelog
 
+## 0.1.161-1
+
+- Sync upstream image [weishaw/sub2api:0.1.161](https://hub.docker.com/r/weishaw/sub2api).
+- Upstream project: [Wei-Shaw/sub2api](https://github.com/Wei-Shaw/sub2api).
+- Upstream release: [Sub2API 0.1.161](https://github.com/Wei-Shaw/sub2api/releases/tag/v0.1.161).
+- Upstream changelog summary:
+  - > AI API Gateway Platform - 将 AI 订阅配额分发和管理
+  - 安全防护全面开关化：敏感操作 step-up 2FA 与会话 IP/UA 绑定均改为默认关闭、按需开启，避免升级后误锁定；同时修复 Grok 受保护视频内容访问及一系列媒体链路问题。
+  - 敏感操作 step-up 2FA 总开关（默认关闭）：开启后，账号/代理导出、备份创建/下载/恢复、S3 配置修改、提升管理员等操作需在 15 分钟内完成过 TOTP 验证
+  - 会话 IP/UA 绑定默认改为关闭（功能保留，可在设置页开启），避免 IP 变动导致登录掉线
+  - 安全开关保存字段改为可空：旧客户端全量保存设置不再静默重置安全开关
+  - 入口拒绝日志降噪，并强化网关鉴权边界
+
+
 ## 0.1.160-1
 
 - Sync upstream image [weishaw/sub2api:0.1.160](https://hub.docker.com/r/weishaw/sub2api).
