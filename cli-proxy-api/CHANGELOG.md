@@ -1,5 +1,19 @@
 # Changelog
 
+## 7.2.93-1
+
+- Sync upstream image [eceasy/cli-proxy-api:v7.2.93](https://hub.docker.com/r/eceasy/cli-proxy-api).
+- Upstream project: [router-for-me/CLIProxyAPI](https://github.com/router-for-me/CLIProxyAPI).
+- Upstream release: [v7.2.93](https://github.com/router-for-me/CLIProxyAPI/releases/tag/v7.2.93).
+- Upstream changelog summary:
+  - `CLIProxyAPI_<version>_linux_<arch>.tar.gz` is the default Linux build. It supports dynamic library plugins and is built against a GLIBC 2.17 baseline.
+  - `CLIProxyAPI_<version>_linux_<arch>_no-plugin.tar.gz` is the portable Linux build for musl-based or older systems such as OpenWrt. It does not support dynamic library plugins.
+  - `CLIProxyAPI_<version>_freebsd_aarch64_no-plugin.tar.gz` is the FreeBSD arm64 build. It is built without CGO and does not support dynamic library plugins.
+  - chore(models): remove obsolete variables and approvals from Codex client models (7d2883e7)
+  - fix(websocket): propagate upstream 1009 without credential fallback (#4444) (73294372)
+  - test(websocket): add robust unit tests for tool call handling and reconciliation (a007ad69)
+
+
 ## 7.2.88-1
 
 - Sync upstream image [eceasy/cli-proxy-api:v7.2.88](https://hub.docker.com/r/eceasy/cli-proxy-api).

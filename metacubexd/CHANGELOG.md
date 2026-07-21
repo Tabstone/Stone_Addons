@@ -1,5 +1,14 @@
 # Changelog
 
+## 1.270.0-1
+
+- Sync upstream image [ghcr.io/metacubex/metacubexd:v1.270.0](https://github.com/MetaCubeX/metacubexd/pkgs/container/metacubexd).
+- Upstream project: [MetaCubeX/metacubexd](https://github.com/MetaCubeX/metacubexd).
+- Upstream release: [v1.270.0](https://github.com/MetaCubeX/metacubexd/releases/tag/v1.270.0).
+- Upstream changelog summary:
+  - **desktop:** tray speed & node switch, silent update, hotkey settings, TUN auto-restore...
+
+
 ## 1.269.0-1
 
 - Sync upstream image [ghcr.io/metacubex/metacubexd:v1.269.0](https://github.com/MetaCubeX/metacubexd/pkgs/container/metacubexd).

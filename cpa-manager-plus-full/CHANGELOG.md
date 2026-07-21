@@ -1,5 +1,19 @@
 # Changelog
 
+## 1.11.4-1
+
+- Sync upstream image [seakee/cpa-manager-plus:v1.11.4](https://hub.docker.com/r/seakee/cpa-manager-plus).
+- Upstream project: [seakee/CPA-Manager-Plus](https://github.com/seakee/CPA-Manager-Plus).
+- Upstream release: [v1.11.4](https://github.com/seakee/CPA-Manager-Plus/releases/tag/v1.11.4).
+- Upstream changelog summary:
+  - > 19 commits · 50 files changed · +3614 / -709
+  - > [English ->](https://github.com/seakee/CPA-Manager-Plus/blob/v1.11.4/docs/release-notes/v1.11.4-en.md)
+  - 本次发布聚焦配置更新的可靠性与用量识别的准确性。OAuth 模型别名和 AI Provider 的连续操作不再互相覆盖；Codex 用量会按实际请求档位统计；监控界面也能更清楚地区分多 Key 渠道来源。
+  - 配额卡片新增可通过键盘操作、会根据视窗自动定位的说明浮层；在窄屏下，套餐、重置次数和到期信息展示更紧凑易读（`web/quota`）。
+  - OAuth 模型别名更新改为串行处理，并与 CPA 的校验规则保持一致；多渠道修改会在失败或不确定结果时尽力回滚，避免连续编辑丢失已保存配置（`web/auth-files`）。
+  - AI Provider 的启停、优先级和健康检查更新使用共享锁协调，防止重叠的乐观写入覆盖较新的 Provider 配置（`web/ai-providers`）。
+
+
 ## 1.11.3-1
 
 - Sync upstream image [seakee/cpa-manager-plus:v1.11.3](https://hub.docker.com/r/seakee/cpa-manager-plus).

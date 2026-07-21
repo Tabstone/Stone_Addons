@@ -1,5 +1,19 @@
 # Changelog
 
+## 0.1.162-1
+
+- Sync upstream image [weishaw/sub2api:0.1.162](https://hub.docker.com/r/weishaw/sub2api).
+- Upstream project: [Wei-Shaw/sub2api](https://github.com/Wei-Shaw/sub2api).
+- Upstream release: [Sub2API 0.1.162](https://github.com/Wei-Shaw/sub2api/releases/tag/v0.1.162).
+- Upstream changelog summary:
+  - > AI API Gateway Platform - 将 AI 订阅配额分发和管理
+  - 客户端真实 IP 解析全面可配置：支持显式可信代理与自定义 IP 请求头，反向代理/Docker 部署下正确识别来源 IP；异步生图对象存储改为后台配置，保存即生效。
+  - 客户端 IP 解析设置：安全设置新增客户端 IP 模式配置，支持显式可信代理列表与自定义客户端 IP 请求头，兼容反向代理和 Docker 部署，请求头变更记录审计日志
+  - 异步生图对象存储改为后台配置：备份页新增配置卡片，保存即生效；同时修复环境变量无法配置 image_storage 等凭证的问题
+  - Grok 客户端工具缓存：新增管理端开关（Free 账号默认开启），覆盖 Claude Desktop、Codex Lite、Trae 客户端工具，缓存路由跨轮次保持
+  - 更新检查支持配置 GitHub Token，规避未认证 API 限流
+
+
 ## 0.1.161-1
 
 - Sync upstream image [weishaw/sub2api:0.1.161](https://hub.docker.com/r/weishaw/sub2api).
