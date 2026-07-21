@@ -31,35 +31,11 @@ jobs:
       - name: Fetch upstream versions from Docker Hub
         id: upstream
         run: |
-          # Generic function: poll Docker Hub for latest versioned tag
+          # Poll every Docker Hub page so stable tags are not hidden by newer prerelease tags.
           get_dockerhub_latest() {
             local repo="$1"
-            curl -fsSL "https://hub.docker.com/v2/repositories/${repo}/tags/?page_size=50&ordering=last_updated" | python3 -c "
-          import sys, json, re
-          data = json.load(sys.stdin)
-          tags = [
-              r['name']
-              for r in data.get('results', [])
-              if r['name'] not in ('latest', 'dev', 'nightly', 'beta')
-              and not r['name'].endswith('.sig')
-          ]
-
-          def parse_semver(tag):
-            m = re.match(r'^v?(\d+)\.(\d+)\.(\d+)$', tag)
-            if m:
-              return (int(m.group(1)), int(m.group(2)), int(m.group(3)), 1)
-            m = re.match(r'^v?(\d+)\.(\d+)$', tag)
-            if m:
-              return (int(m.group(1)), int(m.group(2)), 0, 0)
-            return None
-
-          semver = [(parse_semver(t), t) for t in tags if parse_semver(t)]
-          if semver:
-            print(max(semver, key=lambda item: item[0])[1])
-            raise SystemExit(0)
-
-          print(tags[0] if tags else '')
-          " 2>/dev/null || echo ""
+            local tag_format="${2:-semver}"
+            python3 .github/scripts/dockerhub_latest_tag.py "$repo" "$tag_format"
           }
 
           # GitHub tags (GHCR often requires auth, use repo tags)
@@ -164,7 +140,7 @@ jobs:
           echo "sub2api_tag=$SUB2API_TAG" >> "$GITHUB_OUTPUT"
           echo "sub2api=${SUB2API_TAG#v}" >> "$GITHUB_OUTPUT"
 
-          METAPI_TAG=$(get_dockerhub_latest "1467078763/metapi")
+          METAPI_TAG=$(get_dockerhub_latest "1467078763/metapi" "sha")
           echo "metapi_tag=$METAPI_TAG" >> "$GITHUB_OUTPUT"
           echo "metapi=${METAPI_TAG#v}" >> "$GITHUB_OUTPUT"
 
