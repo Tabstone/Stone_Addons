@@ -197,6 +197,7 @@ jobs:
             - append changelog entries
 
       - name: Dispatch addon metadata workflow
+        id: dispatch_metadata
         if: steps.update.outputs.changed == 'true' && steps.create_pr.outputs.pull-request-number
         env:
           GH_TOKEN: ${{ secrets.PAT }}
@@ -209,55 +210,49 @@ jobs:
             printf 'Unable to resolve PR head branch for PR %s.\n' "$PR_NUMBER"
             exit 1
           fi
-          gh workflow run addon-metadata.yml --ref "$PR_BRANCH"
+          run_url=$(gh workflow run addon-metadata.yml --ref "$PR_BRANCH")
+          run_id="${run_url##*/}"
+          if [[ ! "$run_id" =~ ^[0-9]+$ ]]; then
+            printf 'Unable to resolve workflow run ID from: %s\n' "$run_url"
+            exit 1
+          fi
+          echo "run_id=$run_id" >> "$GITHUB_OUTPUT"
 
       - name: Wait for addon metadata workflow
         if: steps.update.outputs.changed == 'true' && steps.create_pr.outputs.pull-request-number
         env:
           GH_TOKEN: ${{ secrets.PAT }}
           GITHUB_TOKEN: ${{ secrets.PAT }}
-          PR_NUMBER: ${{ steps.create_pr.outputs.pull-request-number }}
+          RUN_ID: ${{ steps.dispatch_metadata.outputs.run_id }}
         run: |
           set -euo pipefail
-          WORKFLOW_NAME="addon-metadata.yml"
           TIMEOUT_SECONDS=900
           start_time=$(date +%s)
 
-          PR_BRANCH=$(gh pr view "$PR_NUMBER" --json headRefName --jq .headRefName)
-          if [ -z "$PR_BRANCH" ]; then
-            printf 'Unable to resolve PR head branch for PR %s.\n' "$PR_NUMBER"
+          if [ -z "$RUN_ID" ]; then
+            printf 'Workflow run ID is missing.\n'
             exit 1
           fi
 
           while true; do
-            if ! run_json=$(gh run list --workflow "$WORKFLOW_NAME" --branch "$PR_BRANCH" --limit 1 --json status,conclusion,createdAt 2>&1); then
-              printf 'Failed to list workflow runs: %s\n' "$run_json"
+            if ! run_json=$(gh run view "$RUN_ID" --json status,conclusion 2>&1); then
+              printf 'Failed to inspect workflow run %s: %s\n' "$RUN_ID" "$run_json"
               exit 1
             fi
-            status=$(echo "$run_json" | python3 -c "import json,sys; data=json.load(sys.stdin); run=data[0] if data else {}; print(run.get('status',''))")
-            conclusion=$(echo "$run_json" | python3 -c "import json,sys; data=json.load(sys.stdin); run=data[0] if data else {}; print(run.get('conclusion',''))")
-
-            if [ -z "$status" ]; then
-              elapsed=$(( $(date +%s) - start_time ))
-              if [ "$elapsed" -ge "$TIMEOUT_SECONDS" ]; then
-                printf 'Timed out after %s seconds waiting for workflow "%s" to appear.\n' "$TIMEOUT_SECONDS" "$WORKFLOW_NAME"
-                exit 1
-              fi
-              sleep 5
-              continue
-            fi
+            status=$(echo "$run_json" | python3 -c "import json,sys; print(json.load(sys.stdin).get('status',''))")
+            conclusion=$(echo "$run_json" | python3 -c "import json,sys; print(json.load(sys.stdin).get('conclusion',''))")
 
             if [ "$status" = "completed" ]; then
               if [ "$conclusion" = "success" ]; then
                 break
               fi
-              printf 'Workflow "%s" completed with conclusion: %s\n' "$WORKFLOW_NAME" "$conclusion"
+              printf 'Workflow run %s completed with conclusion: %s\n' "$RUN_ID" "$conclusion"
               exit 1
             fi
 
             elapsed=$(( $(date +%s) - start_time ))
             if [ "$elapsed" -ge "$TIMEOUT_SECONDS" ]; then
-              printf 'Timed out after %s seconds waiting for workflow "%s" to complete.\n' "$TIMEOUT_SECONDS" "$WORKFLOW_NAME"
+              printf 'Timed out after %s seconds waiting for workflow run %s to complete.\n' "$TIMEOUT_SECONDS" "$RUN_ID"
               exit 1
             fi
             sleep 5
