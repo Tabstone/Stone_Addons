@@ -1,5 +1,19 @@
 # Changelog
 
+## 0.1.163-1
+
+- Sync upstream image [weishaw/sub2api:0.1.163](https://hub.docker.com/r/weishaw/sub2api).
+- Upstream project: [Wei-Shaw/sub2api](https://github.com/Wei-Shaw/sub2api).
+- Upstream release: [Sub2API 0.1.163](https://github.com/Wei-Shaw/sub2api/releases/tag/v0.1.163).
+- Upstream changelog summary:
+  - > AI API Gateway Platform - 将 AI 订阅配额分发和管理
+  - 分组新增 OpenAI 推理策略控制，可按分组约束推理力度；修复优雅关停超时导致缓冲用量/计费记录丢失的问题，并集中修复多处移动端布局适配。
+  - 分组级 OpenAI 推理策略：支持设置推理力度上限与精确映射，HTTP 与 WebSocket 转发统一强制执行
+  - Grok 兼容 /responses/compact 端点：compact 请求可调度 Grok 账号，并支持链式中继的受保护视频下载
+  - Redis 连接支持 ACL 用户名配置
+  - 调度器快照发布减少临时分配，降低发布路径开销
+
+
 ## 0.1.161-1
 
 - Sync upstream image [weishaw/sub2api:0.1.161](https://hub.docker.com/r/weishaw/sub2api).

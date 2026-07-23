@@ -1,5 +1,19 @@
 # Changelog
 
+## 1.11.6-1
+
+- Sync upstream image [seakee/cpa-manager-plus:v1.11.6](https://hub.docker.com/r/seakee/cpa-manager-plus).
+- Upstream project: [seakee/CPA-Manager-Plus](https://github.com/seakee/CPA-Manager-Plus).
+- Upstream release: [v1.11.6](https://github.com/seakee/CPA-Manager-Plus/releases/tag/v1.11.6).
+- Upstream changelog summary:
+  - > 11 commits · 61 files changed · +6692 / -1975
+  - > [English ->](https://github.com/seakee/CPA-Manager-Plus/blob/v1.11.6/docs/release-notes/v1.11.6-en.md)
+  - 本次发布将凭证健康巡检扩展到 Codex 与 xAI，并统一轻量 CPA Panel 的浏览器本地巡检和 Manager Server 的服务端巡检体验。xAI 默认采用计费优先检查，用户可按需启用最小化真实推理；结果页会区分计费、配额、认证、模型和推理故障，并提供响应式配置、脱敏失败详情与更清晰的运维入口。
+  - 凭证健康巡检支持 Codex 与 xAI Provider，可在浏览器本地和 Manager Server 工作流中使用一致的配置、筛选、配额窗口与结果展示（`web/monitoring`、`manager-server/codexinspection`）。
+  - xAI 巡检默认执行计费状态检查，并可显式启用基于待检凭据的最小化非流式 Responses 推理；模型、提示词与失败分类均按 Provider 处理（`web/monitoring`、`manager-server/codexinspection`）。
+  - 巡检结果可区分计费、配额、认证、模型与推理故障，保留脱敏 HTTP 证据和可展开的完整失败详情，同时不在结果列表暴露 `auth_index`（`web/monitoring`）。
+
+
 ## 1.11.3-1
 
 - Sync upstream image [seakee/cpa-manager-plus:v1.11.3](https://hub.docker.com/r/seakee/cpa-manager-plus).
