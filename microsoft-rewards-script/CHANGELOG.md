@@ -1,5 +1,19 @@
 # Changelog
 
+## 4.1.0-1
+
+- Sync upstream image [ghcr.io/thenetsky/microsoft-rewards-script:4.1.0](https://github.com/TheNetsky/Microsoft-Rewards-Script/pkgs/container/microsoft-rewards-script).
+- Upstream project: [TheNetsky/Microsoft-Rewards-Script](https://github.com/TheNetsky/Microsoft-Rewards-Script).
+- Upstream release: [v4.1.0](https://github.com/TheNetsky/Microsoft-Rewards-Script/releases/tag/v4.1.0).
+- Upstream changelog summary:
+  - Update docker to support API by @mgrimace in https://github.com/TheNetsky/Microsoft-Rewards-Script/pull/536
+  - style: apply automated formatting by @github-actions[bot] in https://github.com/TheNetsky/Microsoft-Rewards-Script/pull/537
+  - Add API control of docker scheduler by @mgrimace in https://github.com/TheNetsky/Microsoft-Rewards-Script/pull/538
+  - style: apply automated formatting by @github-actions[bot] in https://github.com/TheNetsky/Microsoft-Rewards-Script/pull/539
+  - style: apply automated formatting by @github-actions[bot] in https://github.com/TheNetsky/Microsoft-Rewards-Script/pull/540
+  - style: apply automated formatting by @github-actions[bot] in https://github.com/TheNetsky/Microsoft-Rewards-Script/pull/541
+
+
 ## 4.0.3-1
 
 - Sync upstream image [ghcr.io/thenetsky/microsoft-rewards-script:4.0.3](https://github.com/TheNetsky/Microsoft-Rewards-Script/pkgs/container/microsoft-rewards-script).
