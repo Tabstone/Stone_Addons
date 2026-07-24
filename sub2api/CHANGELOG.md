@@ -1,5 +1,19 @@
 # Changelog
 
+## 0.1.164-1
+
+- Sync upstream image [weishaw/sub2api:0.1.164](https://hub.docker.com/r/weishaw/sub2api).
+- Upstream project: [Wei-Shaw/sub2api](https://github.com/Wei-Shaw/sub2api).
+- Upstream release: [Sub2API 0.1.164](https://github.com/Wei-Shaw/sub2api/releases/tag/v0.1.164).
+- Upstream changelog summary:
+  - > AI API Gateway Platform - 将 AI 订阅配额分发和管理
+  - 新增聚合分组能力，一个分组可按模型路由规则将请求分发到不同平台的子分组；Ollama 账号支持 Cloud 官方用量自动刷新。
+  - 聚合分组：新增 composite 平台类型分组，可配置模型路由规则，将不同模型的请求分发到已关联的各平台子分组，支持模型别名与路由预览，计费按实际转发的具体模型结算
+  - Ollama Cloud 用量同步：Ollama 账号支持自动刷新 Cloud 官方用量
+  - 支付宝移动端支付：预下单支持深链拉起支付宝客户端完成支付
+  - OpenAI 账号测试默认使用具体模型 gpt-5.6-sol，不再优先别名 gpt-5.6
+
+
 ## 0.1.163-1
 
 - Sync upstream image [weishaw/sub2api:0.1.163](https://hub.docker.com/r/weishaw/sub2api).
