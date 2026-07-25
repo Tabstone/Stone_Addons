@@ -1,5 +1,19 @@
 # Changelog
 
+## 1.11.7-1
+
+- Sync upstream image [seakee/cpa-manager-plus:v1.11.7](https://hub.docker.com/r/seakee/cpa-manager-plus).
+- Upstream project: [seakee/CPA-Manager-Plus](https://github.com/seakee/CPA-Manager-Plus).
+- Upstream release: [v1.11.7](https://github.com/seakee/CPA-Manager-Plus/releases/tag/v1.11.7).
+- Upstream changelog summary:
+  - > 18 commits · 82 files changed · +16432 / -1171
+  - > [English ->](https://github.com/seakee/CPA-Manager-Plus/blob/v1.11.7/docs/release-notes/v1.11.7-en.md)
+  - 本次发布为用量数据引入可续传导入与持久化小时汇总，在保留原始事件和兼容回退路径的前提下，让大规模历史数据导入和监控分析更可靠。同时，凭证巡检会呈现更准确的执行结果与日志，已验证的付费 xAI OAuth 凭证将使用官方 API 完成真实推理检查，并修复编辑抽屉在拖选文本时意外关闭的问题。
+  - 用量历史支持基于会话的分块上传、续传、取消与进度展示，可处理超过旧版单请求限制的大文件（`manager-server/usage`、`web/monitoring`）。
+  - Dashboard 和用量分析可从持久化 UTC 小时汇总与最新原始数据共同读取；不支持的筛选条件和时区边界会安全回退到原始事件查询（`manager-server/usageaggregate`）。
+  - 监控中心按当前标签加载分析数据，并将账户和 API Key 选择器与指标请求分离，减少无关标签的查询工作（`web/monitoring`）。
+
+
 ## 1.11.6-1
 
 - Sync upstream image [seakee/cpa-manager-plus:v1.11.6](https://hub.docker.com/r/seakee/cpa-manager-plus).
