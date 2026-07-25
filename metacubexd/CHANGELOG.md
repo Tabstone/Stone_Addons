@@ -1,5 +1,14 @@
 # Changelog
 
+## 1.270.2-1
+
+- Sync upstream image [ghcr.io/metacubex/metacubexd:v1.270.2](https://github.com/MetaCubeX/metacubexd/pkgs/container/metacubexd).
+- Upstream project: [MetaCubeX/metacubexd](https://github.com/MetaCubeX/metacubexd).
+- Upstream release: [v1.270.2](https://github.com/MetaCubeX/metacubexd/releases/tag/v1.270.2).
+- Upstream changelog summary:
+  - **ui:** drop obsolete @unhead/vue override that broke nuxt 4.5.0 build ([4b9f798](https://github.com/MetaCubeX/metacubexd/commit/4b9f7983a29ba798a5a3943baa5e8fff0594cb59))
+
+
 ## 1.270.0-1
 
 - Sync upstream image [ghcr.io/metacubex/metacubexd:v1.270.0](https://github.com/MetaCubeX/metacubexd/pkgs/container/metacubexd).
