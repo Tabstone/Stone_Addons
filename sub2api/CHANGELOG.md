@@ -1,5 +1,19 @@
 # Changelog
 
+## 0.1.165-1
+
+- Sync upstream image [weishaw/sub2api:0.1.165](https://hub.docker.com/r/weishaw/sub2api).
+- Upstream project: [Wei-Shaw/sub2api](https://github.com/Wei-Shaw/sub2api).
+- Upstream release: [Sub2API 0.1.165](https://github.com/Wei-Shaw/sub2api/releases/tag/v0.1.165).
+- Upstream changelog summary:
+  - > AI API Gateway Platform - 将 AI 订阅配额分发和管理
+  - 新增 ChatGPT Live（Frameless 实时会话）网关支持，并完整适配 Anthropic 新模型 claude-opus-5。
+  - ChatGPT Live 网关：新增 `/v1/live` 与 Codex `/backend-api/codex/realtime/calls` 实时会话转发，支持组级 Live 开关、并发租约控制与用量记录，用量筛选/导出新增 Live 请求类型
+  - 适配 Anthropic claude-opus-5：模型清单、Bedrock 默认映射、定价（$5/$25 per MTok、1M 上下文、128K 输出）、前端预设映射与限流 scope 全部登记
+  - Ollama Cloud 用量改为请求驱动刷新：空闲账号不再轮询，新增「请求安静等待」参数（默认 1 分钟），原刷新周期改为持续请求下的最长等待时间
+  - 用量记录持久化客户端会话标识 session_id，可用于跨请求关联同一会话
+
+
 ## 0.1.164-1
 
 - Sync upstream image [weishaw/sub2api:0.1.164](https://hub.docker.com/r/weishaw/sub2api).
