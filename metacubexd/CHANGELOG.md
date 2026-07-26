@@ -1,5 +1,14 @@
 # Changelog
 
+## 1.270.5-1
+
+- Sync upstream image [ghcr.io/metacubex/metacubexd:v1.270.5](https://github.com/MetaCubeX/metacubexd/pkgs/container/metacubexd).
+- Upstream project: [MetaCubeX/metacubexd](https://github.com/MetaCubeX/metacubexd).
+- Upstream release: [v1.270.5](https://github.com/MetaCubeX/metacubexd/releases/tag/v1.270.5).
+- Upstream changelog summary:
+  - **server:** honor DEFAULT_BACKEND_URL in the all-in-one image ([#2155](https://github.com/MetaCubeX/metacubexd/issues/2155))...
+
+
 ## 1.270.2-1
 
 - Sync upstream image [ghcr.io/metacubex/metacubexd:v1.270.2](https://github.com/MetaCubeX/metacubexd/pkgs/container/metacubexd).

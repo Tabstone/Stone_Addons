@@ -1,5 +1,19 @@
 # Changelog
 
+## 1.11.8-1
+
+- Sync upstream image [seakee/cpa-manager-plus:v1.11.8](https://hub.docker.com/r/seakee/cpa-manager-plus).
+- Upstream project: [seakee/CPA-Manager-Plus](https://github.com/seakee/CPA-Manager-Plus).
+- Upstream release: [v1.11.8](https://github.com/seakee/CPA-Manager-Plus/releases/tag/v1.11.8).
+- Upstream changelog summary:
+  - > 3 commits · 27 files changed · +6402 / -272
+  - > [English ->](https://github.com/seakee/CPA-Manager-Plus/blob/v1.11.8/docs/release-notes/v1.11.8-en.md)
+  - 本次发布强化 Manager Server 凭证健康巡检的执行生命周期：跨实例使用可恢复的 SQLite 租约避免重复巡检，运行中的任务可由用户取消，服务重启及短暂 SQLite 写锁不会遗留无终态运行记录。
+  - 凭证健康巡检通过数据库租约在多个 Manager Server 实例间保持单实例执行，避免同一批凭证被重复巡检或并发处理（`manager-server/codexinspection`）。
+  - 运行中的凭证健康巡检可在监控面板请求停止；页面会显示取消中、已取消和中断状态，并保留已完成的结果与日志（`web/monitoring`）。
+  - 服务启动会恢复过期的巡检租约，关闭过程会等待进行中的巡检写入终态；短暂 SQLite 写锁不再阻塞整个巡检生命周期（`manager-server/codexinspection`）。
+
+
 ## 1.11.7-1
 
 - Sync upstream image [seakee/cpa-manager-plus:v1.11.7](https://hub.docker.com/r/seakee/cpa-manager-plus).
