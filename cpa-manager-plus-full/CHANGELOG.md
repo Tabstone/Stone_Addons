@@ -1,5 +1,19 @@
 # Changelog
 
+## 1.11.9-1
+
+- Sync upstream image [seakee/cpa-manager-plus:v1.11.9](https://hub.docker.com/r/seakee/cpa-manager-plus).
+- Upstream project: [seakee/CPA-Manager-Plus](https://github.com/seakee/CPA-Manager-Plus).
+- Upstream release: [v1.11.9](https://github.com/seakee/CPA-Manager-Plus/releases/tag/v1.11.9).
+- Upstream changelog summary:
+  - > 3 commits · 17 files changed · +781 / -172
+  - > [English ->](https://github.com/seakee/CPA-Manager-Plus/blob/v1.11.9/docs/release-notes/v1.11.9-en.md)
+  - 本次发布提升用量数据处理的可靠性，并加强高风险删除操作的保护。账户历史汇总可在并发写入期间稳定追上进度，大规模监控筛选不再触发 SQLite 条件上限，AI Provider 与认证文件的手动删除则增加目标明确的第二次确认。
+  - 账户历史汇总在用量事件并发写入时会等待 SQLite 写入槽位，避免 WAL 快照失效导致汇总进度长期滞后（`manager-server/sqlite`）。
+  - 监控筛选通过单个 JSON 参数处理大量认证索引、Provider 和账户，避免大规模已保存筛选返回 SQLite 变量上限错误（`manager-server/monitoring`）。
+  - AI Provider 与认证文件的手动删除需要针对掩码目标、删除范围或受影响文件数完成第二次确认，降低永久误删风险（`web/providers-auth-files`）。
+
+
 ## 1.11.8-1
 
 - Sync upstream image [seakee/cpa-manager-plus:v1.11.8](https://hub.docker.com/r/seakee/cpa-manager-plus).
