@@ -1,5 +1,14 @@
 # Changelog
 
+## 1.270.6-1
+
+- Sync upstream image [ghcr.io/metacubex/metacubexd:v1.270.6](https://github.com/MetaCubeX/metacubexd/pkgs/container/metacubexd).
+- Upstream project: [MetaCubeX/metacubexd](https://github.com/MetaCubeX/metacubexd).
+- Upstream release: [v1.270.6](https://github.com/MetaCubeX/metacubexd/releases/tag/v1.270.6).
+- Upstream changelog summary:
+  - **ui:** restore mobile config access and stop proxy popover from following scroll...
+
+
 ## 1.270.5-1
 
 - Sync upstream image [ghcr.io/metacubex/metacubexd:v1.270.5](https://github.com/MetaCubeX/metacubexd/pkgs/container/metacubexd).
