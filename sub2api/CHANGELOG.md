@@ -1,5 +1,19 @@
 # Changelog
 
+## 0.1.166-1
+
+- Sync upstream image [weishaw/sub2api:0.1.166](https://hub.docker.com/r/weishaw/sub2api).
+- Upstream project: [Wei-Shaw/sub2api](https://github.com/Wei-Shaw/sub2api).
+- Upstream release: [Sub2API 0.1.166](https://github.com/Wei-Shaw/sub2api/releases/tag/v0.1.166).
+- Upstream changelog summary:
+  - > AI API Gateway Platform - 将 AI 订阅配额分发和管理
+  - 新增面板 API 限流保护，防止高频请求冲击数据库；修复 WebSocket 多轮会话计费、模型映射统计口径等多项计费与统计准确性问题。
+  - 面板 API 限流：管理后台可配置面板接口限流策略，认证接口按用户、公开接口按真实 IP 限流，保护数据库免受高频请求冲击
+  - Antigravity OpenAI 兼容转发全面加固，并拒绝仅含 usage 的非流式空响应
+  - Codex Responses 与 Anthropic 协议互转兼容性完善（工具调用配对等场景）
+  - 伪装的 Claude Code CLI 版本号升级到 2.1.220
+
+
 ## 0.1.165-1
 
 - Sync upstream image [weishaw/sub2api:0.1.165](https://hub.docker.com/r/weishaw/sub2api).
