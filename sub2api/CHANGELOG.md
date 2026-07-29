@@ -1,5 +1,19 @@
 # Changelog
 
+## 0.1.168-1
+
+- Sync upstream image [weishaw/sub2api:0.1.168](https://hub.docker.com/r/weishaw/sub2api).
+- Upstream project: [Wei-Shaw/sub2api](https://github.com/Wei-Shaw/sub2api).
+- Upstream release: [Sub2API 0.1.168](https://github.com/Wei-Shaw/sub2api/releases/tag/v0.1.168).
+- Upstream changelog summary:
+  - > AI API Gateway Platform - 将 AI 订阅配额分发和管理
+  - 新增 Passkey（通行密钥）免密登录与模型广场页面；修复升级后安全审计配置丢失死锁、Claude OAuth 缓存断点丢失等多项问题。
+  - Passkey 认证：个人资料页可注册/管理通行密钥并用于免密登录，管理员可在系统设置中控制登录开关，注册与撤销需验证账号密码
+  - 模型广场：新增公开模型广场页面，按分组展示各平台模型定价，管理员可配置展示范围
+  - Kimi K3 模型支持：新增计费与思考协议适配，并正确识别 1M 上下文后缀
+  - 账号模型白名单选择器支持一键复制模型 ID
+
+
 ## 0.1.166-1
 
 - Sync upstream image [weishaw/sub2api:0.1.166](https://hub.docker.com/r/weishaw/sub2api).

@@ -1,5 +1,19 @@
 # Changelog
 
+## 7.2.104-1
+
+- Sync upstream image [eceasy/cli-proxy-api:v7.2.104](https://hub.docker.com/r/eceasy/cli-proxy-api).
+- Upstream project: [router-for-me/CLIProxyAPI](https://github.com/router-for-me/CLIProxyAPI).
+- Upstream release: [v7.2.104](https://github.com/router-for-me/CLIProxyAPI/releases/tag/v7.2.104).
+- Upstream changelog summary:
+  - `CLIProxyAPI_<version>_linux_<arch>.tar.gz` is the default Linux build. It supports dynamic library plugins and is built against a GLIBC 2.17 baseline.
+  - `CLIProxyAPI_<version>_linux_<arch>_no-plugin.tar.gz` is the portable Linux build for musl-based or older systems such as OpenWrt. It does not support dynamic library plugins.
+  - `CLIProxyAPI_<version>_freebsd_aarch64_no-plugin.tar.gz` is the FreeBSD arm64 build. It is built without CGO and does not support dynamic library plugins.
+  - feat(home): enhance client recovery and dispatch handling with new state management and error reporting (8eed5f1b)
+  - feat(home): update concurrency release logic to include takeover eligibility state in error handling (3b4f4cf1)
+  - feat(home): improve error handling in cluster discovery and enhance GetConfig tests (f943926f)
+
+
 ## 7.2.103-1
 
 - Sync upstream image [eceasy/cli-proxy-api:v7.2.103](https://hub.docker.com/r/eceasy/cli-proxy-api).
