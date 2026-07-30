@@ -1,5 +1,19 @@
 # Changelog
 
+## 1.11.10-1
+
+- Sync upstream image [seakee/cpa-manager-plus:v1.11.10](https://hub.docker.com/r/seakee/cpa-manager-plus).
+- Upstream project: [seakee/CPA-Manager-Plus](https://github.com/seakee/CPA-Manager-Plus).
+- Upstream release: [v1.11.10](https://github.com/seakee/CPA-Manager-Plus/releases/tag/v1.11.10).
+- Upstream changelog summary:
+  - > 22 commits · 112 files changed · +30546 / -2253
+  - > [English ->](https://github.com/seakee/CPA-Manager-Plus/blob/v1.11.10/docs/release-notes/v1.11.10-en.md)
+  - 本次发布聚焦本地成本估算精度、认证文件操作安全性和实时监控可读性。模型价格同步会优先使用 models.dev 的第一方官方元数据，并把上下文阶梯与 Fast/Priority service tier 应用于 Dashboard、监控和账户历史；认证文件变更会按规范凭据身份校验，实时请求表则统一采用总延迟 TPS。
+  - 模型价格同步优先读取 models.dev catalog 的规范模型元数据，并依次使用 LiteLLM、OpenRouter 回退；只有唯一强身份匹配会自动保存，全部来源失败时会保留最后有效价格（`manager-server/model-pricing`）。
+  - 解析、校验并持久化 models.dev 上下文价格阶梯与显式 Fast/Priority 费率，通过持久化定价汇总将其应用到 Dashboard、监控、账户历史和前端用量成本（`manager-server/usage-pricing`、`web/usage`）。
+  - 模型价格页可只读展示同步的上下文阶梯和 service tier 规则，并按来源保留歧义候选；保存手动基础价格前会提示其将清除同步的高级规则（`web/model-prices`）。
+
+
 ## 1.11.9-1
 
 - Sync upstream image [seakee/cpa-manager-plus:v1.11.9](https://hub.docker.com/r/seakee/cpa-manager-plus).
