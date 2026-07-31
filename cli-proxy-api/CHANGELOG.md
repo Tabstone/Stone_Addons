@@ -1,5 +1,19 @@
 # Changelog
 
+## 7.2.111-1
+
+- Sync upstream image [eceasy/cli-proxy-api:v7.2.111](https://hub.docker.com/r/eceasy/cli-proxy-api).
+- Upstream project: [router-for-me/CLIProxyAPI](https://github.com/router-for-me/CLIProxyAPI).
+- Upstream release: [v7.2.111](https://github.com/router-for-me/CLIProxyAPI/releases/tag/v7.2.111).
+- Upstream changelog summary:
+  - `CLIProxyAPI_<version>_linux_<arch>.tar.gz` is the default Linux build. It supports dynamic library plugins and is built against a GLIBC 2.17 baseline.
+  - `CLIProxyAPI_<version>_linux_<arch>_no-plugin.tar.gz` is the portable Linux build for musl-based or older systems such as OpenWrt. It does not support dynamic library plugins.
+  - `CLIProxyAPI_<version>_freebsd_aarch64_no-plugin.tar.gz` is the FreeBSD arm64 build. It is built without CGO and does not support dynamic library plugins.
+  - fix(auth): refresh Home credentials before 401 retry (f179a0f4)
+  - feat(models): add Kimi K3 256K and extend Kimi K3 configuration (7d00936a)
+  - fix: recover Home OAuth credentials after 401 (4db8e120)
+
+
 ## 7.2.109-1
 
 - Sync upstream image [eceasy/cli-proxy-api:v7.2.109](https://hub.docker.com/r/eceasy/cli-proxy-api).
