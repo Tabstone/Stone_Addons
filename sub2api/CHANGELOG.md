@@ -1,5 +1,19 @@
 # Changelog
 
+## 0.1.169-1
+
+- Sync upstream image [weishaw/sub2api:0.1.169](https://hub.docker.com/r/weishaw/sub2api).
+- Upstream project: [Wei-Shaw/sub2api](https://github.com/Wei-Shaw/sub2api).
+- Upstream release: [Sub2API 0.1.169](https://github.com/Wei-Shaw/sub2api/releases/tag/v0.1.169).
+- Upstream changelog summary:
+  - > AI API Gateway Platform - 将 AI 订阅配额分发和管理
+  - 修复网关上游 URL 路径片段校验缺陷（GHSA-vrxq-qm4h-6hgg），v0.1.135 ~ v0.1.168 用户建议尽快升级；同时修复 release 产物缺少定价兜底资源、以及代理断流熔断可能导致「无可用账号」的问题。
+  - 收紧上游 URL 路径片段校验：`/responses` 子路径、Gemini 模型名等客户端可控片段在参与上游请求路径拼接前统一走闭集允许清单校验，不合规请求在入口即被拒绝（GHSA-vrxq-qm4h-6hgg，影响 v0.1.135 ~ v0.1.168，由 @KKBK-233 报告）
+  - 容器部署默认启用 no-new-privileges，阻止应用进程提权
+  - 安全审计：兼容 Qwen3Guard 输出中的辅助字段
+  - 更新 GPT-5.6 Luna 与 Terra 的计费费率
+
+
 ## 0.1.168-1
 
 - Sync upstream image [weishaw/sub2api:0.1.168](https://hub.docker.com/r/weishaw/sub2api).
