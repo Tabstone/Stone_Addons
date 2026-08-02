@@ -1,5 +1,16 @@
 # Changelog
 
+## 1.271.0-1
+
+- Sync upstream image [ghcr.io/metacubex/metacubexd:v1.271.0](https://github.com/MetaCubeX/metacubexd/pkgs/container/metacubexd).
+- Upstream project: [MetaCubeX/metacubexd](https://github.com/MetaCubeX/metacubexd).
+- Upstream release: [v1.271.0](https://github.com/MetaCubeX/metacubexd/releases/tag/v1.271.0).
+- Upstream changelog summary:
+  - **proxies:** add mobile scroll-to-top ([9ca5eb0](https://github.com/MetaCubeX/metacubexd/commit/9ca5eb065bfd49d8248d55754d6b7ed7deb54581))
+  - **ui:** add managed rules and proxies CRUD ([#2161](https://github.com/MetaCubeX/metacubexd/issues/2161))...
+  - **ui:** prevent mobile document overscroll ([a7c0497](https://github.com/MetaCubeX/metacubexd/commit/a7c049765970b91bcb17f7b46d5a38aec6805aa5))
+
+
 ## 1.270.6-1
 
 - Sync upstream image [ghcr.io/metacubex/metacubexd:v1.270.6](https://github.com/MetaCubeX/metacubexd/pkgs/container/metacubexd).
