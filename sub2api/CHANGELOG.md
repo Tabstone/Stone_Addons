@@ -1,5 +1,19 @@
 # Changelog
 
+## 0.1.170-1
+
+- Sync upstream image [weishaw/sub2api:0.1.170](https://hub.docker.com/r/weishaw/sub2api).
+- Upstream project: [Wei-Shaw/sub2api](https://github.com/Wei-Shaw/sub2api).
+- Upstream release: [Sub2API 0.1.170](https://github.com/Wei-Shaw/sub2api/releases/tag/v0.1.170).
+- Upstream changelog summary:
+  - > AI API Gateway Platform - 将 AI 订阅配额分发和管理
+  - 新增分组级利润控制，可按账号成本倍率过滤调度候选，避免请求被分给成本高于分组定价的账号；上游计费倍率探测扩展到全部 API Key 平台账号并支持自动写回账号倍率；修复 Anthropic 流式响应中断时部分用量丢失导致漏计费的问题。
+  - 分组级利润控制（默认关闭）：为 OpenAI / Anthropic / Gemini / Grok / Antigravity 分组开启后，按「最低利润率 + 安全缓冲」过滤调度候选，成本倍率过高的账号不参与调度；排序、评分、粘性会话与熔断在合格账号之间行为不变
+  - 利润控制：槽位获取后二次复核账号倍率，超阈值账号释放槽位并重新选号；粘性会话仅在终检通过后绑定，超阈值的粘性账号跳过而非解绑，倍率恢复后自动回归
+  - 利润控制：请求级定价时刻，同一请求在等待、重试、切换账号过程中不会因跨越高峰窗口而改变判定基准
+  - 利润控制范围：组合分组不支持直接开启；图片、视频、模型列表、用量、count_tokens 等非 Token 计费路径不纳入门控
+
+
 ## 0.1.169-1
 
 - Sync upstream image [weishaw/sub2api:0.1.169](https://hub.docker.com/r/weishaw/sub2api).
