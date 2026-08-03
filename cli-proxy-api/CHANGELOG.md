@@ -1,5 +1,19 @@
 # Changelog
 
+## 7.2.115-1
+
+- Sync upstream image [eceasy/cli-proxy-api:v7.2.115](https://hub.docker.com/r/eceasy/cli-proxy-api).
+- Upstream project: [router-for-me/CLIProxyAPI](https://github.com/router-for-me/CLIProxyAPI).
+- Upstream release: [v7.2.115](https://github.com/router-for-me/CLIProxyAPI/releases/tag/v7.2.115).
+- Upstream changelog summary:
+  - `CLIProxyAPI_<version>_linux_<arch>.tar.gz` is the default Linux build. It supports dynamic library plugins and is built against a GLIBC 2.17 baseline.
+  - `CLIProxyAPI_<version>_linux_<arch>_no-plugin.tar.gz` is the portable Linux build for musl-based or older systems such as OpenWrt. It does not support dynamic library plugins.
+  - `CLIProxyAPI_<version>_freebsd_aarch64_no-plugin.tar.gz` is the FreeBSD arm64 build. It is built without CGO and does not support dynamic library plugins.
+  - feature(codex): Normalize invalid sub2api message item IDs during Codex input sanitization (8d675e69)
+  - feat(codex): support `max-context-length` overrides for configured models (a303fd86)
+  - feat(executor): normalize OpenAI tool results for text-only compatibility models (13435c93)
+
+
 ## 7.2.113-1
 
 - Sync upstream image [eceasy/cli-proxy-api:v7.2.113](https://hub.docker.com/r/eceasy/cli-proxy-api).
