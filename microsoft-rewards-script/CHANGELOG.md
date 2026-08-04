@@ -1,5 +1,19 @@
 # Changelog
 
+## 4.2.0-1
+
+- Sync upstream image [ghcr.io/thenetsky/microsoft-rewards-script:4.2.0](https://github.com/TheNetsky/Microsoft-Rewards-Script/pkgs/container/microsoft-rewards-script).
+- Upstream project: [TheNetsky/Microsoft-Rewards-Script](https://github.com/TheNetsky/Microsoft-Rewards-Script).
+- Upstream release: [v4.2.0](https://github.com/TheNetsky/Microsoft-Rewards-Script/releases/tag/v4.2.0).
+- Upstream changelog summary:
+  - style: apply automated formatting by @github-actions[bot] in https://github.com/TheNetsky/Microsoft-Rewards-Script/pull/545
+  - style: apply automated formatting by @github-actions[bot] in https://github.com/TheNetsky/Microsoft-Rewards-Script/pull/549
+  - fix: avoid warning for Bing home page by @zhangMonday in https://github.com/TheNetsky/Microsoft-Rewards-Script/pull/555
+  - Improve config handling, add API-based config update by @mgrimace in https://github.com/TheNetsky/Microsoft-Rewards-Script/pull/554
+  - style: apply automated formatting by @github-actions[bot] in https://github.com/TheNetsky/Microsoft-Rewards-Script/pull/557
+  - @zhangMonday made their first contribution in https://github.com/TheNetsky/Microsoft-Rewards-Script/pull/555
+
+
 ## 4.1.0-1
 
 - Sync upstream image [ghcr.io/thenetsky/microsoft-rewards-script:4.1.0](https://github.com/TheNetsky/Microsoft-Rewards-Script/pkgs/container/microsoft-rewards-script).
