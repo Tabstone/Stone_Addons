@@ -1,5 +1,19 @@
 # Changelog
 
+## 0.1.171-1
+
+- Sync upstream image [weishaw/sub2api:0.1.171](https://hub.docker.com/r/weishaw/sub2api).
+- Upstream project: [Wei-Shaw/sub2api](https://github.com/Wei-Shaw/sub2api).
+- Upstream release: [Sub2API 0.1.171](https://github.com/Wei-Shaw/sub2api/releases/tag/v0.1.171).
+- Upstream changelog summary:
+  - > AI API Gateway Platform - 将 AI 订阅配额分发和管理
+  - 人机验证新增腾讯天御与阿里云验证码 2.0，后台合并为单张人机验证卡片按服务商单选；修复 Codex 请求因客户端身份落入上游降载分桶、返回过载错误后被误判为账号故障并冷却，对外表现为「Codex 账号频繁不可用」的问题，出站身份统一收口并跟随官方发布自动同步版本号。
+  - 人机验证新增腾讯天御验证码：与 Cloudflare Turnstile 并列的独立服务商，除注册 / 登录 / 找回密码等既有保护面外，OAuth 登录启动与 passkey 登录同样纳入拦截
+  - 人机验证新增阿里云验证码 2.0：同时支持阿里云中国站与国际站，由「服务地域」决定线路（中国内地 / 新加坡），保存设置时真实探测 AccessKey 有效性，校验异常按 fail-closed 拦截
+  - 后台「安全与认证」合并为单张人机验证卡片：总开关 + 服务商单选（Turnstile / 腾讯天御 / 阿里云），三者互斥，选中即启用该家并关闭其它
+  - Codex 客户端版本号自动同步官方最新稳定版（每 6 小时，面板可关闭），无需为跟随上游版本而发版；出站 User-Agent 与 version 头由同一版本来源派生
+
+
 ## 0.1.170-1
 
 - Sync upstream image [weishaw/sub2api:0.1.170](https://hub.docker.com/r/weishaw/sub2api).
