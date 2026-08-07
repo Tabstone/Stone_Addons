@@ -1,5 +1,19 @@
 # Changelog
 
+## 1.11.12-1
+
+- Sync upstream image [seakee/cpa-manager-plus:v1.11.12](https://hub.docker.com/r/seakee/cpa-manager-plus).
+- Upstream project: [seakee/CPA-Manager-Plus](https://github.com/seakee/CPA-Manager-Plus).
+- Upstream release: [v1.11.12](https://github.com/seakee/CPA-Manager-Plus/releases/tag/v1.11.12).
+- Upstream changelog summary:
+  - > 16 commits · 71 files changed · +9754 / -872
+  - > [English ->](https://github.com/seakee/CPA-Manager-Plus/blob/v1.11.12/docs/release-notes/v1.11.12-en.md)
+  - 本版本聚焦大规模用量监控的查询性能、SQLite/WAL 状态可观测性和受保护的发布流程。Manager Server 为长窗口监控增加可恢复的派生数据与后台补齐机制，SQLite 存储状态现集中在系统信息页并适配桌面、平板和移动端；发布流程要求完成 `dev` 集成、`main` 晋级和来源校验后才创建标签。
+  - 系统信息页提供 SQLite 存储状态模块，展示数据库、WAL、SHM、总占用和检查点状态，并采用桌面、平板和移动端响应式布局（`web/system-info`）。
+  - Dashboard 移除 SQLite 存储卡片并恢复原有四列数据布局（`web/dashboard`）。
+  - 7 天和 30 天监控分析会在派生数据覆盖后使用可恢复的 SQLite 读取路径，减少对大型 `usage_events` 原始表的扫描（`manager-server/monitoring`）。
+
+
 ## 1.11.11-1
 
 - Sync upstream image [seakee/cpa-manager-plus:v1.11.11](https://hub.docker.com/r/seakee/cpa-manager-plus).
