@@ -1,5 +1,15 @@
 # Changelog
 
+## 0.4.7-1
+
+- Sync upstream image [ghcr.io/bitxeno/atvloadly:v0.4.7](https://github.com/bitxeno/atvloadly/pkgs/container/atvloadly).
+- Upstream project: [bitxeno/atvloadly](https://github.com/bitxeno/atvloadly).
+- Upstream release: [v0.4.7 - tvOS 17.4+](https://github.com/bitxeno/atvloadly/releases/tag/v0.4.7).
+- Upstream changelog summary:
+  - **install**: Support renaming the app via a custom app name &nbsp;-&nbsp; by @dgherman in https://github.com/bitxeno/atvloadly/issues/122...
+  - **service**: Hide usbmuxd status from service status &nbsp;-&nbsp; by @bitxeno in https://github.com/bitxeno/atvloadly/issues/123...
+
+
 ## 0.4.6-1
 
 - Sync upstream image [ghcr.io/bitxeno/atvloadly:v0.4.6](https://github.com/bitxeno/atvloadly/pkgs/container/atvloadly).
