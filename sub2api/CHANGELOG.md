@@ -1,5 +1,19 @@
 # Changelog
 
+## 0.1.172-1
+
+- Sync upstream image [weishaw/sub2api:0.1.172](https://hub.docker.com/r/weishaw/sub2api).
+- Upstream project: [Wei-Shaw/sub2api](https://github.com/Wei-Shaw/sub2api).
+- Upstream release: [Sub2API 0.1.172](https://github.com/Wei-Shaw/sub2api/releases/tag/v0.1.172).
+- Upstream changelog summary:
+  - > AI API Gateway Platform - 将 AI 订阅配额分发和管理
+  - 修复一个高危账号接管漏洞：攻击者仅凭受害者邮箱，即可通过 OAuth 登录补全流程把自己的第三方身份绑定到他人账号并直接登录，建议尽快升级。同时新增上游响应模型审计，可识别上游偷偷替换/降级模型的行为。
+  - 上游响应模型审计：用量日志新增记录上游响应声明的模型，并标记与实际发往上游的模型是否一致（区分本站映射与上游侧替换）；管理端用量页支持展示该字段并可筛选「仅看不一致」
+  - Antigravity 支持 Gemini 3.6 Flash 系列模型（补入模型目录与默认映射，此前请求会返回 503）
+  - Codex OAuth 默认出站身份跟随官方迁移切换为 codex-tui，自定义 UA 首尾两处版本号统一同步
+  - Responses 工具 Schema 净化改为单次拼接，消除大请求体下的重复全量拷贝
+
+
 ## 0.1.171-1
 
 - Sync upstream image [weishaw/sub2api:0.1.171](https://hub.docker.com/r/weishaw/sub2api).
