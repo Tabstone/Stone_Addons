@@ -1,5 +1,19 @@
 # Changelog
 
+## 0.1.173-1
+
+- Sync upstream image [weishaw/sub2api:0.1.173](https://hub.docker.com/r/weishaw/sub2api).
+- Upstream project: [Wei-Shaw/sub2api](https://github.com/Wei-Shaw/sub2api).
+- Upstream release: [Sub2API 0.1.173](https://github.com/Wei-Shaw/sub2api/releases/tag/v0.1.173).
+- Upstream changelog summary:
+  - > AI API Gateway Platform - 将 AI 订阅配额分发和管理
+  - 完善 Grok/xAI 平台集成（授权、模型映射、媒体/Voice/搜索计费与调度门禁），并新增基于真实网关流量的被动式渠道监控 V2。
+  - Grok 授权补齐：支持 SSO 登录与 refresh_token 重新授权，OAuth 会话跨实例共享，多副本部署可用
+  - Grok 网关能力扩展：新增图片/视频媒体路由、Voice TTS/STT/Realtime、custom voices 全量管理与 /v1/web_search
+  - Grok 计费维度扩展：视频支持按模型族 × 分辨率定价，搜索按每千次调用计价
+  - Grok 模型映射设置：可配置默认文本模型与跨客户端映射开关，运行时修改即时生效
+
+
 ## 0.1.172-1
 
 - Sync upstream image [weishaw/sub2api:0.1.172](https://hub.docker.com/r/weishaw/sub2api).
