@@ -1,5 +1,19 @@
 # Changelog
 
+## 7.2.130-1
+
+- Sync upstream image [eceasy/cli-proxy-api:v7.2.130](https://hub.docker.com/r/eceasy/cli-proxy-api).
+- Upstream project: [router-for-me/CLIProxyAPI](https://github.com/router-for-me/CLIProxyAPI).
+- Upstream release: [v7.2.130](https://github.com/router-for-me/CLIProxyAPI/releases/tag/v7.2.130).
+- Upstream changelog summary:
+  - `CLIProxyAPI_<version>_linux_<arch>.tar.gz` is the default Linux build. It supports dynamic library plugins and is built against a GLIBC 2.17 baseline.
+  - `CLIProxyAPI_<version>_linux_<arch>_no-plugin.tar.gz` is the portable Linux build for musl-based or older systems such as OpenWrt. It does not support dynamic library plugins.
+  - `CLIProxyAPI_<version>_freebsd_aarch64_no-plugin.tar.gz` is the FreeBSD arm64 build. It is built without CGO and does not support dynamic library plugins.
+  - fix(openai): handle premature SSE stream termination with terminal error emission (522b4de5)
+  - fix(codex): preserve multi-agent-v2 namespace handling across incremental websocket turns (b08fe3b4)
+  - feat(management): add request-scoped proxy override for APICall (17a479a8)
+
+
 ## 7.2.129-1
 
 - Sync upstream image [eceasy/cli-proxy-api:v7.2.129](https://hub.docker.com/r/eceasy/cli-proxy-api).

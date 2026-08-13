@@ -1,5 +1,19 @@
 # Changelog
 
+## 0.1.176-1
+
+- Sync upstream image [weishaw/sub2api:0.1.176](https://hub.docker.com/r/weishaw/sub2api).
+- Upstream project: [Wei-Shaw/sub2api](https://github.com/Wei-Shaw/sub2api).
+- Upstream release: [Sub2API 0.1.176](https://github.com/Wei-Shaw/sub2api/releases/tag/v0.1.176).
+- Upstream changelog summary:
+  - > AI API Gateway Platform - 将 AI 订阅配额分发和管理
+  - 新增 Grok 4.6 模型支持与 JWT 订阅档位识别；分组支持逐模型定价与长上下文阶梯开关；新增原生 x_search 搜索端点。
+  - Grok 4.6：新增 grok-4.6 / grok-4.6-latest 目录、官方定价（含缓存读取价与 200k 长上下文倍率）与请求路径支持
+  - JWT 订阅档位识别：从 Grok Build access token 解码 tier claim，自动识别 free/SuperGrok/Heavy/Lite 等档位，刷新后覆盖失效订阅
+  - 分组逐模型定价：分组新增 model_pricing 与 long_context_pricing_enabled 字段，解析链改为 Group → Channel → 内置，关闭长上下文时 token 模型只取最低档
+  - x_search 端点：新增独立 POST /x_search（仅 Grok 分组），复用 web_search 的审计、failover 与按次计费
+
+
 ## 0.1.173-1
 
 - Sync upstream image [weishaw/sub2api:0.1.173](https://hub.docker.com/r/weishaw/sub2api).
