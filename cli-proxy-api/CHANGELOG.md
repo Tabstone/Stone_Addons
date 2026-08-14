@@ -1,5 +1,19 @@
 # Changelog
 
+## 7.2.131-1
+
+- Sync upstream image [eceasy/cli-proxy-api:v7.2.131](https://hub.docker.com/r/eceasy/cli-proxy-api).
+- Upstream project: [router-for-me/CLIProxyAPI](https://github.com/router-for-me/CLIProxyAPI).
+- Upstream release: [v7.2.131](https://github.com/router-for-me/CLIProxyAPI/releases/tag/v7.2.131).
+- Upstream changelog summary:
+  - `CLIProxyAPI_<version>_linux_<arch>.tar.gz` is the default Linux build. It supports dynamic library plugins and is built against a GLIBC 2.17 baseline.
+  - `CLIProxyAPI_<version>_linux_<arch>_no-plugin.tar.gz` is the portable Linux build for musl-based or older systems such as OpenWrt. It does not support dynamic library plugins.
+  - `CLIProxyAPI_<version>_freebsd_aarch64_no-plugin.tar.gz` is the FreeBSD arm64 build. It is built without CGO and does not support dynamic library plugins.
+  - fix(openai): avoid JSON copies in websocket responses tool-call repair path (75d2c4a4)
+  - fix(translator): drop Gemini hidden thought parts during request conversion (8b54db36)
+  - feat(config): add per-credential request-retry override support (6f2cea94)
+
+
 ## 7.2.130-1
 
 - Sync upstream image [eceasy/cli-proxy-api:v7.2.130](https://hub.docker.com/r/eceasy/cli-proxy-api).
