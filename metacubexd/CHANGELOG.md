@@ -1,5 +1,14 @@
 # Changelog
 
+## 1.272.0-1
+
+- Sync upstream image [ghcr.io/metacubex/metacubexd:v1.272.0](https://github.com/MetaCubeX/metacubexd/pkgs/container/metacubexd).
+- Upstream project: [MetaCubeX/metacubexd](https://github.com/MetaCubeX/metacubexd).
+- Upstream release: [v1.272.0](https://github.com/MetaCubeX/metacubexd/releases/tag/v1.272.0).
+- Upstream changelog summary:
+  - **proxies:** refine desktop proxy navigation ([35a46a5](https://github.com/MetaCubeX/metacubexd/commit/35a46a5bd305c8533bf0f8f003362f03a0568adf))
+
+
 ## 1.271.0-1
 
 - Sync upstream image [ghcr.io/metacubex/metacubexd:v1.271.0](https://github.com/MetaCubeX/metacubexd/pkgs/container/metacubexd).
