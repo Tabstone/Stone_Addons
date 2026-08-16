@@ -1,5 +1,19 @@
 # Changelog
 
+## 0.1.177-1
+
+- Sync upstream image [weishaw/sub2api:0.1.177](https://hub.docker.com/r/weishaw/sub2api).
+- Upstream project: [Wei-Shaw/sub2api](https://github.com/Wei-Shaw/sub2api).
+- Upstream release: [Sub2API 0.1.177](https://github.com/Wei-Shaw/sub2api/releases/tag/v0.1.177).
+- Upstream changelog summary:
+  - > AI API Gateway Platform - 将 AI 订阅配额分发和管理
+  - 分组用量统计引入按日汇总，大数据量下更快更准；Codex 全面适配上游 remote compaction v2，压缩探测与路由不再依赖已下线的旧接口。
+  - 分组用量统计按日汇总：新增日汇总表与自动汇聚，分组页与仪表盘的用量统计性能大幅提升
+  - Codex 请求补齐会话级 beta 功能头（remote_compaction_v2），与官方客户端行为对齐
+  - Codex 回合状态头 x-codex-turn-state 现会回传给客户端，并拦截跨账号回显，保障回合链路一致
+  - 账号"压缩测试"改用原生 remote compaction v2 探测，上游旧接口下线后不再误报失败
+
+
 ## 0.1.176-1
 
 - Sync upstream image [weishaw/sub2api:0.1.176](https://hub.docker.com/r/weishaw/sub2api).
