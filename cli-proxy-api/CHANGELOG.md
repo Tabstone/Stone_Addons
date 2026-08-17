@@ -1,5 +1,19 @@
 # Changelog
 
+## 7.2.134-1
+
+- Sync upstream image [eceasy/cli-proxy-api:v7.2.134](https://hub.docker.com/r/eceasy/cli-proxy-api).
+- Upstream project: [router-for-me/CLIProxyAPI](https://github.com/router-for-me/CLIProxyAPI).
+- Upstream release: [v7.2.134](https://github.com/router-for-me/CLIProxyAPI/releases/tag/v7.2.134).
+- Upstream changelog summary:
+  - `CLIProxyAPI_<version>_linux_<arch>.tar.gz` is the default Linux build. It supports dynamic library plugins and is built against a GLIBC 2.17 baseline.
+  - `CLIProxyAPI_<version>_linux_<arch>_no-plugin.tar.gz` is the portable Linux build for musl-based or older systems such as OpenWrt. It does not support dynamic library plugins.
+  - `CLIProxyAPI_<version>_freebsd_aarch64_no-plugin.tar.gz` is the FreeBSD arm64 build. It is built without CGO and does not support dynamic library plugins.
+  - fix(claude,gemini,openai): preserve upstream stream errors when no data payload is emitted (92f03e68)
+  - feat(claude): map OpenAI `service_tier` to Claude `speed` in responses requests (7eefab98)
+  - test(antigravity): cover schema sanitizer semantics (e23395a9)
+
+
 ## 7.2.133-1
 
 - Sync upstream image [eceasy/cli-proxy-api:v7.2.133](https://hub.docker.com/r/eceasy/cli-proxy-api).

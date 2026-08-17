@@ -1,5 +1,19 @@
 # Changelog
 
+## 1.19.30-1
+
+- Sync upstream image [metacubex/mihomo:v1.19.30](https://hub.docker.com/r/metacubex/mihomo).
+- Upstream project: [MetaCubeX/mihomo](https://github.com/MetaCubeX/mihomo).
+- Upstream release: [v1.19.30](https://github.com/MetaCubeX/mihomo/releases/tag/v1.19.30).
+- Upstream changelog summary:
+  - e889b689 feat: support H2C and QUICv2 sniffing (#3036) by @Kosta
+  - 05b5334c feat: add `handshake-timeout` for hysteria2 by @wwqgtxx
+  - 1265cb9a feat: add `ip-stack` option for masque outbound by @wwqgtxx
+  - 4ad27d81 feat: add `ip-stack` option for ZeroTier by @wwqgtxx
+  - 8453e589 feat: support AmneziaWG v3.0 by @wwqgtxx
+  - 8b76447b feat: add `ip-stack` option for wireguard outbound by @wwqgtxx
+
+
 ## 1.19.29-1
 
 - Sync upstream image [metacubex/mihomo:v1.19.29](https://hub.docker.com/r/metacubex/mihomo).

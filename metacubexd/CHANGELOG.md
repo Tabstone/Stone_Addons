@@ -1,5 +1,14 @@
 # Changelog
 
+## 1.273.0-1
+
+- Sync upstream image [ghcr.io/metacubex/metacubexd:v1.273.0](https://github.com/MetaCubeX/metacubexd/pkgs/container/metacubexd).
+- Upstream project: [MetaCubeX/metacubexd](https://github.com/MetaCubeX/metacubexd).
+- Upstream release: [v1.273.0](https://github.com/MetaCubeX/metacubexd/releases/tag/v1.273.0).
+- Upstream changelog summary:
+  - **ui:** add last-week traffic range ([#2177](https://github.com/MetaCubeX/metacubexd/issues/2177))...
+
+
 ## 1.272.0-1
 
 - Sync upstream image [ghcr.io/metacubex/metacubexd:v1.272.0](https://github.com/MetaCubeX/metacubexd/pkgs/container/metacubexd).

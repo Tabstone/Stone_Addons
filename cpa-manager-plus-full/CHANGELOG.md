@@ -1,5 +1,19 @@
 # Changelog
 
+## 1.12.0-1
+
+- Sync upstream image [seakee/cpa-manager-plus:v1.12.0](https://hub.docker.com/r/seakee/cpa-manager-plus).
+- Upstream project: [seakee/CPA-Manager-Plus](https://github.com/seakee/CPA-Manager-Plus).
+- Upstream release: [v1.12.0](https://github.com/seakee/CPA-Manager-Plus/releases/tag/v1.12.0).
+- Upstream changelog summary:
+  - > 196 commits · 552 files changed · +119770 / -24846
+  - >
+  - > v1.12.0-rc.3 → v1.12.0: 0 product commits · 0 product files changed
+  - > [English ->](https://github.com/seakee/CPA-Manager-Plus/blob/v1.12.0/docs/release-notes/v1.12.0-en.md)
+  - `v1.12.0` 是经过完整 RC 验证的 1.x 稳定版。产品源码与 `v1.12.0-rc.3` 完全一致，本次仅增加正式版发布材料并以 `VERSION=v1.12.0` 重新构建，因此不会引入 RC.3 之后的运行行为变化。此版本将统一的 Accounts...
+  - `/accounts` 成为统一凭证管理入口，集中提供额度、配置、模型、活动、巡检与重新登录工作流，并适配桌面和移动端。
+
+
 ## 1.11.12-1
 
 - Sync upstream image [seakee/cpa-manager-plus:v1.11.12](https://hub.docker.com/r/seakee/cpa-manager-plus).

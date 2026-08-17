@@ -1,5 +1,5 @@
 name: Mihomo
-version: "1.19.29-1"
+version: "1.19.30-1"
 slug: mihomo
 description: Mihomo core wrapped for Home Assistant with persistent config
 url: https://github.com/Tabstone/Stone_Addons/tree/main/mihomo
