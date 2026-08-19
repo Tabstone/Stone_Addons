@@ -1,5 +1,19 @@
 # Changelog
 
+## 7.2.136-1
+
+- Sync upstream image [eceasy/cli-proxy-api:v7.2.136](https://hub.docker.com/r/eceasy/cli-proxy-api).
+- Upstream project: [router-for-me/CLIProxyAPI](https://github.com/router-for-me/CLIProxyAPI).
+- Upstream release: [v7.2.136](https://github.com/router-for-me/CLIProxyAPI/releases/tag/v7.2.136).
+- Upstream changelog summary:
+  - `CLIProxyAPI_<version>_linux_<arch>.tar.gz` is the default Linux build. It supports dynamic library plugins and is built against a GLIBC 2.17 baseline.
+  - `CLIProxyAPI_<version>_linux_<arch>_no-plugin.tar.gz` is the portable Linux build for musl-based or older systems such as OpenWrt. It does not support dynamic library plugins.
+  - `CLIProxyAPI_<version>_freebsd_aarch64_no-plugin.tar.gz` is the FreeBSD arm64 build. It is built without CGO and does not support dynamic library plugins.
+  - fix(claude): keep Fable-only rate limits model scoped (a8f9814a)
+  - add bestproxy sponser (78154496)
+  - fix(websocket): drop consumed compaction triggers (45c90e8d)
+
+
 ## 7.2.135-1
 
 - Sync upstream image [eceasy/cli-proxy-api:v7.2.135](https://hub.docker.com/r/eceasy/cli-proxy-api).

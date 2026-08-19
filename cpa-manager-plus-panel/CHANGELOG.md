@@ -1,5 +1,19 @@
 # Changelog
 
+## 1.12.1-1
+
+- Sync upstream image [seakee/cpa-manager-plus:v1.12.1](https://hub.docker.com/r/seakee/cpa-manager-plus).
+- Upstream project: [seakee/CPA-Manager-Plus](https://github.com/seakee/CPA-Manager-Plus).
+- Upstream release: [v1.12.1](https://github.com/seakee/CPA-Manager-Plus/releases/tag/v1.12.1).
+- Upstream changelog summary:
+  - > 7 commits · 103 files changed · +2616 / -613
+  - > [English ->](https://github.com/seakee/CPA-Manager-Plus/blob/v1.12.1/docs/release-notes/v1.12.1-en.md)
+  - `v1.12.1` 版本带来了同步的 CPAMP 品牌标识、无损 CPA 冷却策略覆盖以及更兼容的插件宿主样式。此版本仅更改前端行为和文档；不会更改管理服务器 API、数据库架构或存储的凭据格式。
+  - 统一的 CPAMP 品牌资源覆盖 favicon、加载页、登录页、展开和收缩边栏以及 README，并提供明暗主题 SVG 与高密度 PNG。
+  - Provider 与凭证配置提供“继承全局、启用冷却、禁用冷却”三态策略，用户可以明确表达局部冷却覆盖。
+  - 冷却策略在 provider 与 auth-file 的读取、编辑、序列化和回滚过程中保留显式 true、false、null 与缺失值，并按 CPA 能力保护旧版和未验证构建。
+
+
 ## 1.12.0-1
 
 - Sync upstream image [seakee/cpa-manager-plus:v1.12.0](https://hub.docker.com/r/seakee/cpa-manager-plus).
