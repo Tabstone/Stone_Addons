@@ -1,5 +1,19 @@
 # Changelog
 
+## 0.1.178-1
+
+- Sync upstream image [weishaw/sub2api:0.1.178](https://hub.docker.com/r/weishaw/sub2api).
+- Upstream project: [Wei-Shaw/sub2api](https://github.com/Wei-Shaw/sub2api).
+- Upstream release: [Sub2API 0.1.178](https://github.com/Wei-Shaw/sub2api/releases/tag/v0.1.178).
+- Upstream changelog summary:
+  - > AI API Gateway Platform - 将 AI 订阅配额分发和管理
+  - 新增支持 Kimi/智谱/DeepSeek 供应商，渠道监控新增配额模式，渠道模型支持谷峰定价。
+  - 新增 Kimi/智谱/DeepSeek 供应商支持：多协议接入，含分组创建入口、渠道定价与配额/余额监控
+  - 渠道监控配额模式：监控检查可切换为配额快照模式，覆盖 8 个平台，新增公开开关（默认关闭）
+  - 渠道模型谷峰定价：token 计费渠道可按时段配置价格倍率
+  - OpenAI Team 账号联动熔断
+
+
 ## 0.1.177-1
 
 - Sync upstream image [weishaw/sub2api:0.1.177](https://hub.docker.com/r/weishaw/sub2api).
