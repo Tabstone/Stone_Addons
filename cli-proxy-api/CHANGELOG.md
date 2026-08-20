@@ -1,5 +1,19 @@
 # Changelog
 
+## 7.2.137-1
+
+- Sync upstream image [eceasy/cli-proxy-api:v7.2.137](https://hub.docker.com/r/eceasy/cli-proxy-api).
+- Upstream project: [router-for-me/CLIProxyAPI](https://github.com/router-for-me/CLIProxyAPI).
+- Upstream release: [v7.2.137](https://github.com/router-for-me/CLIProxyAPI/releases/tag/v7.2.137).
+- Upstream changelog summary:
+  - `CLIProxyAPI_<version>_linux_<arch>.tar.gz` is the default Linux build. It supports dynamic library plugins and is built against a GLIBC 2.17 baseline.
+  - `CLIProxyAPI_<version>_linux_<arch>_no-plugin.tar.gz` is the portable Linux build for musl-based or older systems such as OpenWrt. It does not support dynamic library plugins.
+  - `CLIProxyAPI_<version>_freebsd_aarch64_no-plugin.tar.gz` is the FreeBSD arm64 build. It is built without CGO and does not support dynamic library plugins.
+  - fix: remove temporarily hidden sponsorship details from README files (55397bf6)
+  - fix(executor): prepend empty user turn for model-first Gemini/Antigravity requests (#4959) (#5048) (62f5a279)
+  - fix(antigravity): attach sibling tool images to the nearest functionResponse (#5075) (79ef3618)
+
+
 ## 7.2.136-1
 
 - Sync upstream image [eceasy/cli-proxy-api:v7.2.136](https://hub.docker.com/r/eceasy/cli-proxy-api).
