@@ -1,5 +1,19 @@
 # Changelog
 
+## 0.1.179-1
+
+- Sync upstream image [weishaw/sub2api:0.1.179](https://hub.docker.com/r/weishaw/sub2api).
+- Upstream project: [Wei-Shaw/sub2api](https://github.com/Wei-Shaw/sub2api).
+- Upstream release: [Sub2API 0.1.179](https://github.com/Wei-Shaw/sub2api/releases/tag/v0.1.179).
+- Upstream changelog summary:
+  - > AI API Gateway Platform - 将 AI 订阅配额分发和管理
+  - 国产供应商账号新增自适应 API 协议，同一账号可同时承接 Chat/Anthropic/Responses 三种协议；渠道定价新增服务层级与上下文区间倍率，并修复配置渠道价后 Fast 溢价被抹平的问题。
+  - 账号自适应 API 协议：Kimi/智谱 GLM/DeepSeek API Key 账号可选 adaptive，同一账号同时承接 Chat Completions、Anthropic Messages 与 OpenAI Responses，优先走供应商原生端点，支持分别配置三种协议的 Base URL
+  - 渠道定价服务层级倍率：fast_multiplier / flex_multiplier 可覆盖内置的 2.0 / 0.5 倍率
+  - 渠道上下文区间倍率：区间可只配倍率不配绝对价，按渠道基础价换算，长上下文阶梯不再依赖内置价卡
+  - 原生 Anthropic 转发识别 Fast mode（speed: "fast"）并按 Fast 价计费、写入用量日志
+
+
 ## 0.1.178-1
 
 - Sync upstream image [weishaw/sub2api:0.1.178](https://hub.docker.com/r/weishaw/sub2api).
