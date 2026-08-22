@@ -1,5 +1,19 @@
 # Changelog
 
+## 1.12.2-1
+
+- Sync upstream image [seakee/cpa-manager-plus:v1.12.2](https://hub.docker.com/r/seakee/cpa-manager-plus).
+- Upstream project: [seakee/CPA-Manager-Plus](https://github.com/seakee/CPA-Manager-Plus).
+- Upstream release: [v1.12.2](https://github.com/seakee/CPA-Manager-Plus/releases/tag/v1.12.2).
+- Upstream changelog summary:
+  - > 34 commits · 117 files changed · +8870 / -485
+  - > [English ->](https://github.com/seakee/CPA-Manager-Plus/blob/v1.12.2/docs/release-notes/v1.12.2-en.md)
+  - `v1.12.2` 聚焦配额归属、重置时间和大型历史数据库的升级可运维性：Codex Spark 与主配额使用量不再混算，配额重置时间在浏览器本地时区正确显示，Manager Server 会把延后的数据库维护状态展示给用户，并让账户历史查询在索引可用时按凭证限制候选行。此版本保留 listener-first 启动边界，不改写...
+  - Codex 配额按主产品、Spark 和其他 feature scope 分开归属，Spark 不再继承账户级或主配额使用量；无法完整解析的 scope 会 fail closed，不显示不可靠的 usage 或 forecast。
+  - `GET /status` 新增脱敏的 `databaseMaintenance` 状态，并提供 `?scope=database-maintenance` 的 metadata-bounded 读取，报告维护要求、查询性能风险、deferred index 数量、offline job 数量和稳定 reason code。
+  - Manager Server 面板、System Info 和 Request Monitoring 会显示数据库维护 Warning、待处理数量和长时间范围查询提示，并提供 Docker Compose 与原生 `cleanup-derived` 操作指引。
+
+
 ## 1.12.1-1
 
 - Sync upstream image [seakee/cpa-manager-plus:v1.12.1](https://hub.docker.com/r/seakee/cpa-manager-plus).
