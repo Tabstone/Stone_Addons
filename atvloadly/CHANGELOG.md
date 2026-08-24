@@ -1,5 +1,15 @@
 # Changelog
 
+## 0.4.8-1
+
+- Sync upstream image [ghcr.io/bitxeno/atvloadly:v0.4.8](https://github.com/bitxeno/atvloadly/pkgs/container/atvloadly).
+- Upstream project: [bitxeno/atvloadly](https://github.com/bitxeno/atvloadly).
+- Upstream release: [v0.4.8 - tvOS 17.4+](https://github.com/bitxeno/atvloadly/releases/tag/v0.4.8).
+- Upstream changelog summary:
+  - Fix memory leak &nbsp;-&nbsp; by @bitxeno in https://github.com/bitxeno/atvloadly/issues/127 [<samp>(e4251)</samp>](https://github.com/bitxeno/atvloadly/commit/e425141)
+  - Reduce Assets.car icon decoding memory &nbsp;-&nbsp; by @bitxeno [<samp>(cf65f)</samp>](https://github.com/bitxeno/atvloadly/commit/cf65fee)
+
+
 ## 0.4.7-1
 
 - Sync upstream image [ghcr.io/bitxeno/atvloadly:v0.4.7](https://github.com/bitxeno/atvloadly/pkgs/container/atvloadly).

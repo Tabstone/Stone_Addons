@@ -1,5 +1,19 @@
 # Changelog
 
+## 1.12.3-1
+
+- Sync upstream image [seakee/cpa-manager-plus:v1.12.3](https://hub.docker.com/r/seakee/cpa-manager-plus).
+- Upstream project: [seakee/CPA-Manager-Plus](https://github.com/seakee/CPA-Manager-Plus).
+- Upstream release: [v1.12.3](https://github.com/seakee/CPA-Manager-Plus/releases/tag/v1.12.3).
+- Upstream changelog summary:
+  - > 13 commits · 13 files changed · +1206 / -126
+  - > [English ->](https://github.com/seakee/CPA-Manager-Plus/blob/v1.12.3/docs/release-notes/v1.12.3-en.md)
+  - `v1.12.3` 聚焦 Codex reset credit 操作可靠性、模型价格同步反馈准确性和内嵌管理面板的重复加载效率。Accounts 会先用当前展示证据开放重置入口，再以实时配额校验决定是否消耗 reset credit；Model Prices 的同步计数只保留尚未保存价格的模型；Full Docker 与原生 Manager...
+  - Accounts 中显示有效 reset credit 的 Codex 凭证可以发起额度重置，包括仍可恢复的 disabled credential；runtime-only 凭证与缺少 `auth_index` 的不完整身份继续 fail closed。
+  - Codex 重置在消耗前执行实时配额校验，并按凭证阻止重复点击、并发事务和旧请求覆盖；消耗成功但最新配额刷新失败时会报告 partial success，避免把已完成操作误报为失败。
+  - Model Prices 同步结果会从 pending candidates 和 unmatched 中排除已保存价格的模型，使完成通知的计数与页面中实际可处理的条目一致，同时保留 matched、imported、skipped 和价格写入行为。
+
+
 ## 1.12.2-1
 
 - Sync upstream image [seakee/cpa-manager-plus:v1.12.2](https://hub.docker.com/r/seakee/cpa-manager-plus).
