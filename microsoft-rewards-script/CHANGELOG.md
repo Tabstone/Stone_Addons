@@ -1,5 +1,16 @@
 # Changelog
 
+## 4.3.1-1
+
+- Sync upstream image [ghcr.io/thenetsky/microsoft-rewards-script:4.3.1](https://github.com/TheNetsky/Microsoft-Rewards-Script/pkgs/container/microsoft-rewards-script).
+- Upstream project: [TheNetsky/Microsoft-Rewards-Script](https://github.com/TheNetsky/Microsoft-Rewards-Script).
+- Upstream release: [v4.3.1](https://github.com/TheNetsky/Microsoft-Rewards-Script/releases/tag/v4.3.1).
+- Upstream changelog summary:
+  - style: apply automated formatting by @github-actions[bot] in https://github.com/TheNetsky/Microsoft-Rewards-Script/pull/583
+  - style: apply automated formatting by @github-actions[bot] in https://github.com/TheNetsky/Microsoft-Rewards-Script/pull/584
+  - **Full Changelog**: https://github.com/TheNetsky/Microsoft-Rewards-Script/compare/v4.3.0...v4.3.1
+
+
 ## 4.3.0-1
 
 - Sync upstream image [ghcr.io/thenetsky/microsoft-rewards-script:4.3.0](https://github.com/TheNetsky/Microsoft-Rewards-Script/pkgs/container/microsoft-rewards-script).

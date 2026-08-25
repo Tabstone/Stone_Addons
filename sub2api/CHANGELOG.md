@@ -1,5 +1,19 @@
 # Changelog
 
+## 0.1.181-1
+
+- Sync upstream image [weishaw/sub2api:0.1.181](https://hub.docker.com/r/weishaw/sub2api).
+- Upstream project: [Wei-Shaw/sub2api](https://github.com/Wei-Shaw/sub2api).
+- Upstream release: [Sub2API 0.1.181](https://github.com/Wei-Shaw/sub2api/releases/tag/v0.1.181).
+- Upstream changelog summary:
+  - > AI API Gateway Platform - 将 AI 订阅配额分发和管理
+  - 提升 Gemini、Grok 和 OpenAI 接口兼容性，修复工具调用及长对话请求中的上游参数错误。
+  - Gemini：清理工具 Schema 中上游不支持的字段
+  - Grok：使用官方 CLI User-Agent 发起上游请求
+  - OpenAI Responses Lite：保留 additional_tools 请求所需的 parallel_tool_calls 参数
+  - OpenAI Responses：批量清理同类型输入项中不受支持的 status 字段，避免长对话重试失败
+
+
 ## 0.1.179-1
 
 - Sync upstream image [weishaw/sub2api:0.1.179](https://hub.docker.com/r/weishaw/sub2api).

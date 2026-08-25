@@ -1,5 +1,19 @@
 # Changelog
 
+## 1.12.4-1
+
+- Sync upstream image [seakee/cpa-manager-plus:v1.12.4](https://hub.docker.com/r/seakee/cpa-manager-plus).
+- Upstream project: [seakee/CPA-Manager-Plus](https://github.com/seakee/CPA-Manager-Plus).
+- Upstream release: [v1.12.4](https://github.com/seakee/CPA-Manager-Plus/releases/tag/v1.12.4).
+- Upstream changelog summary:
+  - > 23 commits · 36 files changed · +1789 / -192
+  - > [English ->](https://github.com/seakee/CPA-Manager-Plus/blob/v1.12.4/docs/release-notes/v1.12.4-en.md)
+  - v1.12.4 聚焦 Request Monitoring 账号身份隔离、Codex OAuth 重新登录连续性和 Manager Server SQLite WAL 读事务恢复。相同账号在不同 Provider 下不再被合并，同一 Provider 的多个凭证仍保持聚合；Accounts 刷新不会让成功的 Codex 重新登录跳转到新的 OAuth...
+  - Request Monitoring Account Overview 使用按 Provider 作用域划分的逻辑账号身份，相同显示账号在不同 Provider 下显示为独立行，同一 Provider 的多个凭证仍聚合为一个账号，并保留 Provider 作用域的筛选。
+  - Request Monitoring 使用不透明的账号行标识隔离聚焦、展开、认证、状态和配额刷新状态，避免显示相同的账号共享 UI 状态。
+  - Codex OAuth 重新登录在 Accounts 父级刷新和回调成功后的同步过程中保持当前会话，避免再次获取登录地址并保留最终同步结果。
+
+
 ## 1.12.3-1
 
 - Sync upstream image [seakee/cpa-manager-plus:v1.12.3](https://hub.docker.com/r/seakee/cpa-manager-plus).
