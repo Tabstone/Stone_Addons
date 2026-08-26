@@ -1,5 +1,19 @@
 # Changelog
 
+## 0.1.183-1
+
+- Sync upstream image [weishaw/sub2api:0.1.183](https://hub.docker.com/r/weishaw/sub2api).
+- Upstream project: [Wei-Shaw/sub2api](https://github.com/Wei-Shaw/sub2api).
+- Upstream release: [Sub2API 0.1.183](https://github.com/Wei-Shaw/sub2api/releases/tag/v0.1.183).
+- Upstream changelog summary:
+  - > AI API Gateway Platform - 将 AI 订阅配额分发和管理
+  - 本版本集中修复 OpenAI、Kimi、Antigravity、邮箱绑定及频道监控等场景的调度、会话与兼容性问题，提升请求成功率和账号状态判断准确性。
+  - OpenAI OAuth：识别 5 小时/7 天配额耗尽的 429，并按重置时间暂停账号；普通瞬时 429 继续重试。
+  - Kimi：并发限制 403 改为临时冷却并保留故障转移，避免误将账号永久禁用。
+  - OpenAI：支持 Codex `session-id` 请求头，保持重连请求的粘性会话；容量溢出时不迁移持久绑定。
+  - OpenAI Responses：修正 custom tool/tool search 调用恢复后的项目 ID 前缀，避免后续请求因 ID 校验失败。
+
+
 ## 0.1.181-1
 
 - Sync upstream image [weishaw/sub2api:0.1.181](https://hub.docker.com/r/weishaw/sub2api).
