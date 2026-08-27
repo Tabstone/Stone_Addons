@@ -1,5 +1,19 @@
 # Changelog
 
+## 1.12.5-1
+
+- Sync upstream image [seakee/cpa-manager-plus:v1.12.5](https://hub.docker.com/r/seakee/cpa-manager-plus).
+- Upstream project: [seakee/CPA-Manager-Plus](https://github.com/seakee/CPA-Manager-Plus).
+- Upstream release: [v1.12.5](https://github.com/seakee/CPA-Manager-Plus/releases/tag/v1.12.5).
+- Upstream changelog summary:
+  - > 37 commits · 81 files changed · +5435 / -1020
+  - > [English ->](https://github.com/seakee/CPA-Manager-Plus/blob/v1.12.5/docs/release-notes/v1.12.5-en.md)
+  - v1.12.5 聚焦 Codex 账号身份连续性、OAuth 重新登录同步和 Request Monitoring 刷新一致性。Manager Server 现在只使用明确的 Codex account_id 证据作为稳定账号身份，历史 usage_events 保持不可变并从原始事件重建派生数据；Accounts...
+  - Codex 账号历史现在将明确的 account_id 快照作为稳定身份，不再把通用 project_id 或显示字段当作身份；重新登录后历史保持连续，未带明确 ID 的历史事件继续使用精确的文件名/auth_index 兼容回退。 (`Codex identity / usage history`)
+  - Accounts 中的 Codex OAuth 重新登录会在父级刷新和回调同步期间保持原会话，并对凭证可见性执行有界重试。 (`Accounts / OAuth`)
+  - Request Monitoring 区分凭证变更的 requested 与 covered revision，并按连接作用域和请求代次保护元数据提交；刷新期间出现的新变更会触发后续刷新，避免显示过期状态。 (`Monitoring`)
+
+
 ## 1.12.4-1
 
 - Sync upstream image [seakee/cpa-manager-plus:v1.12.4](https://hub.docker.com/r/seakee/cpa-manager-plus).
