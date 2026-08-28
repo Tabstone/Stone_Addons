@@ -1,5 +1,19 @@
 # Changelog
 
+## 1.12.6-1
+
+- Sync upstream image [seakee/cpa-manager-plus:v1.12.6](https://hub.docker.com/r/seakee/cpa-manager-plus).
+- Upstream project: [seakee/CPA-Manager-Plus](https://github.com/seakee/CPA-Manager-Plus).
+- Upstream release: [v1.12.6](https://github.com/seakee/CPA-Manager-Plus/releases/tag/v1.12.6).
+- Upstream changelog summary:
+  - > 45 commits · 113 files changed · +19022 / -1267
+  - > [English ->](https://github.com/seakee/CPA-Manager-Plus/blob/v1.12.6/docs/release-notes/v1.12.6-en.md)
+  - v1.12.6 聚焦 CPA 连接迁移与回滚安全、跨 Provider 的计划与配额展示、Codex 历史身份连续性，以及观测间隔后的配额窗口恢复。Manager Server 现在将 CPA Management Key 保持在服务端加密存储中，不再返回浏览器；安装升级保留可恢复状态；Accounts 与 Request Monitoring...
+  - Manager Server 配置接口现在只返回 CPA Management Key 是否已配置；已保存的密钥留在服务端加密存储中，setup 与轮换均使用只写入输入。
+  - Docker 与原生安装器会将旧 CPA URL/Key 输入导入加密 SQLite，并在健康检查、管理员鉴权和 CPA 管理接口验证通过后才移除旧运行配置；外部密钥文件不会被删除。
+  - 迁移快照与恢复将 `usage.sqlite`、WAL/SHM/journal 伴随文件和 `data.key` 视为一个完整文件集；取消或失败时保留安全回滚路径。
+
+
 ## 1.12.5-1
 
 - Sync upstream image [seakee/cpa-manager-plus:v1.12.5](https://hub.docker.com/r/seakee/cpa-manager-plus).
