@@ -1,5 +1,19 @@
 # Changelog
 
+## 7.2.146-1
+
+- Sync upstream image [eceasy/cli-proxy-api:v7.2.146](https://hub.docker.com/r/eceasy/cli-proxy-api).
+- Upstream project: [router-for-me/CLIProxyAPI](https://github.com/router-for-me/CLIProxyAPI).
+- Upstream release: [v7.2.146](https://github.com/router-for-me/CLIProxyAPI/releases/tag/v7.2.146).
+- Upstream changelog summary:
+  - `CLIProxyAPI_<version>_linux_<arch>.tar.gz` is the default Linux build. It supports dynamic library plugins and is built against a GLIBC 2.17 baseline.
+  - `CLIProxyAPI_<version>_linux_<arch>_no-plugin.tar.gz` is the portable Linux build for musl-based or older systems such as OpenWrt. It does not support dynamic library plugins.
+  - `CLIProxyAPI_<version>_freebsd_aarch64_no-plugin.tar.gz` is the FreeBSD arm64 build. It is built without CGO and does not support dynamic library plugins.
+  - Merge pull request #5273 from esokullu/codex/add-webbrain-project (f0de1d00)
+  - fix(claude): emit message_delta when openai streaming finish reason is omitted (677dbe1d)
+  - fix(claude): fallback to array index when tool call index is omitted (be1763e5)
+
+
 ## 7.2.145-1
 
 - Sync upstream image [eceasy/cli-proxy-api:v7.2.145](https://hub.docker.com/r/eceasy/cli-proxy-api).
