@@ -1,5 +1,19 @@
 # Changelog
 
+## 0.1.184-1
+
+- Sync upstream image [weishaw/sub2api:0.1.184](https://hub.docker.com/r/weishaw/sub2api).
+- Upstream project: [Wei-Shaw/sub2api](https://github.com/Wei-Shaw/sub2api).
+- Upstream release: [Sub2API 0.1.184](https://github.com/Wei-Shaw/sub2api/releases/tag/v0.1.184).
+- Upstream changelog summary:
+  - > AI API Gateway Platform - 将 AI 订阅配额分发和管理
+  - 完善 Codex 路由模型目录与能力同步，新增多项账号、用量统计及网关稳定性改进。
+  - Codex 路由模型目录：支持按实际路由展示模型及能力，并支持精确账号模型别名。
+  - 用量记录：新增原生 compaction 请求统计，并展示映射前的推理强度。
+  - 公共分组访问控制：管理员可限制用户可访问的公共分组。
+  - 新增智谱团队 GLM Coding Plan 用量查询。
+
+
 ## 0.1.183-1
 
 - Sync upstream image [weishaw/sub2api:0.1.183](https://hub.docker.com/r/weishaw/sub2api).

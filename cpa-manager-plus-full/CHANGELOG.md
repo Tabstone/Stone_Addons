@@ -1,5 +1,19 @@
 # Changelog
 
+## 1.12.7-1
+
+- Sync upstream image [seakee/cpa-manager-plus:v1.12.7](https://hub.docker.com/r/seakee/cpa-manager-plus).
+- Upstream project: [seakee/CPA-Manager-Plus](https://github.com/seakee/CPA-Manager-Plus).
+- Upstream release: [v1.12.7](https://github.com/seakee/CPA-Manager-Plus/releases/tag/v1.12.7).
+- Upstream changelog summary:
+  - > 64 commits · 81 files changed · +7899 / -429
+  - > [English ->](https://github.com/seakee/CPA-Manager-Plus/blob/v1.12.7/docs/release-notes/v1.12.7-en.md)
+  - v1.12.7 聚焦配额生命周期证据的稳定性、API Key 管理的即时持久化、Claude 请求指纹配置，以及 Usage Analytics、Request Monitoring 和 Dashboard...
+  - Request Monitoring 新增“昨天”快捷范围，按本地完整日计算上一日的监控数据。
+  - Claude provider 编辑器新增 Request Fingerprint 配置，可选择 claude-code-cli 并核验 CPA 实际保存结果。
+  - API Key 在弹窗确认后立即通过 CPA 管理接口创建、替换或删除，其他 Visual 配置草稿保持不变。
+
+
 ## 1.12.6-1
 
 - Sync upstream image [seakee/cpa-manager-plus:v1.12.6](https://hub.docker.com/r/seakee/cpa-manager-plus).

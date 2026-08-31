@@ -1,5 +1,12 @@
 # Changelog
 
+## 2.0.3-1
+
+- Sync upstream image [ghcr.io/hjdhnx/drpy-node:2.0.3](https://github.com/users/hjdhnx/packages/container/package/drpy-node).
+- Upstream project: [hjdhnx/drpy-node](https://github.com/hjdhnx/drpy-node).
+- Upstream release notes were not published or could not be resolved for this image tag.
+
+
 ## 2.0.2-1
 
 - Sync upstream image [ghcr.io/hjdhnx/drpy-node:2.0.2](https://github.com/users/hjdhnx/packages/container/package/drpy-node).
