@@ -1,5 +1,19 @@
 # Changelog
 
+## 0.1.185-1
+
+- Sync upstream image [weishaw/sub2api:0.1.185](https://hub.docker.com/r/weishaw/sub2api).
+- Upstream project: [Wei-Shaw/sub2api](https://github.com/Wei-Shaw/sub2api).
+- Upstream release: [Sub2API 0.1.185](https://github.com/Wei-Shaw/sub2api/releases/tag/v0.1.185).
+- Upstream changelog summary:
+  - > AI API Gateway Platform - 将 AI 订阅配额分发和管理
+  - 升级价格目录与长上下文计费体系，并增强 Codex/OpenAI 网关兼容性和连接稳定性。
+  - 价格目录支持通过 `pricing.override_file` 使用 JSON 补丁覆盖官方价格数据。
+  - 长上下文阶梯计价改为由价格目录驱动，支持不同模型和渠道的动态定价策略。
+  - Codex 快速模型支持展示 priority service tier。
+  - 优化账号统计成本计算，统一应用模型定价策略及 DeepSeek 峰谷价格。
+
+
 ## 0.1.184-1
 
 - Sync upstream image [weishaw/sub2api:0.1.184](https://hub.docker.com/r/weishaw/sub2api).
