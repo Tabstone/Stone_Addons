@@ -1,5 +1,19 @@
 # Changelog
 
+## 0.2.0-1
+
+- Sync upstream image [weishaw/sub2api:0.2.0](https://hub.docker.com/r/weishaw/sub2api).
+- Upstream project: [Wei-Shaw/sub2api](https://github.com/Wei-Shaw/sub2api).
+- Upstream release: [Sub2API 0.2.0](https://github.com/Wei-Shaw/sub2api/releases/tag/v0.2.0).
+- Upstream changelog summary:
+  - > AI API Gateway Platform - 将 AI 订阅配额分发和管理
+  - 新增 OpenAI Fast 分组策略、按模型配置 reasoning effort，以及 Kimi 原生 Responses API 转发支持。
+  - 分组支持配置 OpenAI Fast，并支持将免费 Fast 请求按 Standard 价格计费
+  - 支持按模型设置 OpenAI reasoning effort 映射，并可配置超限时拒绝或降级
+  - 支持转发 Kimi 原生 OpenAI Responses API
+  - 支持 Claude Fable 5.1
+
+
 ## 0.1.185-1
 
 - Sync upstream image [weishaw/sub2api:0.1.185](https://hub.docker.com/r/weishaw/sub2api).
