@@ -1,5 +1,19 @@
 # Changelog
 
+## 1.12.8-1
+
+- Sync upstream image [seakee/cpa-manager-plus:v1.12.8](https://hub.docker.com/r/seakee/cpa-manager-plus).
+- Upstream project: [seakee/CPA-Manager-Plus](https://github.com/seakee/CPA-Manager-Plus).
+- Upstream release: [v1.12.8](https://github.com/seakee/CPA-Manager-Plus/releases/tag/v1.12.8).
+- Upstream changelog summary:
+  - > 22 commits · 30 files changed · +2292 / -575
+  - > [English ->](https://github.com/seakee/CPA-Manager-Plus/blob/v1.12.8/docs/release-notes/v1.12.8-en.md)
+  - v1.12.8 聚焦 Accounts 配额信息的可发现性与历史用量展示，并修复 API Key 分析筛选、OAuth 凭证同步和配额生命周期边界问题。用户可以从凭证列表直接进入完整额度详情，查看更紧凑且仍可追溯到精确值的历史数据；合成 API Key 分组不再污染按 Key 分析操作；接近重置时间或新增 OAuth 凭证时，现有配额和周期归属保持正确。
+  - Accounts 凭证列表中的历史用量和配额区域现在可直接打开对应凭证的 Quota 详情页；列表保留标准时间窗口，模型级和其他额度项仍在详情中完整展示。
+  - Accounts 历史用量使用统一的紧凑数字和美元格式，悬停与辅助技术仍可获取完整精确值，历史网格也可按内容伸缩。
+  - Usage Analytics 保留合成 fallback API Key 分组在汇总中的完整贡献，同时将合成 ID 排除在客户端 Key 筛选、趋势、热力图和下钻操作之外。
+
+
 ## 1.12.7-1
 
 - Sync upstream image [seakee/cpa-manager-plus:v1.12.7](https://hub.docker.com/r/seakee/cpa-manager-plus).
