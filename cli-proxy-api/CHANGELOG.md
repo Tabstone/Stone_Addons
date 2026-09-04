@@ -1,5 +1,19 @@
 # Changelog
 
+## 7.2.149-1
+
+- Sync upstream image [eceasy/cli-proxy-api:v7.2.149](https://hub.docker.com/r/eceasy/cli-proxy-api).
+- Upstream project: [router-for-me/CLIProxyAPI](https://github.com/router-for-me/CLIProxyAPI).
+- Upstream release: [v7.2.149](https://github.com/router-for-me/CLIProxyAPI/releases/tag/v7.2.149).
+- Upstream changelog summary:
+  - `CLIProxyAPI_<version>_linux_<arch>.tar.gz` is the default Linux build. It supports dynamic library plugins and is built against a GLIBC 2.17 baseline.
+  - `CLIProxyAPI_<version>_linux_<arch>_no-plugin.tar.gz` is the portable Linux build for musl-based or older systems such as OpenWrt. It does not support dynamic library plugins.
+  - `CLIProxyAPI_<version>_freebsd_aarch64_no-plugin.tar.gz` is the FreeBSD arm64 build. It is built without CGO and does not support dynamic library plugins.
+  - fix(auth): prevent individual model quota cooldowns from blocking credential (09471dd9)
+  - feat(session): derive distinct branch session ID, parent lineage on Merkle LCP forks, and enhance Codex fork/subagent affinity (#5418) (#5454) (e899f0e5)
+  - chore: remove sponsorship images for Claude API and Code0 from README files (ebbce50e)
+
+
 ## 7.2.147-1
 
 - Sync upstream image [eceasy/cli-proxy-api:v7.2.147](https://hub.docker.com/r/eceasy/cli-proxy-api).
