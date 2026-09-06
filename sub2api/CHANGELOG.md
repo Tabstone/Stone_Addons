@@ -1,5 +1,19 @@
 # Changelog
 
+## 0.2.1-1
+
+- Sync upstream image [weishaw/sub2api:0.2.1](https://hub.docker.com/r/weishaw/sub2api).
+- Upstream project: [Wei-Shaw/sub2api](https://github.com/Wei-Shaw/sub2api).
+- Upstream release: [Sub2API 0.2.1](https://github.com/Wei-Shaw/sub2api/releases/tag/v0.2.1).
+- Upstream changelog summary:
+  - > AI API Gateway Platform - 将 AI 订阅配额分发和管理
+  - 新增 GPT-6 Astra、Codex Ultrafast 服务层级及多项网关能力，提升 OpenAI、Claude、Gemini 和图片生成场景的兼容性与稳定性。
+  - OpenAI：支持 GPT-6 Astra 模型及能力同步、消息提示缓存
+  - Codex：支持 Ultrafast 服务层级和固定账号模型清单
+  - Claude：支持配置对外展示的 CLI 版本
+  - 图片生成：支持将上游图片 URL 下载并回填为 `b64_json`
+
+
 ## 0.2.0-1
 
 - Sync upstream image [weishaw/sub2api:0.2.0](https://hub.docker.com/r/weishaw/sub2api).
