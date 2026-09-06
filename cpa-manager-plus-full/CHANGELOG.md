@@ -1,5 +1,19 @@
 # Changelog
 
+## 1.12.9-1
+
+- Sync upstream image [seakee/cpa-manager-plus:v1.12.9](https://hub.docker.com/r/seakee/cpa-manager-plus).
+- Upstream project: [seakee/CPA-Manager-Plus](https://github.com/seakee/CPA-Manager-Plus).
+- Upstream release: [v1.12.9](https://github.com/seakee/CPA-Manager-Plus/releases/tag/v1.12.9).
+- Upstream changelog summary:
+  - > 61 commits · 144 files changed · +21457 / -1691
+  - > [English ->](https://github.com/seakee/CPA-Manager-Plus/blob/v1.12.9/docs/release-notes/v1.12.9-en.md)
+  - v1.12.9 聚焦 Codex 多成员身份与配额历史的正确归属，修复 OAuth 重认证后的账户健康状态，并完善 Accounts 配额生命周期、预测和回退展示；同时为 OpenAI Compatible Provider 增加按模型配置 Thinking Levels 的能力。
+  - OpenAI Compatible Provider 模型编辑器支持按模型配置 Thinking Levels，可保持未配置状态并保留未知或未来配置字段。（Web）
+  - Codex 用量、成本、配额和凭证操作现在按 Workspace 与强成员证据隔离，同一成员重认证保持历史连续；成员证据缺失或冲突时不跨账户合并。（Manager Server / Web）
+  - 确认完成 Codex OAuth 重认证后，重认证前的 401 证据不再继续将账户标记为需要重新登录；新的认证失败仍可被识别。（Web）
+
+
 ## 1.12.8-1
 
 - Sync upstream image [seakee/cpa-manager-plus:v1.12.8](https://hub.docker.com/r/seakee/cpa-manager-plus).
