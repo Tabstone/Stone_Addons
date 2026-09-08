@@ -1,5 +1,19 @@
 # Changelog
 
+## 0.2.3-1
+
+- Sync upstream image [weishaw/sub2api:0.2.3](https://hub.docker.com/r/weishaw/sub2api).
+- Upstream project: [Wei-Shaw/sub2api](https://github.com/Wei-Shaw/sub2api).
+- Upstream release: [Sub2API 0.2.3](https://github.com/Wei-Shaw/sub2api/releases/tag/v0.2.3).
+- Upstream changelog summary:
+  - > AI API Gateway Platform - 将 AI 订阅配额分发和管理
+  - 修复升级后 groups.model_allowlist 列缺失导致密钥/订阅页面 500 的问题，并补齐 Ollama Cloud 下 DeepSeek 模型在 Messages / Responses 协议的输出上限与鉴权处理。
+  - 修复数据库回滚旧结构后升级不自愈，导致「API 密钥」「我的订阅」「管理端订阅列表」等页面加载失败的问题（新增可重放收敛迁移 236）
+  - 修复挂载在 Ollama Cloud 下的 DeepSeek 模型请求在 Anthropic Messages 与原生 /v1/responses 路径未压制输出上限，被上游以 400 拒绝的问题
+  - 修复 Ollama Cloud base URL 带尾部斜杠时输出上限压制失效的问题
+  - 修复 Anthropic 兼容入口指向 Ollama Cloud 时未自动使用 Bearer 鉴权导致认证失败的问题
+
+
 ## 0.2.1-1
 
 - Sync upstream image [weishaw/sub2api:0.2.1](https://hub.docker.com/r/weishaw/sub2api).

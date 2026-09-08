@@ -1,5 +1,19 @@
 # Changelog
 
+## 1.12.10-1
+
+- Sync upstream image [seakee/cpa-manager-plus:v1.12.10](https://hub.docker.com/r/seakee/cpa-manager-plus).
+- Upstream project: [seakee/CPA-Manager-Plus](https://github.com/seakee/CPA-Manager-Plus).
+- Upstream release: [v1.12.10](https://github.com/seakee/CPA-Manager-Plus/releases/tag/v1.12.10).
+- Upstream changelog summary:
+  - > 30 commits · 44 files changed · +3284 / -484
+  - > [English ->](https://github.com/seakee/CPA-Manager-Plus/blob/v1.12.10/docs/release-notes/v1.12.10-en.md)
+  - v1.12.10 聚焦凭证管理与配额展示的正确性和操作反馈，改善多凭证额度刷新体验，修正 xAI 周额度与月度账期边界，并优化大型 Codex 历史库的旧身份验证读取性能。
+  - Credential Management 新增 `Enabled` 状态筛选，可单独查看配置上处于启用状态的凭证；`Enabled` 与同时要求健康和额度证据的 `Available` 保持明确区分。（Web）
+  - 不同凭证的额度刷新现在可以并行执行，同一凭证的重复刷新仍会去重；Codex reset-credit 过期记录同时显示剩余天数。（Web）
+  - 凭证详情中的操作通知现在始终显示在 Drawer / Modal 之上；单凭证额度刷新保留具体 Provider 错误，批量刷新提供清晰汇总，用户主动刷新模型时也会得到最终成功或警告结果。（Web）
+
+
 ## 1.12.9-1
 
 - Sync upstream image [seakee/cpa-manager-plus:v1.12.9](https://hub.docker.com/r/seakee/cpa-manager-plus).
