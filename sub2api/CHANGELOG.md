@@ -1,5 +1,19 @@
 # Changelog
 
+## 0.2.4-1
+
+- Sync upstream image [weishaw/sub2api:0.2.4](https://hub.docker.com/r/weishaw/sub2api).
+- Upstream project: [Wei-Shaw/sub2api](https://github.com/Wei-Shaw/sub2api).
+- Upstream release: [Sub2API 0.2.4](https://github.com/Wei-Shaw/sub2api/releases/tag/v0.2.4).
+- Upstream changelog summary:
+  - > AI API Gateway Platform - 将 AI 订阅配额分发和管理
+  - 新增 MiniMax 平台接入，并为长时间生成的流式请求加入 HTTP/2 PING 保活，改善长任务断流问题。
+  - MiniMax 平台支持：新增账号类型、分组调度、渠道监控与额度监控完整接线
+  - OpenAI 生图支持 Image 2.5 模型
+  - Grok 媒体能力资格控制：可在账号维度配置媒体调用资格
+  - 长流保活：为长时间生成的上游流式请求启用 HTTP/2 PING 保活
+
+
 ## 0.2.3-1
 
 - Sync upstream image [weishaw/sub2api:0.2.3](https://hub.docker.com/r/weishaw/sub2api).
