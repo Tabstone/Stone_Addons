@@ -1,5 +1,14 @@
 # Changelog
 
+## 1.273.1-1
+
+- Sync upstream image [ghcr.io/metacubex/metacubexd:v1.273.1](https://github.com/MetaCubeX/metacubexd/pkgs/container/metacubexd).
+- Upstream project: [MetaCubeX/metacubexd](https://github.com/MetaCubeX/metacubexd).
+- Upstream release: [v1.273.1](https://github.com/MetaCubeX/metacubexd/releases/tag/v1.273.1).
+- Upstream changelog summary:
+  - **desktop:** repair native TUN helper startup and recovery ([81b9f81](https://github.com/MetaCubeX/metacubexd/commit/81b9f81d2664a03cb74fb92f33a5f5cdb3dc2255)), closes...
+
+
 ## 1.273.0-1
 
 - Sync upstream image [ghcr.io/metacubex/metacubexd:v1.273.0](https://github.com/MetaCubeX/metacubexd/pkgs/container/metacubexd).
