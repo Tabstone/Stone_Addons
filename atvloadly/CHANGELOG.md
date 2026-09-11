@@ -1,5 +1,14 @@
 # Changelog
 
+## 0.4.10-1
+
+- Sync upstream image [ghcr.io/bitxeno/atvloadly:v0.4.10](https://github.com/bitxeno/atvloadly/pkgs/container/atvloadly).
+- Upstream project: [bitxeno/atvloadly](https://github.com/bitxeno/atvloadly).
+- Upstream release: [v0.4.10 - tvOS 17.4+](https://github.com/bitxeno/atvloadly/releases/tag/v0.4.10).
+- Upstream changelog summary:
+  - Bump Impactor version to fix GSA 503 &nbsp;-&nbsp; by @bitxeno in https://github.com/bitxeno/atvloadly/issues/131...
+
+
 ## 0.4.8-1
 
 - Sync upstream image [ghcr.io/bitxeno/atvloadly:v0.4.8](https://github.com/bitxeno/atvloadly/pkgs/container/atvloadly).
