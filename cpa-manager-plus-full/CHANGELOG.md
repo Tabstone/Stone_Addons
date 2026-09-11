@@ -1,5 +1,19 @@
 # Changelog
 
+## 1.12.11-1
+
+- Sync upstream image [seakee/cpa-manager-plus:v1.12.11](https://hub.docker.com/r/seakee/cpa-manager-plus).
+- Upstream project: [seakee/CPA-Manager-Plus](https://github.com/seakee/CPA-Manager-Plus).
+- Upstream release: [v1.12.11](https://github.com/seakee/CPA-Manager-Plus/releases/tag/v1.12.11).
+- Upstream changelog summary:
+  - > 18 commits · 61 files changed · +6346 / -199
+  - > [English ->](https://github.com/seakee/CPA-Manager-Plus/blob/v1.12.11/docs/release-notes/v1.12.11-en.md)
+  - v1.12.11 建立 CPAMP 自身的可信版本更新检查与发布通道体系，并修复 Codex reset credit 成功消费后 CPA 仍保留旧路由冷却的问题。本版本只提供更新发现、通知与升级指引，不会自动安装或替换现有部署。
+  - 新增 Manager Server 版本更新检查，支持 `auto`、`stable`、`rc`、`beta` 通道；更新状态保存在现有 settings 中，并提供后台周期检查、手动检查和明确的缓存/失败状态。（Manager Server）
+  - 新增「系统信息 → 软件更新」页面与 Dashboard 更新入口，可展示目标版本、版本摘要、检查状态、迁移/兼容性提示，并针对 Docker 与原生部署提供精确版本升级指引。（Web）
+  - 每个 Manager 实例对同一精确版本最多主动提示一次更新；查看、关闭、刷新或重启不会重复弹出，同一版本仍可从版本卡片重新进入更新页。（Web / Manager Server）
+
+
 ## 1.12.10-1
 
 - Sync upstream image [seakee/cpa-manager-plus:v1.12.10](https://hub.docker.com/r/seakee/cpa-manager-plus).
