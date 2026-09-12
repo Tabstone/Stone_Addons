@@ -1,5 +1,19 @@
 # Changelog
 
+## 1.12.12-1
+
+- Sync upstream image [seakee/cpa-manager-plus:v1.12.12](https://hub.docker.com/r/seakee/cpa-manager-plus).
+- Upstream project: [seakee/CPA-Manager-Plus](https://github.com/seakee/CPA-Manager-Plus).
+- Upstream release: [v1.12.12](https://github.com/seakee/CPA-Manager-Plus/releases/tag/v1.12.12).
+- Upstream changelog summary:
+  - > 30 commits · 47 files changed · +10596 / -1528
+  - > [English ->](https://github.com/seakee/CPA-Manager-Plus/blob/v1.12.12/docs/release-notes/v1.12.12-en.md)
+  - v1.12.12 主要完善凭证列表的响应式展示和额度可读性。表格与卡片模式现在能更完整地呈现额度窗口、历史用量、订阅与账户信息，同时收紧 xAI 未确认额度的展示规则。本版本为前端展示与选择逻辑更新，不包含数据库 schema、凭证存储或 usage 原始数据迁移。
+  - 重做凭证列表的响应式布局，在移动端、笔记本和桌面宽度下改善列表与卡片模式；提供更清晰的 Provider、套餐、订阅、重置额度、优先级、备注与额度信息，并保留现有账户操作。（Web）
+  - 表格模式最多展示四个额度窗口，并按窗口数量自适应布局；单窗口充分利用额度列，三窗口使用独立第三行，四窗口采用 2×2 排列，同时为「可用状态」与「最近请求」保留更稳定的可读空间。（Web）
+  - 卡片与表格恢复四项历史用量指标，并使用紧凑值展示与完整可访问值，减少信息缺失和窄屏溢出。（Web）
+
+
 ## 1.12.11-1
 
 - Sync upstream image [seakee/cpa-manager-plus:v1.12.11](https://hub.docker.com/r/seakee/cpa-manager-plus).
