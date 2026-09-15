@@ -1,5 +1,19 @@
 # Changelog
 
+## 1.12.13-1
+
+- Sync upstream image [seakee/cpa-manager-plus:1.12.13](https://hub.docker.com/r/seakee/cpa-manager-plus).
+- Upstream project: [seakee/CPA-Manager-Plus](https://github.com/seakee/CPA-Manager-Plus).
+- Upstream release: [v1.12.13](https://github.com/seakee/CPA-Manager-Plus/releases/tag/v1.12.13).
+- Upstream changelog summary:
+  - > 35 commits · 76 files changed · +5614 / -381
+  - > [English ->](https://github.com/seakee/CPA-Manager-Plus/blob/v1.12.13/docs/release-notes/v1.12.13-en.md)
+  - v1.12.13 是一个以可靠性、正确性与数据安全为重点的维护版本。凭证列表修复了 xAI 实际周额度展示和带前缀模型禁用问题，并新增 Codex 套餐剩余时间排序；Manager Server 修复手动模型价格被同步覆盖的问题，同时在 UsageEvent 持久化边界增加凭证清理，并保持旧版本 JSONL 的导入兼容。
+  - 本版本不包含数据库 schema 迁移，不会在启动或升级时扫描、重写历史 `usage_events`，也不要求执行离线维护。
+  - 凭证列表新增「套餐剩余时间」排序。付费 Codex 账号可按到期时间排序，Free 与未知套餐保持在有效付费套餐之后；默认排序行为不变。（Web）
+  - xAI 在上游未确认 `planType` 时，只要实际返回 weekly credit 或 product usage，仍会展示这些已观测额度；未确认套餐的 billing limit / PAYG 继续保持隐藏，且这些未确认额度不会影响账户健康状态或自动禁用判断。（Web）
+
+
 ## 1.12.12-1
 
 - Sync upstream image [seakee/cpa-manager-plus:v1.12.12](https://hub.docker.com/r/seakee/cpa-manager-plus).
