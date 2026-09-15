@@ -1,5 +1,19 @@
 # Changelog
 
+## 1.19.31-1
+
+- Sync upstream image [metacubex/mihomo:v1.19.31](https://hub.docker.com/r/metacubex/mihomo).
+- Upstream project: [MetaCubeX/mihomo](https://github.com/MetaCubeX/mihomo).
+- Upstream release: [v1.19.31](https://github.com/MetaCubeX/mihomo/releases/tag/v1.19.31).
+- Upstream changelog summary:
+  - dca26db0 feat: add EasyTier outbound (#3194) by @MiaM1ku
+  - ab405bad feat: support `stack: mips` in tun configuration by @wwqgtxx
+  - 390870c7 feat: support `identity-secret` for ZeroTier by @wwqgtxx
+  - 0159cf47 fix: restore hysteria v1 udp handling (#3178) by @Chenx Dust
+  - 04366507 fix: close connection after error handling in doq by @wwqgtxx
+  - 06b2c5b8 fix: close connection after error handling in mkcp outbound by @wwqgtxx
+
+
 ## 1.19.30-1
 
 - Sync upstream image [metacubex/mihomo:v1.19.30](https://hub.docker.com/r/metacubex/mihomo).
