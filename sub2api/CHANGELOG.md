@@ -1,5 +1,19 @@
 # Changelog
 
+## 0.2.5-1
+
+- Sync upstream image [weishaw/sub2api:0.2.5](https://hub.docker.com/r/weishaw/sub2api).
+- Upstream project: [Wei-Shaw/sub2api](https://github.com/Wei-Shaw/sub2api).
+- Upstream release: [Sub2API 0.2.5](https://github.com/Wei-Shaw/sub2api/releases/tag/v0.2.5).
+- Upstream changelog summary:
+  - > AI API Gateway Platform - 将 AI 订阅配额分发和管理
+  - 新增 OpenCode 平台接入（Zen / GO 双账号类型）与「站点类型」三态开关，可按需关闭订阅或充值入口；OpenAI WebSocket 连接池在容量、抢占与作用域隔离上做了系统性修正。
+  - OpenCode 平台：支持 Zen、GO 两种账号类型，按模型在 Chat Completions / Responses / Anthropic Messages 三种上游协议间路由，并派生 X-OpenCode-Session 以命中提示词缓存
+  - 站点类型开关：后台功能开关页新增「充值 & 订阅 / 仅充值 / 仅订阅」三态选择，关闭订阅后用户端自动收起所有订阅入口、页签与文案
+  - Antigravity 新增 Gemini 3.7 Flash、3.8 Flash 模型支持
+  - 订阅管理支持批量操作
+
+
 ## 0.2.4-1
 
 - Sync upstream image [weishaw/sub2api:0.2.4](https://hub.docker.com/r/weishaw/sub2api).
