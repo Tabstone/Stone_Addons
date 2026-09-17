@@ -1,5 +1,19 @@
 # Changelog
 
+## 1.12.14-1
+
+- Sync upstream image [seakee/cpa-manager-plus:v1.12.14](https://hub.docker.com/r/seakee/cpa-manager-plus).
+- Upstream project: [seakee/CPA-Manager-Plus](https://github.com/seakee/CPA-Manager-Plus).
+- Upstream release: [v1.12.14](https://github.com/seakee/CPA-Manager-Plus/releases/tag/v1.12.14).
+- Upstream changelog summary:
+  - > 35 commits since v1.12.13
+  - > [English ->](https://github.com/seakee/CPA-Manager-Plus/blob/v1.12.14/docs/release-notes/v1.12.14-en.md)
+  - v1.12.14 是一个以模型价格管理与监控可读性为重点的小型维护版本。Manager Server 现在可以在模型首次产生用量之前发现 CPA 当前暴露的运行时模型，并在价格同步时提前纳入；Web 会在 Dashboard、Request Monitoring 与 Usage Analytics 中提示尚未配置价格的新模型，并提供直达缺失价格筛选的入口。
+  - 模型价格手动编辑器现在支持保留并编辑 context threshold 与 service tier 特殊价格规则，包括继承字段和显式零价格，不再因为修改基础价格而清空同步得到的高级规则。同时，本版本修复了监控中的 opaque hash / 未知 provider 来源展示和窄屏自动刷新控件布局，并为 Manager Server 增加 `-v`...
+  - 本版本不包含数据库 schema 迁移，不需要离线维护，也没有新增必填配置项。
+  - 新增 Manager Server `-v` / `--version`。查询版本时会直接输出并退出，不初始化配置、数据库或网络连接。（Manager Server）
+
+
 ## 1.12.13-1
 
 - Sync upstream image [seakee/cpa-manager-plus:1.12.13](https://hub.docker.com/r/seakee/cpa-manager-plus).
