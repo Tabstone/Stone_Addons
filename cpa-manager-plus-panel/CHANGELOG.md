@@ -1,5 +1,19 @@
 # Changelog
 
+## 1.13.0-1
+
+- Sync upstream image [seakee/cpa-manager-plus:v1.13.0](https://hub.docker.com/r/seakee/cpa-manager-plus).
+- Upstream project: [seakee/CPA-Manager-Plus](https://github.com/seakee/CPA-Manager-Plus).
+- Upstream release: [v1.13.0](https://github.com/seakee/CPA-Manager-Plus/releases/tag/v1.13.0).
+- Upstream changelog summary:
+  - > 30 commits since v1.12.14
+  - > [English ->](https://github.com/seakee/CPA-Manager-Plus/blob/v1.13.0/docs/release-notes/v1.13.0-en.md)
+  - v1.13.0 是一个以 Devin Provider 支持和升级可靠性为重点的功能版本。CPAMP 现在可以识别 Devin 凭证与模型，在 OAuth 页面完成 Devin 授权，并在账号详情中展示 Daily / Weekly 额度窗口、重置时间与订阅计划信息。Visual Config 同时加入 `devin.sensitive-words`...
+  - Devin 的请求执行与认证能力继续由 CPA 提供，CPAMP 只负责管理、展示和调用现有 Management API。为保证完整的 Devin OAuth 回调流程，本版本要求 CPA v7.3.2 或更高版本。
+  - 本版本还修复了浏览器版本或 User-Agent 变化后已记住的 CPAMP Admin Key 无法恢复的问题，并增强 Native 安装器对旧版 `<install_dir>/data` 数据布局和历史 `bash install-cpamp.sh update`...
+  - 本版本不包含数据库 schema 迁移，不需要离线维护，也没有新增 CPAMP 必填配置项。
+
+
 ## 1.12.14-1
 
 - Sync upstream image [seakee/cpa-manager-plus:v1.12.14](https://hub.docker.com/r/seakee/cpa-manager-plus).
