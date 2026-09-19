@@ -1,5 +1,19 @@
 # Changelog
 
+## 0.2.7-1
+
+- Sync upstream image [weishaw/sub2api:0.2.7](https://hub.docker.com/r/weishaw/sub2api).
+- Upstream project: [Wei-Shaw/sub2api](https://github.com/Wei-Shaw/sub2api).
+- Upstream release: [Sub2API 0.2.7](https://github.com/Wei-Shaw/sub2api/releases/tag/v0.2.7).
+- Upstream changelog summary:
+  - > AI API Gateway Platform - 将 AI 订阅配额分发和管理
+  - 新增火山方舟 Seedance 原生视频任务 API，并为本地插件系统引入通用宿主服务与只读状态通道。
+  - Seedance (Ark) 原生视频 API：支持火山方舟异步视频任务协议（创建/查询/删除），按上游 usage 计费，响应保持原生格式
+  - 插件宿主服务：为本地插件提供按插件命名空间的 KV 存储、账号目录（受插件已声明能力范围限制）等通用能力
+  - 插件只读状态通道：新增 /admin/plugins/:id/status 与 plugin.status UI 通道，可无需二次验证轮询插件实时状态
+  - 手机竖屏顶栏保留模型广场图标入口
+
+
 ## 0.2.5-1
 
 - Sync upstream image [weishaw/sub2api:0.2.5](https://hub.docker.com/r/weishaw/sub2api).
