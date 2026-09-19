@@ -1,5 +1,19 @@
 # Changelog
 
+## 7.3.8-1
+
+- Sync upstream image [eceasy/cli-proxy-api:v7.3.8](https://hub.docker.com/r/eceasy/cli-proxy-api).
+- Upstream project: [router-for-me/CLIProxyAPI](https://github.com/router-for-me/CLIProxyAPI).
+- Upstream release: [v7.3.8](https://github.com/router-for-me/CLIProxyAPI/releases/tag/v7.3.8).
+- Upstream changelog summary:
+  - `CLIProxyAPI_<version>_linux_<arch>.tar.gz` is the default Linux build. It supports dynamic library plugins and is built against a GLIBC 2.17 baseline.
+  - `CLIProxyAPI_<version>_linux_<arch>_no-plugin.tar.gz` is the portable Linux build for musl-based or older systems such as OpenWrt. It does not support dynamic library plugins.
+  - `CLIProxyAPI_<version>_freebsd_aarch64_no-plugin.tar.gz` is the FreeBSD arm64 build. It is built without CGO and does not support dynamic library plugins.
+  - feat(xai): allow grok imagine aspect_ratio 9:20 (75bd6a60)
+  - feat(xai): also allow grok imagine aspect_ratio 20:9 (f049e00b)
+  - fix(claude): skip retry-after header on overage-only rejections (1cce9325)
+
+
 ## 7.3.7-1
 
 - Sync upstream image [eceasy/cli-proxy-api:v7.3.7](https://hub.docker.com/r/eceasy/cli-proxy-api).
