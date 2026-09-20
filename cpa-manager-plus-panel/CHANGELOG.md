@@ -1,5 +1,19 @@
 # Changelog
 
+## 1.13.1-1
+
+- Sync upstream image [seakee/cpa-manager-plus:v1.13.1](https://hub.docker.com/r/seakee/cpa-manager-plus).
+- Upstream project: [seakee/CPA-Manager-Plus](https://github.com/seakee/CPA-Manager-Plus).
+- Upstream release: [v1.13.1](https://github.com/seakee/CPA-Manager-Plus/releases/tag/v1.13.1).
+- Upstream changelog summary:
+  - > 24 commits since v1.13.0
+  - > [English ->](https://github.com/seakee/CPA-Manager-Plus/blob/v1.13.1/docs/release-notes/v1.13.1-en.md)
+  - v1.13.1 是一个以凭证操作性能、请求诊断和升级兼容性为重点的维护版本。针对大规模凭证池，单凭证刷新、启停、字段修改和配置编辑保存现在尽量使用定向查询与局部对账，减少不必要的全量凭证列表读取，同时继续保留多凭证操作和初始列表加载所需的完整集合语义。
+  - Request Monitoring 现在可以区分请求模型、CPA 路由模型和上游响应模型；当响应模型与路由模型不一致时，会以琥珀色提示实际响应模型，便于识别上游模型切换或降级。新版 CPA Usage queue 提供的 session、parent session、generate、stream...
+  - 本版本还修复了历史 SQLite 数据中模型价格 configured 标记以 REAL 数值保存时导致价格加载失败的问题，以及 OAuth 排除模型接口显式返回 null wrapper 时被错误回退到其他字段的问题。
+  - Request Monitoring 的模型列现在区分请求模型、路由模型和上游响应模型；当响应模型与路由模型不一致时，以琥珀色响应模型与“模型不一致”标记提示异常路由结果。（Web / Manager Server）
+
+
 ## 1.13.0-1
 
 - Sync upstream image [seakee/cpa-manager-plus:v1.13.0](https://hub.docker.com/r/seakee/cpa-manager-plus).
