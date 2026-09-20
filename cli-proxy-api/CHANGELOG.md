@@ -1,5 +1,19 @@
 # Changelog
 
+## 7.3.9-1
+
+- Sync upstream image [eceasy/cli-proxy-api:v7.3.9](https://hub.docker.com/r/eceasy/cli-proxy-api).
+- Upstream project: [router-for-me/CLIProxyAPI](https://github.com/router-for-me/CLIProxyAPI).
+- Upstream release: [v7.3.9](https://github.com/router-for-me/CLIProxyAPI/releases/tag/v7.3.9).
+- Upstream changelog summary:
+  - `CLIProxyAPI_<version>_linux_<arch>.tar.gz` is the default Linux build. It supports dynamic library plugins and is built against a GLIBC 2.17 baseline.
+  - `CLIProxyAPI_<version>_linux_<arch>_no-plugin.tar.gz` is the portable Linux build for musl-based or older systems such as OpenWrt. It does not support dynamic library plugins.
+  - `CLIProxyAPI_<version>_freebsd_aarch64_no-plugin.tar.gz` is the FreeBSD arm64 build. It is built without CGO and does not support dynamic library plugins.
+  - fix(translator): deduct cache_write_tokens from input_tokens in openai/codex to claude (#5956) (883660fb)
+  - Merge pull request #5962 from router-for-me/fix/issue-5956-cache-write-deduction (12773e74)
+  - fix(translator): align tool choice mapping and enforce fail-closed handling (49eec664)
+
+
 ## 7.3.8-1
 
 - Sync upstream image [eceasy/cli-proxy-api:v7.3.8](https://hub.docker.com/r/eceasy/cli-proxy-api).
