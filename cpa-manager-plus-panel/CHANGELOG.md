@@ -1,5 +1,19 @@
 # Changelog
 
+## 1.13.2-1
+
+- Sync upstream image [seakee/cpa-manager-plus:v1.13.2](https://hub.docker.com/r/seakee/cpa-manager-plus).
+- Upstream project: [seakee/CPA-Manager-Plus](https://github.com/seakee/CPA-Manager-Plus).
+- Upstream release: [v1.13.2](https://github.com/seakee/CPA-Manager-Plus/releases/tag/v1.13.2).
+- Upstream changelog summary:
+  - > 46 commits · 110 files changed · +10,370 / -380
+  - > [English ->](https://github.com/seakee/CPA-Manager-Plus/blob/v1.13.2/docs/release-notes/v1.13.2-en.md)
+  - v1.13.2 是一个围绕提供商兼容和额度/计费正确性的维护版本。核心变化是完成 Muse / Meta 在 CPA Manager Plus 中的端到端接入：从 OAuth Device Flow、凭证识别、额度窗口与历史快照，到 Meta API Key 提供商管理、模型发现、健康检查和监控来源解析，均纳入现有 CPAMP 工作流。
+  - 本版本同时收口三类 correctness 问题：Codex Reset Credit 的数量证据与明细证据现在独立维护，避免旧快照或仅数量响应误刷新明细；xAI 在只有有效周周期元数据但缺少百分比时仍会保留 Weekly 窗口，同时不再把 0 月额度合成为不存在的 Monthly 窗口；Devin...
+  - 新增 Muse / Meta 提供商识别，规范 ID 为 `meta`，同时兼容 `muse` 别名。（Web / Manager Server）
+  - 接入 CPA 的 Meta OAuth Device Flow，可在 CPAMP 中获取授权地址、设备码并轮询登录状态。（Web / CPA）
+
+
 ## 1.13.1-1
 
 - Sync upstream image [seakee/cpa-manager-plus:v1.13.1](https://hub.docker.com/r/seakee/cpa-manager-plus).
