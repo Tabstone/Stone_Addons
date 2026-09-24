@@ -1,5 +1,19 @@
 # Changelog
 
+## 0.2.8-1
+
+- Sync upstream image [weishaw/sub2api:0.2.8](https://hub.docker.com/r/weishaw/sub2api).
+- Upstream project: [Wei-Shaw/sub2api](https://github.com/Wei-Shaw/sub2api).
+- Upstream release: [Sub2API 0.2.8](https://github.com/Wei-Shaw/sub2api/releases/tag/v0.2.8).
+- Upstream changelog summary:
+  - > AI API Gateway Platform - 将 AI 订阅配额分发和管理
+  - 本版本新增 GPT-6 Sol/Luna、Claude Opus 5.5、Grok 4.7 等模型支持，并接入 OpenCode Go 官方用量窗口查询与自动刷新。
+  - 新增模型支持：GPT-6 Sol、GPT-6 Luna、Claude Opus 5.5、Grok 4.7
+  - OpenCode Go 用量窗口：支持官方用量查询、自动刷新、同 Key 组共享与主动查询，账号列表/单元格展示余额（7d/1m 徽章）
+  - 计费：支持按推理力度（reasoning effort）配置计费倍率
+  - 自动同步 Claude Code 客户端版本号
+
+
 ## 0.2.7-1
 
 - Sync upstream image [weishaw/sub2api:0.2.7](https://hub.docker.com/r/weishaw/sub2api).

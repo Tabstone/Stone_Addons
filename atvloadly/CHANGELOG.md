@@ -1,5 +1,19 @@
 # Changelog
 
+## 0.5.0-1
+
+- Sync upstream image [ghcr.io/bitxeno/atvloadly:v0.5.0](https://github.com/bitxeno/atvloadly/pkgs/container/atvloadly).
+- Upstream project: [bitxeno/atvloadly](https://github.com/bitxeno/atvloadly).
+- Upstream release: [v0.5.0 - tvOS 17.4+](https://github.com/bitxeno/atvloadly/releases/tag/v0.5.0).
+- Upstream changelog summary:
+  - **i18n**:
+  - Add Swedish localization &nbsp;-&nbsp; by @YellowNest in https://github.com/bitxeno/atvloadly/issues/134 [<samp>(a3bca)</samp>](https://github.com/bitxeno/atvloadly/commit/a3bcae7)
+  - **ui**:
+  - Redesign frontend interface &nbsp;-&nbsp; by @YellowNest [<samp>(0d151)</samp>](https://github.com/bitxeno/atvloadly/commit/0d1518a)
+  - Add persistent theme preference &nbsp;-&nbsp; by @YellowNest in https://github.com/bitxeno/atvloadly/issues/136...
+  - Translate status labels and improve expiry colors &nbsp;-&nbsp; by @YellowNest in https://github.com/bitxeno/atvloadly/issues/146...
+
+
 ## 0.4.10-1
 
 - Sync upstream image [ghcr.io/bitxeno/atvloadly:v0.4.10](https://github.com/bitxeno/atvloadly/pkgs/container/atvloadly).

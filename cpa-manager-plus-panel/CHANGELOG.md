@@ -1,5 +1,19 @@
 # Changelog
 
+## 1.14.0-1
+
+- Sync upstream image [seakee/cpa-manager-plus:v1.14.0](https://hub.docker.com/r/seakee/cpa-manager-plus).
+- Upstream project: [seakee/CPA-Manager-Plus](https://github.com/seakee/CPA-Manager-Plus).
+- Upstream release: [v1.14.0](https://github.com/seakee/CPA-Manager-Plus/releases/tag/v1.14.0).
+- Upstream changelog summary:
+  - > 92 commits · 165 files changed · +16,577 / -272
+  - > [English ->](https://github.com/seakee/CPA-Manager-Plus/blob/v1.14.0/docs/release-notes/v1.14.0-en.md)
+  - v1.14.0 是一次围绕历史用量生命周期管理的功能版本。新增的 **Usage Maintenance（用量维护）** 工作区把历史数据归档、完整性校验、在线明细清理、导入导出、任务恢复和存储诊断集中到一套明确的流程中，并为长期运行、SQLite 持续增长和历史数据迁移提供正式的维护边界。
+  - 本版本同时补齐离线空间回收能力：新增 `compact-usage` 命令，在 Manager Server 停止后通过独占锁与完整性检查安全执行 SQLite 压缩。对于已经归档并清理在线 raw usage 的实例，查询、rollup、pricing coverage...
+  - 此外，修复模型发现中的一个配置正确性问题：上游仅用于展示的 `display_name` / `displayName` 不再自动写入 CPA 路由别名，避免保存后意外改变对外模型 ID。
+  - 新增独立的 **用量维护** 工作区，以“归档管理”和“导入/导出”为主要入口，并提供任务状态、筛选、详情抽屉和浏览器历史恢复。（Web / Manager Server）
+
+
 ## 1.13.2-1
 
 - Sync upstream image [seakee/cpa-manager-plus:v1.13.2](https://hub.docker.com/r/seakee/cpa-manager-plus).
