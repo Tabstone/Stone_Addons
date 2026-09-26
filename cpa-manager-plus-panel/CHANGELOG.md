@@ -1,5 +1,19 @@
 # Changelog
 
+## 1.14.1-1
+
+- Sync upstream image [seakee/cpa-manager-plus:v1.14.1](https://hub.docker.com/r/seakee/cpa-manager-plus).
+- Upstream project: [seakee/CPA-Manager-Plus](https://github.com/seakee/CPA-Manager-Plus).
+- Upstream release: [v1.14.1](https://github.com/seakee/CPA-Manager-Plus/releases/tag/v1.14.1).
+- Upstream changelog summary:
+  - > 3 commits · 2 files changed · +3 / -6
+  - > [English ->](https://github.com/seakee/CPA-Manager-Plus/blob/v1.14.1/docs/release-notes/v1.14.1-en.md)
+  - v1.14.1 是 v1.14.0 的稳定性补丁版本，修复部分反向代理部署下 Usage Maintenance（用量维护）无法打开的问题。
+  - Manager Server 原生的 `HEAD /v0/management/usage/maintenance` 返回 `204 No Content`，但部分反向代理链路会将该 HEAD 请求归一化为 `200 OK`。v1.14.0 前端把“必须精确返回 204”作为能力探测条件，因此会在实际接口可用时错误显示 `This Manager...
+  - v1.14.1 允许能力探测接受 `200` 或 `204`，同时继续使用后续真实 GET 响应和现有 schema 校验确认功能支持，避免把旧版或不兼容的 Manager Server 误判为可用。
+  - 修复 Docker / Nginx 等反向代理部署中，Usage Maintenance 的 HEAD 能力探测返回 `200` 时被错误判定为“不支持用量维护”的问题。（Web）
+
+
 ## 1.14.0-1
 
 - Sync upstream image [seakee/cpa-manager-plus:v1.14.0](https://hub.docker.com/r/seakee/cpa-manager-plus).
