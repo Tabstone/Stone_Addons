@@ -1,5 +1,19 @@
 # Changelog
 
+## 0.2.9-1
+
+- Sync upstream image [weishaw/sub2api:0.2.9](https://hub.docker.com/r/weishaw/sub2api).
+- Upstream project: [Wei-Shaw/sub2api](https://github.com/Wei-Shaw/sub2api).
+- Upstream release: [Sub2API 0.2.9](https://github.com/Wei-Shaw/sub2api/releases/tag/v0.2.9).
+- Upstream changelog summary:
+  - > AI API Gateway Platform - 将 AI 订阅配额分发和管理
+  - 本版本以稳定性与计费准确性修复为主，覆盖 Anthropic、OpenAI/Codex、Antigravity 等多个上游的兼容性问题；模型分组白名单新增通配符位置匹配。
+  - 模型分组白名单支持通配符位置匹配（glob）
+  - OpenAI 透传账号可补充模型发现，不再隐藏已映射的模型
+  - 自动重置额度：跳过已确认无额度的账号，并在查询失败后自动退避
+  - 安装向导移除过时的限流默认配置
+
+
 ## 0.2.8-1
 
 - Sync upstream image [weishaw/sub2api:0.2.8](https://hub.docker.com/r/weishaw/sub2api).
