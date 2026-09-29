@@ -1,5 +1,19 @@
 # Changelog
 
+## 0.2.10-1
+
+- Sync upstream image [weishaw/sub2api:0.2.10](https://hub.docker.com/r/weishaw/sub2api).
+- Upstream project: [Wei-Shaw/sub2api](https://github.com/Wei-Shaw/sub2api).
+- Upstream release: [Sub2API 0.2.10](https://github.com/Wei-Shaw/sub2api/releases/tag/v0.2.10).
+- Upstream changelog summary:
+  - > AI API Gateway Platform - 将 AI 订阅配额分发和管理
+  - 新增支持 Claude Sonnet 5.5 模型，并为账号管理增加原生重置额度状态查询与风控用户白名单等能力。
+  - 支持 Claude Sonnet 5.5 模型
+  - Claude 账号原生重置额度查询：在账号页按需查看重置额度次数、可用状态与到期时间
+  - 风控用户白名单：支持配置豁免内容审计/风控策略的用户名单
+  - 仪表盘近期用量支持在 Token 用量与消费金额之间切换展示
+
+
 ## 0.2.9-1
 
 - Sync upstream image [weishaw/sub2api:0.2.9](https://hub.docker.com/r/weishaw/sub2api).
