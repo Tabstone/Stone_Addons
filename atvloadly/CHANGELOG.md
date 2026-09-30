@@ -1,5 +1,19 @@
 # Changelog
 
+## 0.6.0-1
+
+- Sync upstream image [ghcr.io/bitxeno/atvloadly:v0.6.0](https://github.com/bitxeno/atvloadly/pkgs/container/atvloadly).
+- Upstream project: [bitxeno/atvloadly](https://github.com/bitxeno/atvloadly).
+- Upstream release: [v0.6.0 - tvOS 17.4+](https://github.com/bitxeno/atvloadly/releases/tag/v0.6.0).
+- Upstream changelog summary:
+  - **signing**: Sign and install apps with an imported certificate (P12) &nbsp;-&nbsp; by @docloulou in https://github.com/bitxeno/atvloadly/issues/161...
+  - **source**: Track GitHub releases and AltStore sources for app updates &nbsp;-&nbsp; by @docloulou and **Claude Opus 5.5** in https://github.com/bitxeno/atvloadly/issues/160...
+  - **settings**: Add GitHub token settings &nbsp;-&nbsp; by @bitxeno in https://github.com/bitxeno/atvloadly/issues/174...
+  - **db**:
+  - Sync device fields when reinstalling existing app &nbsp;-&nbsp; by @bitxeno [<samp>(5911d)</samp>](https://github.com/bitxeno/atvloadly/commit/5911db9)
+  - **device**:
+
+
 ## 0.5.0-1
 
 - Sync upstream image [ghcr.io/bitxeno/atvloadly:v0.5.0](https://github.com/bitxeno/atvloadly/pkgs/container/atvloadly).
