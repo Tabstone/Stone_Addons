@@ -1,5 +1,19 @@
 # Changelog
 
+## 0.2.11-1
+
+- Sync upstream image [weishaw/sub2api:0.2.11](https://hub.docker.com/r/weishaw/sub2api).
+- Upstream project: [Wei-Shaw/sub2api](https://github.com/Wei-Shaw/sub2api).
+- Upstream release: [Sub2API 0.2.11](https://github.com/Wei-Shaw/sub2api/releases/tag/v0.2.11).
+- Upstream changelog summary:
+  - > AI API Gateway Platform - 将 AI 订阅配额分发和管理
+  - 新增 GPT-6.1 Sol 模型支持和 Claude 原生限额重置兑换；余额模式新增在途额度预占，防止并发请求导致透支。
+  - 支持 GPT-6.1 Sol 模型（含定价、模型目录与各兼容入口转换）
+  - Claude 账号支持兑换原生限额重置：查询到可兑换额度后，可在账号列表中经二次确认一键重置
+  - 使用密钥弹窗的 Codex 配置支持远程模型目录（Codex 0.156.0+），旧版客户端仍可选择本地文件模式
+  - 识别 ChatGPT 最新订阅套餐类型，账号套餐标签显示更准确
+
+
 ## 0.2.10-1
 
 - Sync upstream image [weishaw/sub2api:0.2.10](https://hub.docker.com/r/weishaw/sub2api).
