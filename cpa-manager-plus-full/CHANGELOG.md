@@ -1,5 +1,19 @@
 # Changelog
 
+## 1.14.2-1
+
+- Sync upstream image [seakee/cpa-manager-plus:v1.14.2](https://hub.docker.com/r/seakee/cpa-manager-plus).
+- Upstream project: [seakee/CPA-Manager-Plus](https://github.com/seakee/CPA-Manager-Plus).
+- Upstream release: [v1.14.2](https://github.com/seakee/CPA-Manager-Plus/releases/tag/v1.14.2).
+- Upstream changelog summary:
+  - > 21 commits · 25 files changed · +1096 / -171
+  - > [English ->](https://github.com/seakee/CPA-Manager-Plus/blob/v1.14.2/docs/release-notes/v1.14.2-en.md)
+  - v1.14.2 是 v1.14.1 的稳定性补丁版本，集中修复 CPA v8 配置兼容和 Usage Maintenance 清理历史数据后暴露出的模型定价、账号历史查询问题。
+  - CPA v8 将客户端 API Key 移到 `access.api-keys` 后，旧读取路径会让设置页在首次打开时显示空列表；本版本按 v8 有效字段读取，同时保留旧配置兼容。对于已经执行过受支持用量归档清理的数据库，模型价格结构变更现在可以在保留的 monitoring projection...
+  - 修复 CPA v8 使用 `access.api-keys` 后，设置页首次打开或重新加载时客户端 API Key 列表为空的问题；显式存在的 v8 字段优先，旧配置继续使用兼容回退。（Web / CPA compatibility）
+  - 修复执行受支持的 Usage Maintenance 归档清理后，模型价格结构同步可能被永久阻止的问题；当已删除历史可由保留的 monitoring projection 完整证明时，定价重建会复用保留历史，真正不完整的旧数据仍保持 fail-closed。（Manager Server）
+
+
 ## 1.14.1-1
 
 - Sync upstream image [seakee/cpa-manager-plus:v1.14.1](https://hub.docker.com/r/seakee/cpa-manager-plus).

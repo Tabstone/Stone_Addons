@@ -1,5 +1,19 @@
 # Changelog
 
+## 8.0.8-1
+
+- Sync upstream image [eceasy/cli-proxy-api:v8.0.8](https://hub.docker.com/r/eceasy/cli-proxy-api).
+- Upstream project: [router-for-me/CLIProxyAPI](https://github.com/router-for-me/CLIProxyAPI).
+- Upstream release: [v8.0.8](https://github.com/router-for-me/CLIProxyAPI/releases/tag/v8.0.8).
+- Upstream changelog summary:
+  - `CLIProxyAPI_<version>_linux_<arch>.tar.gz` is the default Linux build. It supports dynamic library plugins and is built against a GLIBC 2.17 baseline.
+  - `CLIProxyAPI_<version>_linux_<arch>_no-plugin.tar.gz` is the portable Linux build for musl-based or older systems such as OpenWrt. It does not support dynamic library plugins.
+  - `CLIProxyAPI_<version>_freebsd_aarch64_no-plugin.tar.gz` is the FreeBSD arm64 build. It is built without CGO and does not support dynamic library plugins.
+  - fix(xai): bump pinned grok client version to 1.0.44 for chat-proxy (b467a83c)
+  - Merge pull request #6252 from ggbdpq/fix/xai-grok-client-version-bump (fd48ea68)
+  - fix(xai): bump pinned grok client version to 1.0.44 for chat-proxy by @ggbdpq in https://github.com/router-for-me/CLIProxyAPI/pull/6252
+
+
 ## 8.0.4-1
 
 - Sync upstream image [eceasy/cli-proxy-api:v8.0.4](https://hub.docker.com/r/eceasy/cli-proxy-api).

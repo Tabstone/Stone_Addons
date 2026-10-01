@@ -1,5 +1,19 @@
 # Changelog
 
+## 1.19.32-1
+
+- Sync upstream image [metacubex/mihomo:v1.19.32](https://hub.docker.com/r/metacubex/mihomo).
+- Upstream project: [MetaCubeX/mihomo](https://github.com/MetaCubeX/mihomo).
+- Upstream release: [v1.19.32](https://github.com/MetaCubeX/mihomo/releases/tag/v1.19.32).
+- Upstream changelog summary:
+  - 3025efad feat: add load-balance hash-key to pin a session on the inbound user (#3133) by @简直蠢丶
+  - 409ee57e fix: populate HWCap from auxv on linux by @artbred
+  - 41b8a059 fix: account for TCP options in effective MSS by @wwqgtxx
+  - 5019cc09 fix: potential race condition in c.idleSession.Len() in idleCleanupExpTime() for anytls (#3225) by @Chenx Dust
+  - 60f70cec fix: align unconnected UDP and raw IP ICMP errors with Linux for mipstack by @wwqgtxx
+  - 88dcbf7f fix: default listener tun to mips stack (#3264) by @Jiawen Geng
+
+
 ## 1.19.31-1
 
 - Sync upstream image [metacubex/mihomo:v1.19.31](https://hub.docker.com/r/metacubex/mihomo).
