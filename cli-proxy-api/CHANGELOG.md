@@ -1,5 +1,19 @@
 # Changelog
 
+## 8.0.10-1
+
+- Sync upstream image [eceasy/cli-proxy-api:v8.0.10](https://hub.docker.com/r/eceasy/cli-proxy-api).
+- Upstream project: [router-for-me/CLIProxyAPI](https://github.com/router-for-me/CLIProxyAPI).
+- Upstream release: [v8.0.10](https://github.com/router-for-me/CLIProxyAPI/releases/tag/v8.0.10).
+- Upstream changelog summary:
+  - `CLIProxyAPI_<version>_linux_<arch>.tar.gz` is the default Linux build. It supports dynamic library plugins and is built against a GLIBC 2.17 baseline.
+  - `CLIProxyAPI_<version>_linux_<arch>_no-plugin.tar.gz` is the portable Linux build for musl-based or older systems such as OpenWrt. It does not support dynamic library plugins.
+  - `CLIProxyAPI_<version>_freebsd_aarch64_no-plugin.tar.gz` is the FreeBSD arm64 build. It is built without CGO and does not support dynamic library plugins.
+  - docs(readme): refresh provider models and add Muse Code and Devin (#6118) (028f6a19)
+  - fix(signature): suppress routine Gemini bypass logs (f3fd2f23)
+  - refactor(signature): improve logging and sanitize logic for Gemini signatures (9f35c1dc)
+
+
 ## 8.0.8-1
 
 - Sync upstream image [eceasy/cli-proxy-api:v8.0.8](https://hub.docker.com/r/eceasy/cli-proxy-api).
