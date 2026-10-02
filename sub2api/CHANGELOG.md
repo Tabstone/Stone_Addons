@@ -1,5 +1,19 @@
 # Changelog
 
+## 0.2.12-1
+
+- Sync upstream image [weishaw/sub2api:0.2.12](https://hub.docker.com/r/weishaw/sub2api).
+- Upstream project: [Wei-Shaw/sub2api](https://github.com/Wei-Shaw/sub2api).
+- Upstream release: [Sub2API 0.2.12](https://github.com/Wei-Shaw/sub2api/releases/tag/v0.2.12).
+- Upstream changelog summary:
+  - > AI API Gateway Platform - 将 AI 订阅配额分发和管理
+  - 新增 TypeSafe Jev System One 原生平台支持；充值页新增优惠阶梯，支持「赠金」与「折扣」两种模式。
+  - TypeSafe 平台：原生支持 Jev System One（/v1/systemone），含账号创建与测试、分组/渠道/配额/Composite 路由、计费、内容审核与提示词审计覆盖
+  - 充值优惠阶梯：后台可配置「满 X 送 Y%」赠金或「满 X 打折」折扣模式及 Markdown 活动文案，充值页快捷金额显示促销价签，订单与支付结果展示赠送额度
+  - 账号列表优先级快捷调整：悬停显示 -/+ 按钮、点击可直接输入，连续点击自动合并为一次保存
+  - API 密钥列表支持按分组名称排序
+
+
 ## 0.2.11-1
 
 - Sync upstream image [weishaw/sub2api:0.2.11](https://hub.docker.com/r/weishaw/sub2api).
