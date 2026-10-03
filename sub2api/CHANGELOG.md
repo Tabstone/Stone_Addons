@@ -1,5 +1,19 @@
 # Changelog
 
+## 0.2.13-1
+
+- Sync upstream image [weishaw/sub2api:0.2.13](https://hub.docker.com/r/weishaw/sub2api).
+- Upstream project: [Wei-Shaw/sub2api](https://github.com/Wei-Shaw/sub2api).
+- Upstream release: [Sub2API 0.2.13](https://github.com/Wei-Shaw/sub2api/releases/tag/v0.2.13).
+- Upstream changelog summary:
+  - > AI API Gateway Platform - 将 AI 订阅配额分发和管理
+  - 修复创建 TypeSafe API Key 账号时，因默认开启上游计费自动探测而返回 400 无法创建的问题
+  - 修复特定情况下请求用量未能正常结算的问题
+  - **Docker:**
+  - ```bash
+  - docker pull weishaw/sub2api:0.2.13
+
+
 ## 0.2.12-1
 
 - Sync upstream image [weishaw/sub2api:0.2.12](https://hub.docker.com/r/weishaw/sub2api).
