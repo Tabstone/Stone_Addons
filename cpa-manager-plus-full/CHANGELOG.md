@@ -1,5 +1,19 @@
 # Changelog
 
+## 1.14.3-1
+
+- Sync upstream image [seakee/cpa-manager-plus:v1.14.3](https://hub.docker.com/r/seakee/cpa-manager-plus).
+- Upstream project: [seakee/CPA-Manager-Plus](https://github.com/seakee/CPA-Manager-Plus).
+- Upstream release: [v1.14.3](https://github.com/seakee/CPA-Manager-Plus/releases/tag/v1.14.3).
+- Upstream changelog summary:
+  - > 61 commits · 41 files changed · +2529 / -281
+  - > [English ->](https://github.com/seakee/CPA-Manager-Plus/blob/v1.14.3/docs/release-notes/v1.14.3-en.md)
+  - v1.14.3 是 v1.14.2 的稳定性补丁版本，继续遵守 1.x 功能冻结边界，集中处理三个已经确认的兼容性与稳定性问题：Usage Maintenance 归档清理在 SQLite 瞬时写争用下可能反复中断、CPA v8 配置布局变化导致可视化配置读取/写入不正确，以及 Safari / iOS 缺少兼容站点图标的问题。
+  - 归档清理现在会区分瞬时 SQLite `BUSY` / `LOCKED` 与真实派生状态失败：已经提交且覆盖目标范围的安全状态不会再被瞬时争用错误污染，但重建、回填、真实失败或覆盖不足仍保持 fail-closed。可视化配置编辑器补齐 CPA v8 canonical path、历史别名、YAML merge / alias...
+  - 修复 Usage Maintenance 归档清理在已经具备安全派生覆盖时，因瞬时 SQLite `BUSY` / `LOCKED` 把有效状态错误标记为失败、导致清理频繁中断的问题；真实失败、重建/回填状态和覆盖不足仍然阻止删除原始用量。（Manager Server）
+  - 完善 CPA v8 可视化 YAML 配置兼容：按 CPA 的字段存在性与优先级读取 canonical path、历史 v8 alias 和 legacy path，并在真实 v8 布局中写回 canonical path；legacy-only 配置继续保持原路径行为。（Web / CPA compatibility）
+
+
 ## 1.14.2-1
 
 - Sync upstream image [seakee/cpa-manager-plus:v1.14.2](https://hub.docker.com/r/seakee/cpa-manager-plus).
