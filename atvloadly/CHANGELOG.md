@@ -1,5 +1,19 @@
 # Changelog
 
+## 0.6.1-1
+
+- Sync upstream image [ghcr.io/bitxeno/atvloadly:v0.6.1](https://github.com/bitxeno/atvloadly/pkgs/container/atvloadly).
+- Upstream project: [bitxeno/atvloadly](https://github.com/bitxeno/atvloadly).
+- Upstream release: [v0.6.1 - tvOS 17.4+](https://github.com/bitxeno/atvloadly/releases/tag/v0.6.1).
+- Upstream changelog summary:
+  - **home**: Add reinstall action running the full install flow &nbsp;-&nbsp; by @bitxeno in https://github.com/bitxeno/atvloadly/issues/188...
+  - **i18n**: Add Serbian localization &nbsp;-&nbsp; by @YellowNest in https://github.com/bitxeno/atvloadly/issues/190...
+  - **device**: Only discover devices on private LAN addresses &nbsp;-&nbsp; by @bitxeno in https://github.com/bitxeno/atvloadly/issues/187...
+  - **install**: Open a fresh socket for each submission &nbsp;-&nbsp; by @thedavidweng in https://github.com/bitxeno/atvloadly/issues/184...
+  - **ipa**: Cache asset catalogs in temporary files &nbsp;-&nbsp; by @thedavidweng in https://github.com/bitxeno/atvloadly/issues/182...
+  - **source**: Support private GitHub release assets &nbsp;-&nbsp; by @YellowNest in https://github.com/bitxeno/atvloadly/issues/186...
+
+
 ## 0.6.0-1
 
 - Sync upstream image [ghcr.io/bitxeno/atvloadly:v0.6.0](https://github.com/bitxeno/atvloadly/pkgs/container/atvloadly).
