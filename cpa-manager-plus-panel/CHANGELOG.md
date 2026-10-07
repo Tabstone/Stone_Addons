@@ -1,5 +1,19 @@
 # Changelog
 
+## 1.14.4-1
+
+- Sync upstream image [seakee/cpa-manager-plus:v1.14.4](https://hub.docker.com/r/seakee/cpa-manager-plus).
+- Upstream project: [seakee/CPA-Manager-Plus](https://github.com/seakee/CPA-Manager-Plus).
+- Upstream release: [v1.14.4](https://github.com/seakee/CPA-Manager-Plus/releases/tag/v1.14.4).
+- Upstream changelog summary:
+  - > 12 commits · 24 files changed · +984 / -183
+  - > [English ->](https://github.com/seakee/CPA-Manager-Plus/blob/v1.14.4/docs/release-notes/v1.14.4-en.md)
+  - v1.14.4 是 v1.14.3 之后的维护补丁版本，继续遵守 1.x 功能冻结边界，集中修复三个已确认问题：xAI/Grok 健康巡检因过期 Grok CLI 客户端标识触发 HTTP 426、Claude 自定义 Base URL...
+  - xAI 请求现在统一使用与当前 CPA 兼容的 Grok 客户端版本标识；Claude 探测鉴权与 CPA v7.3.4+ 运行时规则保持一致，Anthropic 官方 API Key 继续使用 `x-api-key`，自定义兼容端点可按实际配置使用 `Authorization: Bearer`；用量分析则在仅有历史对比区间无法证明定价覆盖时降级省略...
+  - 更新 xAI/Grok 健康巡检使用的 Grok CLI 客户端版本标识，并统一 billing / inference 请求的 User-Agent，避免因旧版 `0.2.101` 低于上游最低版本要求而触发 HTTP 426。（Web / xAI compatibility）
+  - 修复 Claude 模型发现与连通性测试的鉴权构造，使其与 CPA v7.3.4+ 运行时规则一致；Anthropic 官方端点继续使用 `x-api-key`，自定义 Base URL 可正确使用 Bearer 鉴权，且自定义 Header 覆盖规则保持生效。（Web / Claude compatibility）
+
+
 ## 1.14.3-1
 
 - Sync upstream image [seakee/cpa-manager-plus:v1.14.3](https://hub.docker.com/r/seakee/cpa-manager-plus).

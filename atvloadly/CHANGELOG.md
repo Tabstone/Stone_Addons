@@ -1,5 +1,19 @@
 # Changelog
 
+## 0.6.2-1
+
+- Sync upstream image [ghcr.io/bitxeno/atvloadly:v0.6.2](https://github.com/bitxeno/atvloadly/pkgs/container/atvloadly).
+- Upstream project: [bitxeno/atvloadly](https://github.com/bitxeno/atvloadly).
+- Upstream release: [v0.6.2 - tvOS 17.4+](https://github.com/bitxeno/atvloadly/releases/tag/v0.6.2).
+- Upstream changelog summary:
+  - **install**:
+  - Isolate Apple ID staging directories &nbsp;-&nbsp; by @YellowNest in https://github.com/bitxeno/atvloadly/issues/192...
+  - **notify**:
+  - Return the Telegram client error instead of panicking &nbsp;-&nbsp; by @NotAFlightRisk in https://github.com/bitxeno/atvloadly/issues/194...
+  - **web**:
+  - Prevent deleting apps during install &nbsp;-&nbsp; by @YellowNest in https://github.com/bitxeno/atvloadly/issues/191...
+
+
 ## 0.6.1-1
 
 - Sync upstream image [ghcr.io/bitxeno/atvloadly:v0.6.1](https://github.com/bitxeno/atvloadly/pkgs/container/atvloadly).
