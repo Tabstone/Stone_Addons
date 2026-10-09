@@ -1,5 +1,19 @@
 # Changelog
 
+## 1.14.5-1
+
+- Sync upstream image [seakee/cpa-manager-plus:v1.14.5](https://hub.docker.com/r/seakee/cpa-manager-plus).
+- Upstream project: [seakee/CPA-Manager-Plus](https://github.com/seakee/CPA-Manager-Plus).
+- Upstream release: [v1.14.5](https://github.com/seakee/CPA-Manager-Plus/releases/tag/v1.14.5).
+- Upstream changelog summary:
+  - > 17 commits · 45 files changed · +2332 / -318
+  - > [English ->](https://github.com/seakee/CPA-Manager-Plus/blob/v1.14.5/docs/release-notes/v1.14.5-en.md)
+  - v1.14.5 是 v1.14.4 之后的维护补丁版本，继续遵守 1.x 功能冻结边界，集中修复两个已确认问题：Codex 已知的重置次数可能在额度刷新后被低置信度的零值覆盖、消费重置后由 CPAMP 自动禁用的凭证可能无法及时恢复，以及 OpenAI-compatible 上游即使本身不需要 API Key，也会被 CPAMP...
+  - Codex 重置状态现在按证据可信度合并：已有正向证据时，只有专用重置详情明确返回空库存才能清除已知次数；详情请求失败或超时时保留已知状态并标记为陈旧。消费重置后，Manager 可在一次性额度验证成功后尝试恢复精确匹配的 CPAMP 自有冷却状态，并继续保护手动禁用或预先禁用的凭证。整个修复不引入周期轮询、后台重置队列或新的定时器。
+  - OpenAI-compatible 提供商现在可以真正以无密钥方式保存、重新打开、测试、发现模型并执行健康检查。CPAMP 不再构造空的 Bearer 鉴权，也不会为匿名请求生成虚假 Token；当 CPA 无法为无密钥流量提供按 Key 用量统计时，界面会明确显示统计不可用或部分可用，而不是伪造零请求。
+  - 修复 Codex 重置次数在额度刷新后消失或长期停留在错误值的问题：已有正向重置证据时，count-only / usage summary 的零值不再具有清除权限；只有专用详情明确返回空库存才会清除已知重置。（Web / Codex quota）
+
+
 ## 1.14.4-1
 
 - Sync upstream image [seakee/cpa-manager-plus:v1.14.4](https://hub.docker.com/r/seakee/cpa-manager-plus).
