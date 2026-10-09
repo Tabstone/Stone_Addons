@@ -1,5 +1,19 @@
 # Changelog
 
+## 0.2.15-1
+
+- Sync upstream image [weishaw/sub2api:0.2.15](https://hub.docker.com/r/weishaw/sub2api).
+- Upstream project: [Wei-Shaw/sub2api](https://github.com/Wei-Shaw/sub2api).
+- Upstream release: [Sub2API 0.2.15](https://github.com/Wei-Shaw/sub2api/releases/tag/v0.2.15).
+- Upstream changelog summary:
+  - > AI API Gateway Platform - 将 AI 订阅配额分发和管理
+  - 新增 Cline 与 Command Code 两个上游平台；平台列表、多协议转发与账号表单统一改由平台清单驱动，同时集中修复一批协议转换、计费与前端竞态问题。
+  - 新增 Cline 平台：支持 ClinePass 订阅（5 小时 / 7 天 / 30 天额度）与积分计费，ClinePass 账号连接测试优先使用订阅模型
+  - 新增 Command Code 平台：按模型自动分流到 Anthropic / Responses / Chat Completions，并按上游模型目录对支持的协议直通
+  - 用量页默认展示单请求输出 TPS，运维监控新增输出 TPS 分位数
+  - 账号管理页搜索与筛选栏改为紧凑布局
+
+
 ## 0.2.14-1
 
 - Sync upstream image [weishaw/sub2api:0.2.14](https://hub.docker.com/r/weishaw/sub2api).
