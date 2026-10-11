@@ -1,5 +1,19 @@
 # Changelog
 
+## 0.6.3-1
+
+- Sync upstream image [ghcr.io/bitxeno/atvloadly:v0.6.3](https://github.com/bitxeno/atvloadly/pkgs/container/atvloadly).
+- Upstream project: [bitxeno/atvloadly](https://github.com/bitxeno/atvloadly).
+- Upstream release: [v0.6.3 - tvOS 17.4+](https://github.com/bitxeno/atvloadly/releases/tag/v0.6.3).
+- Upstream changelog summary:
+  - **certificate**:
+  - Import SideStore P12 exports &nbsp;-&nbsp; by @bitxeno in https://github.com/bitxeno/atvloadly/issues/198...
+  - **discovery**:
+  - Redact remote pairing auth tags from logs &nbsp;-&nbsp; by @YellowNest in https://github.com/bitxeno/atvloadly/issues/205...
+  - **home**:
+  - Wrap long source URLs inside the badge tooltip &nbsp;-&nbsp; by @bitxeno [<samp>(c3181)</samp>](https://github.com/bitxeno/atvloadly/commit/c3181e8)
+
+
 ## 0.6.2-1
 
 - Sync upstream image [ghcr.io/bitxeno/atvloadly:v0.6.2](https://github.com/bitxeno/atvloadly/pkgs/container/atvloadly).
