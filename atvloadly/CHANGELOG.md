@@ -1,5 +1,19 @@
 # Changelog
 
+## 0.6.4-1
+
+- Sync upstream image [ghcr.io/bitxeno/atvloadly:v0.6.4](https://github.com/bitxeno/atvloadly/pkgs/container/atvloadly).
+- Upstream project: [bitxeno/atvloadly](https://github.com/bitxeno/atvloadly).
+- Upstream release: [v0.6.4 - tvOS 17.4+](https://github.com/bitxeno/atvloadly/releases/tag/v0.6.4).
+- Upstream changelog summary:
+  - **install**: Support custom bundle identifier in Apple ID mode &nbsp;-&nbsp; by @bitxeno in https://github.com/bitxeno/atvloadly/issues/209...
+  - **docker**:
+  - Bump plumesign to v2.2.3-patch.10 &nbsp;-&nbsp; by @bitxeno [<samp>(fc776)</samp>](https://github.com/bitxeno/atvloadly/commit/fc77686)
+  - **home**:
+  - Keep the warning badge tooltip inside phone viewports &nbsp;-&nbsp; by @bitxeno [<samp>(7d762)</samp>](https://github.com/bitxeno/atvloadly/commit/7d76253)
+  - Show the source line below the refresh date &nbsp;-&nbsp; by @bitxeno [<samp>(ce18d)</samp>](https://github.com/bitxeno/atvloadly/commit/ce18d4d)
+
+
 ## 0.6.3-1
 
 - Sync upstream image [ghcr.io/bitxeno/atvloadly:v0.6.3](https://github.com/bitxeno/atvloadly/pkgs/container/atvloadly).
