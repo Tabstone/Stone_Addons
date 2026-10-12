@@ -1,5 +1,19 @@
 # Changelog
 
+## 8.0.25-1
+
+- Sync upstream image [eceasy/cli-proxy-api:v8.0.25](https://hub.docker.com/r/eceasy/cli-proxy-api).
+- Upstream project: [router-for-me/CLIProxyAPI](https://github.com/router-for-me/CLIProxyAPI).
+- Upstream release: [v8.0.25](https://github.com/router-for-me/CLIProxyAPI/releases/tag/v8.0.25).
+- Upstream changelog summary:
+  - `CLIProxyAPI_<version>_linux_<arch>.tar.gz` is the default Linux build. It supports dynamic library plugins and is built against a GLIBC 2.17 baseline.
+  - `CLIProxyAPI_<version>_linux_<arch>_no-plugin.tar.gz` is the portable Linux build for musl-based or older systems such as OpenWrt. It does not support dynamic library plugins.
+  - `CLIProxyAPI_<version>_freebsd_aarch64_no-plugin.tar.gz` is the FreeBSD arm64 build. It is built without CGO and does not support dynamic library plugins.
+  - feat(codex): support Sign in with ChatGPT (7b0319fb)
+  - fix(codex): fallback default model template when gpt-5.5 is missing (e240bd84)
+  - feat(routing): support session-affinity-rebind-on option (7a687f42)
+
+
 ## 8.0.23-1
 
 - Sync upstream image [eceasy/cli-proxy-api:v8.0.23](https://hub.docker.com/r/eceasy/cli-proxy-api).
