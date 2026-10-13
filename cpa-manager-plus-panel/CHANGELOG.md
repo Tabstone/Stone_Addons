@@ -1,5 +1,19 @@
 # Changelog
 
+## 1.14.6-1
+
+- Sync upstream image [seakee/cpa-manager-plus:v1.14.6](https://hub.docker.com/r/seakee/cpa-manager-plus).
+- Upstream project: [seakee/CPA-Manager-Plus](https://github.com/seakee/CPA-Manager-Plus).
+- Upstream release: [v1.14.6](https://github.com/seakee/CPA-Manager-Plus/releases/tag/v1.14.6).
+- Upstream changelog summary:
+  - > 15 commits · 37 files changed · +3031 / -132
+  - > [English ->](https://github.com/seakee/CPA-Manager-Plus/blob/v1.14.6/docs/release-notes/v1.14.6-en.md)
+  - v1.14.6 是 v1.14.5 之后的 1.x 维护补丁版本，仅收录三个已合并并通过 CI 的问题修复：Codex 工作区预算限制的识别与展示（#935 / #938）、归档清理前的历史监控投影完整性保护（#939 / #945），以及未知提供商在严格 CPA v2 计量证据下的缓存 Token 重复计算（#941 / #946）。
+  - 本版本不增加新功能、后台轮询或定时器，也不改变 CPA 管理 API、凭证权限或数据库 Schema。
+  - **Codex 工作区消费预算（#935 / #938）**：正确识别结构化 `spend_control.individual_limit`，同时兼容旧版标量数据与浏览器中已持久化的额度缓存。保留预算总额、已用、剩余额度、单位、周期及重置证据；已触发的消费限制仍显示为受限，不再被普通 5 小时或周额度余额掩盖。
+  - 对 `0 / 0` 等零预算场景显示具体的 workspace budget 原因，不以“已用 100%”代替解释。仅在消费限制证据完整且没有其他冲突限制时，建议检查工作区预算；同时存在其他限制时保留额度刷新建议。没有新增后台额度探测或轮询。
+
+
 ## 1.14.5-1
 
 - Sync upstream image [seakee/cpa-manager-plus:v1.14.5](https://hub.docker.com/r/seakee/cpa-manager-plus).

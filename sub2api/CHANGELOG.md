@@ -1,5 +1,19 @@
 # Changelog
 
+## 0.2.16-1
+
+- Sync upstream image [weishaw/sub2api:0.2.16](https://hub.docker.com/r/weishaw/sub2api).
+- Upstream project: [Wei-Shaw/sub2api](https://github.com/Wei-Shaw/sub2api).
+- Upstream release: [Sub2API 0.2.16](https://github.com/Wei-Shaw/sub2api/releases/tag/v0.2.16).
+- Upstream changelog summary:
+  - > AI API Gateway Platform - 将 AI 订阅配额分发和管理
+  - Gemini 支持显式上下文缓存（AI Studio / Vertex / 自建网关上游），并新增 Claude Haiku 5.5 模型适配。
+  - Claude Haiku 5.5：全链路适配模型注册、推理强度、定价与计费，并接入 Responses 桥接
+  - Gemini 显式上下文缓存：支持创建、续期、删除缓存，内置官方存储价并按 Pro / Flash 系列兜底，存储费按 API Key 额度与订阅额度预留校验
+  - Gemini Vertex（Agent Platform）：支持 API Key 认证，服务账号支持同步上游模型列表，模型列表与详情接口支持 Vertex 账号
+  - Gemini AI Studio：适配新的 AQ. 格式 Key
+
+
 ## 0.2.15-1
 
 - Sync upstream image [weishaw/sub2api:0.2.15](https://hub.docker.com/r/weishaw/sub2api).
