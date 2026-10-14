@@ -1,5 +1,12 @@
 # Changelog
 
+## 4.1.1-1
+
+- Sync upstream image [wantcat/trendradar-mcp:4.1.1](https://hub.docker.com/r/wantcat/trendradar-mcp).
+- Upstream project: [sansan0/TrendRadar](https://github.com/sansan0/TrendRadar).
+- Upstream release notes were not published or could not be resolved for this image tag.
+
+
 ## 4.1.0-1
 
 - Sync upstream image to 4.1.0.
