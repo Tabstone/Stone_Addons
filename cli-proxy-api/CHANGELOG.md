@@ -1,5 +1,19 @@
 # Changelog
 
+## 8.0.28-1
+
+- Sync upstream image [eceasy/cli-proxy-api:v8.0.28](https://hub.docker.com/r/eceasy/cli-proxy-api).
+- Upstream project: [router-for-me/CLIProxyAPI](https://github.com/router-for-me/CLIProxyAPI).
+- Upstream release: [v8.0.28](https://github.com/router-for-me/CLIProxyAPI/releases/tag/v8.0.28).
+- Upstream changelog summary:
+  - `CLIProxyAPI_<version>_linux_<arch>.tar.gz` is the default Linux build. It supports dynamic library plugins and is built against a GLIBC 2.17 baseline.
+  - `CLIProxyAPI_<version>_linux_<arch>_no-plugin.tar.gz` is the portable Linux build for musl-based or older systems such as OpenWrt. It does not support dynamic library plugins.
+  - `CLIProxyAPI_<version>_freebsd_aarch64_no-plugin.tar.gz` is the FreeBSD arm64 build. It is built without CGO and does not support dynamic library plugins.
+  - docs(readme): clarify Antigravity Claude 5.5 availability (a4a545c0)
+  - docs(readme): add Haiku 5.5 and refresh Antigravity availability (02efbf13)
+  - fix(claude): restore passthrough MCP tools wrapped with their full mcp__ name (02fc76b1)
+
+
 ## 8.0.27-1
 
 - Sync upstream image [eceasy/cli-proxy-api:v8.0.27](https://hub.docker.com/r/eceasy/cli-proxy-api).
