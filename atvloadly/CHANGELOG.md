@@ -1,5 +1,14 @@
 # Changelog
 
+## 0.7.1-1
+
+- Sync upstream image [ghcr.io/bitxeno/atvloadly:v0.7.1](https://github.com/bitxeno/atvloadly/pkgs/container/atvloadly).
+- Upstream project: [bitxeno/atvloadly](https://github.com/bitxeno/atvloadly).
+- Upstream release: [v0.7.1 - tvOS 17.4+](https://github.com/bitxeno/atvloadly/releases/tag/v0.7.1).
+- Upstream changelog summary:
+  - **login**: Recognize every plumesign 2FA prompt &nbsp;-&nbsp; by @bitxeno [<samp>(29142)</samp>](https://github.com/bitxeno/atvloadly/commit/2914219)
+
+
 ## 0.6.4-1
 
 - Sync upstream image [ghcr.io/bitxeno/atvloadly:v0.6.4](https://github.com/bitxeno/atvloadly/pkgs/container/atvloadly).
