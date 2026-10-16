@@ -1,5 +1,19 @@
 # Changelog
 
+## 0.2.17-1
+
+- Sync upstream image [weishaw/sub2api:0.2.17](https://hub.docker.com/r/weishaw/sub2api).
+- Upstream project: [Wei-Shaw/sub2api](https://github.com/Wei-Shaw/sub2api).
+- Upstream release: [Sub2API 0.2.17](https://github.com/Wei-Shaw/sub2api/releases/tag/v0.2.17).
+- Upstream changelog summary:
+  - > AI API Gateway Platform - 将 AI 订阅配额分发和管理
+  - Antigravity / Gemini 支持 Gemini 4 Argon（含计费与上游模型目录同步），Gemini 兼容入口支持思考档位与流式思考摘要；同时集中修复支付退款、易支付查单等多处资金链路问题。
+  - Gemini 4 Argon：Antigravity、Gemini API、Gemini CLI 支持 gemini-4-argon（low/medium/high），并补齐计费价格
+  - Antigravity 模型目录：同步上游模型目录时按账号实际端点拉取，并保存上下文窗口、图像输入、思考等能力信息
+  - Gemini 兼容入口思考档位：chat/messages 兼容入口转发 reasoning_effort / thinking 为 Gemini 思考配置，流式返回思考摘要
+  - 最小输出 token 可配置：新增 gateway.min_output_tokens（默认 128，最低 16），作用于各协议转换路径
+
+
 ## 0.2.16-1
 
 - Sync upstream image [weishaw/sub2api:0.2.16](https://hub.docker.com/r/weishaw/sub2api).
