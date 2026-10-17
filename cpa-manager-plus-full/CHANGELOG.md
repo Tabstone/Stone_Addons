@@ -1,5 +1,19 @@
 # Changelog
 
+## 1.14.7-1
+
+- Sync upstream image [seakee/cpa-manager-plus:v1.14.7](https://hub.docker.com/r/seakee/cpa-manager-plus).
+- Upstream project: [seakee/CPA-Manager-Plus](https://github.com/seakee/CPA-Manager-Plus).
+- Upstream release: [v1.14.7](https://github.com/seakee/CPA-Manager-Plus/releases/tag/v1.14.7).
+- Upstream changelog summary:
+  - > 29 commits · 68 files changed · +6743 / -386
+  - > [English ->](https://github.com/seakee/CPA-Manager-Plus/blob/v1.14.7/docs/release-notes/v1.14.7-en.md)
+  - v1.14.7 是 v1.14.6 之后的 1.x 维护版本，收录五项已经合并并通过 CI 的修复与性能改进：长窗口延迟分析的 SQLite 覆盖索引（#960）、Quota Snapshot 写入热路径去除历史候选读取（#981）、Antigravity Hub 客户端身份兼容修复（#986）、v1 页面后台刷新体验统一修复（#987），以及...
+  - 本版本不新增 1.x 功能，不改变 CPA 管理 API、凭证权限、SQLite Schema 或配置格式，也不增加新的后台轮询或定时器。
+  - **后台刷新体验（#987）**：凭证、配置、OAuth 规则、Dashboard、日志、插件、System、Provider 模型发现、Usage Analytics 与候选列表等已加载区域，在同一数据作用域内刷新时继续保留当前成功快照，不再退回整块 Loading、空白或误判空态。
+  - 后台重验证失败时保留最后一次成功内容并显示轻量错误反馈；成功返回空结果会被识别为已加载的空快照。连接、Provider、凭证或能力作用域发生变化时，旧数据、迟到请求和旧危险操作会失效，避免跨作用域回写。
+
+
 ## 1.14.6-1
 
 - Sync upstream image [seakee/cpa-manager-plus:v1.14.6](https://hub.docker.com/r/seakee/cpa-manager-plus).

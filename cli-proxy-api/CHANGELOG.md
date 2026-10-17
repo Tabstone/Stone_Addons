@@ -1,5 +1,19 @@
 # Changelog
 
+## 8.0.32-1
+
+- Sync upstream image [eceasy/cli-proxy-api:v8.0.32](https://hub.docker.com/r/eceasy/cli-proxy-api).
+- Upstream project: [router-for-me/CLIProxyAPI](https://github.com/router-for-me/CLIProxyAPI).
+- Upstream release: [v8.0.32](https://github.com/router-for-me/CLIProxyAPI/releases/tag/v8.0.32).
+- Upstream changelog summary:
+  - `CLIProxyAPI_<version>_linux_<arch>.tar.gz` is the default Linux build. It supports dynamic library plugins and is built against a GLIBC 2.17 baseline.
+  - `CLIProxyAPI_<version>_linux_<arch>_no-plugin.tar.gz` is the portable Linux build for musl-based or older systems such as OpenWrt. It does not support dynamic library plugins.
+  - `CLIProxyAPI_<version>_freebsd_aarch64_no-plugin.tar.gz` is the FreeBSD arm64 build. It is built without CGO and does not support dynamic library plugins.
+  - feat(docs): add kedaya.ai as a new AI model API relay service provider in README files (e7003d2a)
+  - feat(claude): clean and normalize Claude tool arguments against original schemas (202b8b8c)
+  - feat(claude): add session date pin retention to preserve continuity across credential switches (7604d3df)
+
+
 ## 8.0.31-1
 
 - Sync upstream image [eceasy/cli-proxy-api:v8.0.31](https://hub.docker.com/r/eceasy/cli-proxy-api).
