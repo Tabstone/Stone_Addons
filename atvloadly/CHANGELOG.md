@@ -1,5 +1,12 @@
 # Changelog
 
+## 0.7.2-1
+
+- Sync upstream image [ghcr.io/bitxeno/atvloadly:v0.7.2](https://github.com/bitxeno/atvloadly/pkgs/container/atvloadly).
+- Upstream project: [bitxeno/atvloadly](https://github.com/bitxeno/atvloadly).
+- Upstream tag: [v0.7.2](https://github.com/bitxeno/atvloadly/tree/v0.7.2).
+
+
 ## 0.7.1-1
 
 - Sync upstream image [ghcr.io/bitxeno/atvloadly:v0.7.1](https://github.com/bitxeno/atvloadly/pkgs/container/atvloadly).
