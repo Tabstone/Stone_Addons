@@ -1,5 +1,19 @@
 # Changelog
 
+## 8.0.35-1
+
+- Sync upstream image [eceasy/cli-proxy-api:v8.0.35](https://hub.docker.com/r/eceasy/cli-proxy-api).
+- Upstream project: [router-for-me/CLIProxyAPI](https://github.com/router-for-me/CLIProxyAPI).
+- Upstream release: [v8.0.35](https://github.com/router-for-me/CLIProxyAPI/releases/tag/v8.0.35).
+- Upstream changelog summary:
+  - `CLIProxyAPI_<version>_linux_<arch>.tar.gz` is the default Linux build. It supports dynamic library plugins and is built against a GLIBC 2.17 baseline.
+  - `CLIProxyAPI_<version>_linux_<arch>_no-plugin.tar.gz` is the portable Linux build for musl-based or older systems such as OpenWrt. It does not support dynamic library plugins.
+  - `CLIProxyAPI_<version>_freebsd_aarch64_no-plugin.tar.gz` is the FreeBSD arm64 build. It is built without CGO and does not support dynamic library plugins.
+  - fix(util): strip readOnly and writeOnly keywords in Gemini schema cleaners (154d5144)
+  - feat(cache): add Home KV support to Claude web search result cache (ab9c06b4)
+  - feat(executor): support Codex remote-compaction v2 on Kimi and Meta Responses routes (344e0ef9)
+
+
 ## 8.0.33-1
 
 - Sync upstream image [eceasy/cli-proxy-api:v8.0.33](https://hub.docker.com/r/eceasy/cli-proxy-api).
