@@ -1,5 +1,19 @@
 # Changelog
 
+## 8.0.37-1
+
+- Sync upstream image [eceasy/cli-proxy-api:v8.0.37](https://hub.docker.com/r/eceasy/cli-proxy-api).
+- Upstream project: [router-for-me/CLIProxyAPI](https://github.com/router-for-me/CLIProxyAPI).
+- Upstream release: [v8.0.37](https://github.com/router-for-me/CLIProxyAPI/releases/tag/v8.0.37).
+- Upstream changelog summary:
+  - `CLIProxyAPI_<version>_linux_<arch>.tar.gz` is the default Linux build. It supports dynamic library plugins and is built against a GLIBC 2.17 baseline.
+  - `CLIProxyAPI_<version>_linux_<arch>_no-plugin.tar.gz` is the portable Linux build for musl-based or older systems such as OpenWrt. It does not support dynamic library plugins.
+  - `CLIProxyAPI_<version>_freebsd_aarch64_no-plugin.tar.gz` is the FreeBSD arm64 build. It is built without CGO and does not support dynamic library plugins.
+  - feat(vertex): support per-model and per-credential openapi routing settings (d44f8682)
+  - feat(pluginhost): add host.auth.models callback for per-credential model lookup (4846a289)
+  - feat(management): add read-only SIWC credential status endpoint (06fd5b8b)
+
+
 ## 8.0.35-1
 
 - Sync upstream image [eceasy/cli-proxy-api:v8.0.35](https://hub.docker.com/r/eceasy/cli-proxy-api).
