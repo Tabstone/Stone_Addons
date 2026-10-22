@@ -1,5 +1,19 @@
 # Changelog
 
+## 8.0.38-1
+
+- Sync upstream image [eceasy/cli-proxy-api:v8.0.38](https://hub.docker.com/r/eceasy/cli-proxy-api).
+- Upstream project: [router-for-me/CLIProxyAPI](https://github.com/router-for-me/CLIProxyAPI).
+- Upstream release: [v8.0.38](https://github.com/router-for-me/CLIProxyAPI/releases/tag/v8.0.38).
+- Upstream changelog summary:
+  - `CLIProxyAPI_<version>_linux_<arch>.tar.gz` is the default Linux build. It supports dynamic library plugins and is built against a GLIBC 2.17 baseline.
+  - `CLIProxyAPI_<version>_linux_<arch>_no-plugin.tar.gz` is the portable Linux build for musl-based or older systems such as OpenWrt. It does not support dynamic library plugins.
+  - `CLIProxyAPI_<version>_freebsd_aarch64_no-plugin.tar.gz` is the FreeBSD arm64 build. It is built without CGO and does not support dynamic library plugins.
+  - feat(home): add planned cluster rebalance handoff (befcba23)
+  - fix(codex): preserve explicit parallel_tool_calls false in OpenAI translators (99d1698f)
+  - perf(claude/responses): resolve namespaces from cached state and extract request echo once (f4a2d040)
+
+
 ## 8.0.37-1
 
 - Sync upstream image [eceasy/cli-proxy-api:v8.0.37](https://hub.docker.com/r/eceasy/cli-proxy-api).
