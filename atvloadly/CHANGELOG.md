@@ -1,5 +1,19 @@
 # Changelog
 
+## 0.7.3-1
+
+- Sync upstream image [ghcr.io/bitxeno/atvloadly:v0.7.3](https://github.com/bitxeno/atvloadly/pkgs/container/atvloadly).
+- Upstream project: [bitxeno/atvloadly](https://github.com/bitxeno/atvloadly).
+- Upstream release: [v0.7.3 - tvOS 17.4+](https://github.com/bitxeno/atvloadly/releases/tag/v0.7.3).
+- Upstream changelog summary:
+  - **login**: Warn that 2FA needs a trusted device &nbsp;-&nbsp; by @bitxeno [<samp>(b261a)</samp>](https://github.com/bitxeno/atvloadly/commit/b261a3e)
+  - **docker**:
+  - Bump plumesign to v2.7.1-patch.3 to fix the SRP login 503 error &nbsp;-&nbsp; by @bitxeno [<samp>(ca8f6)</samp>](https://github.com/bitxeno/atvloadly/commit/ca8f66f)
+  - **log**:
+  - Rotate the app log at 10 MB and compress backups &nbsp;-&nbsp; by @bitxeno [<samp>(97826)</samp>](https://github.com/bitxeno/atvloadly/commit/97826fe)
+  - **pair**:
+
+
 ## 0.7.2-1
 
 - Sync upstream image [ghcr.io/bitxeno/atvloadly:v0.7.2](https://github.com/bitxeno/atvloadly/pkgs/container/atvloadly).

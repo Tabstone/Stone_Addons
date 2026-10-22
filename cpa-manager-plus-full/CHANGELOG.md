@@ -1,5 +1,19 @@
 # Changelog
 
+## 1.14.8-1
+
+- Sync upstream image [seakee/cpa-manager-plus:v1.14.8](https://hub.docker.com/r/seakee/cpa-manager-plus).
+- Upstream project: [seakee/CPA-Manager-Plus](https://github.com/seakee/CPA-Manager-Plus).
+- Upstream release: [v1.14.8](https://github.com/seakee/CPA-Manager-Plus/releases/tag/v1.14.8).
+- Upstream changelog summary:
+  - > 44 commits · 38 files changed · +2459 / -114
+  - > [English ->](https://github.com/seakee/CPA-Manager-Plus/blob/v1.14.8/docs/release-notes/v1.14.8-en.md)
+  - v1.14.8 是 v1.14.7 之后的 1.x 维护版本，整合四项已经合并的前端修复：后台刷新数据连续性（#1001）、实时监控来源识别（#1014）、配额窗口显示（#1020），以及 xAI OAuth 订阅计划与可观察配额识别（#1006）。
+  - 本次不包含 v2 架构改造，不修改 Manager Server、CPA 管理 API、数据库 Schema、凭证格式或配置格式。没有新增用户配置项或迁移步骤。
+  - **后台刷新连续性（#1001）**：凭证历史、配额使用量、Usage Analytics 和模型价格表在相同连接及数据作用域内刷新时保留已加载的数据，避免请求进行中或暂时失败时闪烁、清空或错误显示空态。
+  - 对于替换的凭证，历史及配额使用量以当前凭证身份隔离；未变更的其他凭证仍保留其有效快照。滚动时间范围跨日及筛选条件变化时，旧数据按作用域正常失效。
+
+
 ## 1.14.7-1
 
 - Sync upstream image [seakee/cpa-manager-plus:v1.14.7](https://hub.docker.com/r/seakee/cpa-manager-plus).
