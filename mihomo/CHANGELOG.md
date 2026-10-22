@@ -1,5 +1,19 @@
 # Changelog
 
+## 1.19.33-1
+
+- Sync upstream image [metacubex/mihomo:v1.19.33](https://hub.docker.com/r/metacubex/mihomo).
+- Upstream project: [MetaCubeX/mihomo](https://github.com/MetaCubeX/mihomo).
+- Upstream release: [v1.19.33](https://github.com/MetaCubeX/mihomo/releases/tag/v1.19.33).
+- Upstream changelog summary:
+  - 2df147b9 feat: support `dns-mode` for tun (#3288) by @Chenx Dust
+  - 349af191 fix: the embedded shadowsocks listener can't be closed (#3314) by @Token
+  - 80101933 fix: bound doh dials so ones the query gave up on cannot pile up (#3274) by @Cassian433
+  - 94b13aed fix: dialer-proxy cycle check takes quadratic time and memory (#3315) by @Token
+  - c4e81869 fix: CVE-2026-97031 for crypto/tls by @wwqgtxx
+  - df1b07af fix: a sub-millisecond URL test is reported as a failure (#3316) by @Token
+
+
 ## 1.19.32-1
 
 - Sync upstream image [metacubex/mihomo:v1.19.32](https://hub.docker.com/r/metacubex/mihomo).
