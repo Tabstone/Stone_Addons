@@ -1,5 +1,19 @@
 # Changelog
 
+## 0.2.18-1
+
+- Sync upstream image [weishaw/sub2api:0.2.18](https://hub.docker.com/r/weishaw/sub2api).
+- Upstream project: [Wei-Shaw/sub2api](https://github.com/Wei-Shaw/sub2api).
+- Upstream release: [Sub2API 0.2.18](https://github.com/Wei-Shaw/sub2api/releases/tag/v0.2.18).
+- Upstream changelog summary:
+  - > AI API Gateway Platform - 将 AI 订阅配额分发和管理
+  - 修复多条流式链路在客户端断开或上游异常中断时的计费与收尾问题；Vertex 账号支持配额上限。
+  - Vertex 账号支持配额上限：可设置总额/日/周上限，用满停止调度并发送额度通知，用量列显示配额进度条
+  - 分组「允许当前分组生图」开关对 Gemini / Antigravity / 混合分组生效，关闭时 Gemini 系生图请求返回 400
+  - 账号管理页的平台与状态筛选条件刷新后保留
+  - 调度快照解码结果常驻进程内存，降低大分组选号时的 Redis 流量与 CPU 开销
+
+
 ## 0.2.17-1
 
 - Sync upstream image [weishaw/sub2api:0.2.17](https://hub.docker.com/r/weishaw/sub2api).

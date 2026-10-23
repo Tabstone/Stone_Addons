@@ -1,5 +1,19 @@
 # Changelog
 
+## 0.7.4-1
+
+- Sync upstream image [ghcr.io/bitxeno/atvloadly:v0.7.4](https://github.com/bitxeno/atvloadly/pkgs/container/atvloadly).
+- Upstream project: [bitxeno/atvloadly](https://github.com/bitxeno/atvloadly).
+- Upstream release: [v0.7.4 - tvOS 17.4+](https://github.com/bitxeno/atvloadly/releases/tag/v0.7.4).
+- Upstream changelog summary:
+  - > [!WARNING]
+  - > The new version forces the use of a remote anisette server; refresh and install may fail due to instability of the remote anisette server, so please try again later.
+  - > 新版本强制使用远程anisette服务器；由于远程anisette服务器不稳定，刷新和安装可能会失败，请稍后再试。
+  - **settings**: Add anisette server configuration &nbsp;-&nbsp; by @bitxeno [<samp>(938c8)</samp>](https://github.com/bitxeno/atvloadly/commit/938c837)
+  - **login**:
+  - Replace the 2FA warning with a help dropdown &nbsp;-&nbsp; by @bitxeno [<samp>(3c544)</samp>](https://github.com/bitxeno/atvloadly/commit/3c54498)
+
+
 ## 0.7.3-1
 
 - Sync upstream image [ghcr.io/bitxeno/atvloadly:v0.7.3](https://github.com/bitxeno/atvloadly/pkgs/container/atvloadly).

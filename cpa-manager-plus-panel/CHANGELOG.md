@@ -1,5 +1,19 @@
 # Changelog
 
+## 1.14.9-1
+
+- Sync upstream image [seakee/cpa-manager-plus:v1.14.9](https://hub.docker.com/r/seakee/cpa-manager-plus).
+- Upstream project: [seakee/CPA-Manager-Plus](https://github.com/seakee/CPA-Manager-Plus).
+- Upstream release: [v1.14.9](https://github.com/seakee/CPA-Manager-Plus/releases/tag/v1.14.9).
+- Upstream changelog summary:
+  - > 2 commits · 16 files changed · +990 / -1463
+  - > [English ->](https://github.com/seakee/CPA-Manager-Plus/blob/v1.14.9/docs/release-notes/v1.14.9-en.md)
+  - v1.14.9 是 v1.14.8 之后的 1.x 安全维护版本，包含已合并的依赖安全更新与持续检查改进（#1049）。本次重点是更新构建工具链及依赖项、减少已知安全告警，并阻止后续存在未通过依赖扫描的改动直接通过既有 CI 门禁。
+  - **本次没有新增用户功能。** 不包含 v2 架构改造，也不修改 CPA 管理 API、身份认证逻辑、数据库 Schema、凭证格式、配置格式或历史用量数据。
+  - **Go 与 Manager Server（#1049）**：将 Go 源码构建工具链更新到 **1.26.10**，升级 `golang.org/x/sys` 至 **v0.44.0**；CI 依据 `go.mod` 选取工具链，Docker 构建阶段固定相应版本。SQLite 依赖仍为 **v1.46.1**。
+  - **Node.js 与前端依赖（#1049）**：Docker 前端构建固定使用 Node.js **22.23.4**，CI 使用 **24.22.1**；同时更新 axios、React Router、Vite、Vitest 等依赖及其锁定版本。
+
+
 ## 1.14.8-1
 
 - Sync upstream image [seakee/cpa-manager-plus:v1.14.8](https://hub.docker.com/r/seakee/cpa-manager-plus).
