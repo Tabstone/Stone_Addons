@@ -1,5 +1,19 @@
 # Changelog
 
+## 8.0.41-1
+
+- Sync upstream image [eceasy/cli-proxy-api:v8.0.41](https://hub.docker.com/r/eceasy/cli-proxy-api).
+- Upstream project: [router-for-me/CLIProxyAPI](https://github.com/router-for-me/CLIProxyAPI).
+- Upstream release: [v8.0.41](https://github.com/router-for-me/CLIProxyAPI/releases/tag/v8.0.41).
+- Upstream changelog summary:
+  - `CLIProxyAPI_<version>_linux_<arch>.tar.gz` is the default Linux build. It supports dynamic library plugins and is built against a GLIBC 2.17 baseline.
+  - `CLIProxyAPI_<version>_linux_<arch>_no-plugin.tar.gz` is the portable Linux build for musl-based or older systems such as OpenWrt. It does not support dynamic library plugins.
+  - `CLIProxyAPI_<version>_freebsd_aarch64_no-plugin.tar.gz` is the FreeBSD arm64 build. It is built without CGO and does not support dynamic library plugins.
+  - feat(home): add cluster latency telemetry and probing (e45f9426)
+  - Merge pull request #6903 from router-for-me/home (41a4b9f4)
+  - fix(codex): map commentary phase messages to thinking blocks in Claude response translator (376015c3)
+
+
 ## 8.0.40-1
 
 - Sync upstream image [eceasy/cli-proxy-api:v8.0.40](https://hub.docker.com/r/eceasy/cli-proxy-api).
