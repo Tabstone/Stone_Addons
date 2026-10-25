@@ -1,5 +1,19 @@
 # Changelog
 
+## 0.8.0-1
+
+- Sync upstream image [ghcr.io/bitxeno/atvloadly:v0.8.0](https://github.com/bitxeno/atvloadly/pkgs/container/atvloadly).
+- Upstream project: [bitxeno/atvloadly](https://github.com/bitxeno/atvloadly).
+- Upstream release: [v0.8.0 - tvOS 17.4+](https://github.com/bitxeno/atvloadly/releases/tag/v0.8.0).
+- Upstream changelog summary:
+  - **desktop**: Add a native desktop app for macOS and Windows &nbsp;-&nbsp; by @bitxeno in https://github.com/bitxeno/atvloadly/issues/233...
+  - **device**: Add add-device flow with manual-IP pairing and Tailscale support &nbsp;-&nbsp; by @bitxeno in https://github.com/bitxeno/atvloadly/issues/232...
+  - **desktop**: Copy the locales before mygo build starts &nbsp;-&nbsp; by @bitxeno [<samp>(b1162)</samp>](https://github.com/bitxeno/atvloadly/commit/b11623d)
+  - **device**: Fail fast when a manual device is unreachable &nbsp;-&nbsp; by @bitxeno [<samp>(f6c53)</samp>](https://github.com/bitxeno/atvloadly/commit/f6c53de)
+  - **release**: Pass -R to gh in the publish job &nbsp;-&nbsp; by @bitxeno [<samp>(d4b4d)</samp>](https://github.com/bitxeno/atvloadly/commit/d4b4d45)
+  - **[@Hintay](https://github.com/Hintay)** ([#228](https://github.com/bitxeno/atvloadly/pull/228)) — the macOS-native approach that shaped the desktop app.
+
+
 ## 0.7.4-1
 
 - Sync upstream image [ghcr.io/bitxeno/atvloadly:v0.7.4](https://github.com/bitxeno/atvloadly/pkgs/container/atvloadly).
