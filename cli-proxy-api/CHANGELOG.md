@@ -1,5 +1,19 @@
 # Changelog
 
+## 8.0.44-1
+
+- Sync upstream image [eceasy/cli-proxy-api:v8.0.44](https://hub.docker.com/r/eceasy/cli-proxy-api).
+- Upstream project: [router-for-me/CLIProxyAPI](https://github.com/router-for-me/CLIProxyAPI).
+- Upstream release: [v8.0.44](https://github.com/router-for-me/CLIProxyAPI/releases/tag/v8.0.44).
+- Upstream changelog summary:
+  - `CLIProxyAPI_<version>_linux_<arch>.tar.gz` is the default Linux build. It supports dynamic library plugins and is built against a GLIBC 2.17 baseline.
+  - `CLIProxyAPI_<version>_linux_<arch>_no-plugin.tar.gz` is the portable Linux build for musl-based or older systems such as OpenWrt. It does not support dynamic library plugins.
+  - `CLIProxyAPI_<version>_freebsd_aarch64_no-plugin.tar.gz` is the FreeBSD arm64 build. It is built without CGO and does not support dynamic library plugins.
+  - fix(handlers): report cancellation when stream closes before first chunk (712e4970)
+  - fix(auth,pluginapi,usage): share per-selection ID between Scheduler.Pick and UsageRecord (e5321f53)
+  - feat(codex): add full-chain compression for Codex upstream and downstream traffic (064e008b)
+
+
 ## 8.0.43-1
 
 - Sync upstream image [eceasy/cli-proxy-api:v8.0.43](https://hub.docker.com/r/eceasy/cli-proxy-api).
