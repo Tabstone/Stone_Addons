@@ -1,5 +1,19 @@
 # Changelog
 
+## 0.8.1-1
+
+- Sync upstream image [ghcr.io/bitxeno/atvloadly:v0.8.1](https://github.com/bitxeno/atvloadly/pkgs/container/atvloadly).
+- Upstream project: [bitxeno/atvloadly](https://github.com/bitxeno/atvloadly).
+- Upstream release: [v0.8.1 - tvOS 17.4+](https://github.com/bitxeno/atvloadly/releases/tag/v0.8.1).
+- Upstream changelog summary:
+  - **desktop**:
+  - Add native server port editor &nbsp;-&nbsp; by @bitxeno [<samp>(bed8b)</samp>](https://github.com/bitxeno/atvloadly/commit/bed8bc9)
+  - Add open-at-login setting &nbsp;-&nbsp; by @bitxeno [<samp>(e2cf2)</samp>](https://github.com/bitxeno/atvloadly/commit/e2cf2e3)
+  - Replace port dialog with service settings page &nbsp;-&nbsp; by @bitxeno [<samp>(d330f)</samp>](https://github.com/bitxeno/atvloadly/commit/d330fda)
+  - **device**: Resolve pairing files under %APPDATA% on Windows &nbsp;-&nbsp; by @bitxeno in https://github.com/bitxeno/atvloadly/issues/237...
+  - **deps**: Move vendored go-pkcs12 from third_party to pkg &nbsp;-&nbsp; by @bitxeno [<samp>(f9a5c)</samp>](https://github.com/bitxeno/atvloadly/commit/f9a5cf8)
+
+
 ## 0.8.0-1
 
 - Sync upstream image [ghcr.io/bitxeno/atvloadly:v0.8.0](https://github.com/bitxeno/atvloadly/pkgs/container/atvloadly).
