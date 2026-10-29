@@ -1,5 +1,19 @@
 # Changelog
 
+## 0.2.19-1
+
+- Sync upstream image [weishaw/sub2api:0.2.19](https://hub.docker.com/r/weishaw/sub2api).
+- Upstream project: [Wei-Shaw/sub2api](https://github.com/Wei-Shaw/sub2api).
+- Upstream release: [Sub2API 0.2.19](https://github.com/Wei-Shaw/sub2api/releases/tag/v0.2.19).
+- Upstream changelog summary:
+  - > AI API Gateway Platform - 将 AI 订阅配额分发和管理
+  - 新增按操作与资源范围授权的管理员 API Key；OpenAI / Composite 分组支持按实际出图张数计费，并新增 GPT-6.1 Terra 模型支持。
+  - 管理员 API Key：可按操作和资源范围授权，支持过期时间和 IP 白名单；只保存不可逆摘要，撤销记录保留用于审计
+  - 按张计费：OpenAI 和 Composite 分组新增「按张计费」开关（默认关闭），一次生成多张图时按上游实际返回的张数计费，只对专用图片端点生效
+  - OpenAI：支持 GPT-6.1 Terra 模型
+  - Gemini：同账号重试次数可通过 gateway.max_same_account_retries_gemini 配置（默认 4，范围 0–10）
+
+
 ## 0.2.18-1
 
 - Sync upstream image [weishaw/sub2api:0.2.18](https://hub.docker.com/r/weishaw/sub2api).
