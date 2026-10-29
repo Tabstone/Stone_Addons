@@ -1,5 +1,19 @@
 # Changelog
 
+## 1.14.10-1
+
+- Sync upstream image [seakee/cpa-manager-plus:v1.14.10](https://hub.docker.com/r/seakee/cpa-manager-plus).
+- Upstream project: [seakee/CPA-Manager-Plus](https://github.com/seakee/CPA-Manager-Plus).
+- Upstream release: [v1.14.10](https://github.com/seakee/CPA-Manager-Plus/releases/tag/v1.14.10).
+- Upstream changelog summary:
+  - > 35 commits (including merges) · 37 files changed · +1323 / -108
+  - > [English →](https://github.com/seakee/CPA-Manager-Plus/blob/v1.14.10/docs/release-notes/v1.14.10-en.md)
+  - v1.14.10 是 v1.14.9 之后的 1.x 功能完善与问题修复版本。新增常用凭证置顶，并修复模型排除优先级、历史价格读取、插件配置默认值及同页面 URL 状态同步问题。Manager Server 还补充了范围受限的 CPA v8 API Key 分组只读转发。不包含 v2 架构改造。
+  - **凭证置顶（#1098、#1102）**：可在表格或卡片视图置顶关注的凭证；符合当前筛选条件的置顶项按置顶先后排在列表前列，其他项仍按原排序。图钉改为账号名称旁的轻量按钮，避免遮挡提供商标识。置顶状态仅保存在当前浏览器，选择模式下不提供置顶操作。
+  - **模型排除的实际生效规则（#1080）**：按 CPA 版本区分 OAuth 排除优先级。CPA v6.10.8–v8.0.32 合并全局和凭证规则；v8.0.33+ 的非空凭证列表覆盖全局规则，空列表继承全局规则。模型数量、徽标、操作状态和编辑提示按实际生效规则展示；新增凭证排除时避免意外重新放开全局已排除模型。无法识别版本时采取保守的编辑限制。
+  - **同页面 URL 状态（#1099）**：修复仅变更查询参数或锚点时页面未收到新地址的问题。凭证管理的筛选、搜索、排序、布局和详情状态能与 URL 保持一致，刷新、前进后退及分享链接可还原当前视图；修复快速输入时旧地址回写覆盖新搜索条件的问题。
+
+
 ## 1.14.9-1
 
 - Sync upstream image [seakee/cpa-manager-plus:v1.14.9](https://hub.docker.com/r/seakee/cpa-manager-plus).
