@@ -1,5 +1,19 @@
 # Changelog
 
+## 0.8.2-1
+
+- Sync upstream image [ghcr.io/bitxeno/atvloadly:v0.8.2](https://github.com/bitxeno/atvloadly/pkgs/container/atvloadly).
+- Upstream project: [bitxeno/atvloadly](https://github.com/bitxeno/atvloadly).
+- Upstream release: [v0.8.2 - tvOS 17.4+](https://github.com/bitxeno/atvloadly/releases/tag/v0.8.2).
+- Upstream changelog summary:
+  - **home**: Open source dialog from the update-available badge &nbsp;-&nbsp; by @bitxeno [<samp>(c2afd)</samp>](https://github.com/bitxeno/atvloadly/commit/c2afd38)
+  - **settings**: List and reset anisette data from the engine &nbsp;-&nbsp; by @bitxeno [<samp>(7b241)</samp>](https://github.com/bitxeno/atvloadly/commit/7b24117)
+  - **app**: Confine deletion to the app's storage directory &nbsp;-&nbsp; by @YellowNest in https://github.com/bitxeno/atvloadly/issues/244...
+  - **coreadi**: Stage both libraries before replacing installed files &nbsp;-&nbsp; by @YellowNest in https://github.com/bitxeno/atvloadly/issues/243...
+  - **device**: Reload manual devices without copying sync.Map &nbsp;-&nbsp; by @YellowNest in https://github.com/bitxeno/atvloadly/issues/241...
+  - **screenshot**: Bound base64 decoding memory &nbsp;-&nbsp; by @YellowNest in https://github.com/bitxeno/atvloadly/issues/242...
+
+
 ## 0.8.1-1
 
 - Sync upstream image [ghcr.io/bitxeno/atvloadly:v0.8.1](https://github.com/bitxeno/atvloadly/pkgs/container/atvloadly).
