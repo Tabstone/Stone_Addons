@@ -1,5 +1,14 @@
 # Changelog
 
+## 1.274.3-1
+
+- Sync upstream image [ghcr.io/metacubex/metacubexd:v1.274.3](https://github.com/MetaCubeX/metacubexd/pkgs/container/metacubexd).
+- Upstream project: [MetaCubeX/metacubexd](https://github.com/MetaCubeX/metacubexd).
+- Upstream release: [v1.274.3](https://github.com/MetaCubeX/metacubexd/releases/tag/v1.274.3).
+- Upstream changelog summary:
+  - **connections:** prevent live table flicker and layout shifts ([710f395](https://github.com/MetaCubeX/metacubexd/commit/710f39506ef58b7a6d94ce0afde4576dc3fb4d5e))
+
+
 ## 1.273.1-1
 
 - Sync upstream image [ghcr.io/metacubex/metacubexd:v1.273.1](https://github.com/MetaCubeX/metacubexd/pkgs/container/metacubexd).

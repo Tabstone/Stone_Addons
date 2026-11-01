@@ -1,5 +1,19 @@
 # Changelog
 
+## 8.0.49-1
+
+- Sync upstream image [eceasy/cli-proxy-api:v8.0.49](https://hub.docker.com/r/eceasy/cli-proxy-api).
+- Upstream project: [router-for-me/CLIProxyAPI](https://github.com/router-for-me/CLIProxyAPI).
+- Upstream release: [v8.0.49](https://github.com/router-for-me/CLIProxyAPI/releases/tag/v8.0.49).
+- Upstream changelog summary:
+  - `CLIProxyAPI_<version>_linux_<arch>.tar.gz` is the default Linux build. It supports dynamic library plugins and is built against a GLIBC 2.17 baseline.
+  - `CLIProxyAPI_<version>_linux_<arch>_no-plugin.tar.gz` is the portable Linux build for musl-based or older systems such as OpenWrt. It does not support dynamic library plugins.
+  - `CLIProxyAPI_<version>_freebsd_aarch64_no-plugin.tar.gz` is the FreeBSD arm64 build. It is built without CGO and does not support dynamic library plugins.
+  - feat(claude): add opt-in visible Codex commentary with preserved replay (cc4b9949)
+  - fix(gemini): strip empty part objects from systemInstruction (#7136) (4c46f0aa)
+  - feat(pluginhost): allow plugins to register multiple OAuth login entries (a8dbebab)
+
+
 ## 8.0.48-1
 
 - Sync upstream image [eceasy/cli-proxy-api:v8.0.48](https://hub.docker.com/r/eceasy/cli-proxy-api).
