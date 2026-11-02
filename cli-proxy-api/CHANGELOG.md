@@ -1,5 +1,19 @@
 # Changelog
 
+## 8.0.51-1
+
+- Sync upstream image [eceasy/cli-proxy-api:v8.0.51](https://hub.docker.com/r/eceasy/cli-proxy-api).
+- Upstream project: [router-for-me/CLIProxyAPI](https://github.com/router-for-me/CLIProxyAPI).
+- Upstream release: [v8.0.51](https://github.com/router-for-me/CLIProxyAPI/releases/tag/v8.0.51).
+- Upstream changelog summary:
+  - `CLIProxyAPI_<version>_linux_<arch>.tar.gz` is the default Linux build. It supports dynamic library plugins and is built against a GLIBC 2.17 baseline.
+  - `CLIProxyAPI_<version>_linux_<arch>_no-plugin.tar.gz` is the portable Linux build for musl-based or older systems such as OpenWrt. It does not support dynamic library plugins.
+  - `CLIProxyAPI_<version>_freebsd_aarch64_no-plugin.tar.gz` is the FreeBSD arm64 build. It is built without CGO and does not support dynamic library plugins.
+  - chore(meta): match Muse Code 1.4.14 client headers (d9a688e6)
+  - fix(meta): include Muse namespace in tool-bearing requests (b147b8d2)
+  - fix(xai): support Grok Imagine Video 1.5 Lite (f0ddc38f)
+
+
 ## 8.0.49-1
 
 - Sync upstream image [eceasy/cli-proxy-api:v8.0.49](https://hub.docker.com/r/eceasy/cli-proxy-api).
