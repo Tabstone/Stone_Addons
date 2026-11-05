@@ -1,5 +1,15 @@
 # Changelog
 
+## 1.274.4-1
+
+- Sync upstream image [ghcr.io/metacubex/metacubexd:v1.274.4](https://github.com/MetaCubeX/metacubexd/pkgs/container/metacubexd).
+- Upstream project: [MetaCubeX/metacubexd](https://github.com/MetaCubeX/metacubexd).
+- Upstream release: [v1.274.4](https://github.com/MetaCubeX/metacubexd/releases/tag/v1.274.4).
+- Upstream changelog summary:
+  - **desktop:** avoid duplicate __dirname declaration in main bundle ([#2241](https://github.com/MetaCubeX/metacubexd/issues/2241))...
+  - **desktop:** use static AppImage runtime toolset to avoid libfuse2 dependency ([#2242](https://github.com/MetaCubeX/metacubexd/issues/2242))...
+
+
 ## 1.274.3-1
 
 - Sync upstream image [ghcr.io/metacubex/metacubexd:v1.274.3](https://github.com/MetaCubeX/metacubexd/pkgs/container/metacubexd).
