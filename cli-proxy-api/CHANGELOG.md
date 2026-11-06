@@ -1,5 +1,19 @@
 # Changelog
 
+## 8.0.57-1
+
+- Sync upstream image [eceasy/cli-proxy-api:v8.0.57](https://hub.docker.com/r/eceasy/cli-proxy-api).
+- Upstream project: [router-for-me/CLIProxyAPI](https://github.com/router-for-me/CLIProxyAPI).
+- Upstream release: [v8.0.57](https://github.com/router-for-me/CLIProxyAPI/releases/tag/v8.0.57).
+- Upstream changelog summary:
+  - `CLIProxyAPI_<version>_linux_<arch>.tar.gz` is the default Linux build. It supports dynamic library plugins and is built against a GLIBC 2.17 baseline.
+  - `CLIProxyAPI_<version>_linux_<arch>_no-plugin.tar.gz` is the portable Linux build for musl-based or older systems such as OpenWrt. It does not support dynamic library plugins.
+  - `CLIProxyAPI_<version>_freebsd_aarch64_no-plugin.tar.gz` is the FreeBSD arm64 build. It is built without CGO and does not support dynamic library plugins.
+  - fix(usage): clear consumed queue slot in usage manager dispatcher (f2e255f7)
+  - fix(codex): handle Responses-Lite hosted image_generation compatibility (8fb60326)
+  - feat(devin): update devin_models.json with swe-2-flash, nemotron-3-5-super, and gpt-6-1-terra (a3c84a37)
+
+
 ## 8.0.56-1
 
 - Sync upstream image [eceasy/cli-proxy-api:v8.0.56](https://hub.docker.com/r/eceasy/cli-proxy-api).
