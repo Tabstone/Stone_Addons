@@ -1,5 +1,19 @@
 # Changelog
 
+## 0.2.20-1
+
+- Sync upstream image [weishaw/sub2api:0.2.20](https://hub.docker.com/r/weishaw/sub2api).
+- Upstream project: [Wei-Shaw/sub2api](https://github.com/Wei-Shaw/sub2api).
+- Upstream release: [Sub2API 0.2.20](https://github.com/Wei-Shaw/sub2api/releases/tag/v0.2.20).
+- Upstream changelog summary:
+  - > AI API Gateway Platform - 将 AI 订阅配额分发和管理
+  - 新增基于 OAuth 授权的管理 MCP 接口，并完善管理员密钥的细粒度权限；同时全面治理网关请求体内存与读写超时，提升高并发下的稳定性。
+  - 管理 MCP：新增 OAuth 认证的管理 MCP 接口及前端授权确认/连接管理页面，需显式配置 MCP_PUBLIC_URL 才会启用（默认关闭）
+  - 管理员密钥：补全权限项（统计、OpenAI OAuth、邀请等）与中英文权限展示，新增需输入确认文字才能开启的「全权兼容模式」
+  - 注册邮箱精确黑名单：支持批量粘贴（上限 20000 条），按收件箱身份匹配 Gmail 点号/+后缀变体，保存时可批量禁用命中的已注册用户
+  - OpenAI 生图账号支持按 1K/2K/4K 尺寸档位分流，未指定尺寸时按档位偏好逐层选号
+
+
 ## 0.2.19-1
 
 - Sync upstream image [weishaw/sub2api:0.2.19](https://hub.docker.com/r/weishaw/sub2api).
