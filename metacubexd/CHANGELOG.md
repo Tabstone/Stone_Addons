@@ -1,5 +1,15 @@
 # Changelog
 
+## 1.274.5-1
+
+- Sync upstream image [ghcr.io/metacubex/metacubexd:v1.274.5](https://github.com/MetaCubeX/metacubexd/pkgs/container/metacubexd).
+- Upstream project: [MetaCubeX/metacubexd](https://github.com/MetaCubeX/metacubexd).
+- Upstream release: [v1.274.5](https://github.com/MetaCubeX/metacubexd/releases/tag/v1.274.5).
+- Upstream changelog summary:
+  - **agent:** keep config section edits on remote profiles across refresh ([#2246](https://github.com/MetaCubeX/metacubexd/issues/2246))...
+  - **ui:** offer only TUN stacks mihomo accepts ([#2247](https://github.com/MetaCubeX/metacubexd/issues/2247))...
+
+
 ## 1.274.4-1
 
 - Sync upstream image [ghcr.io/metacubex/metacubexd:v1.274.4](https://github.com/MetaCubeX/metacubexd/pkgs/container/metacubexd).
