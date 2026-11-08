@@ -144,6 +144,10 @@ jobs:
           echo "metapi_tag=$METAPI_TAG" >> "$GITHUB_OUTPUT"
           echo "metapi=${METAPI_TAG#v}" >> "$GITHUB_OUTPUT"
 
+          MAGPIE_TAG=$(get_ghcr_latest "yetone/magpie")
+          echo "magpie_tag=$MAGPIE_TAG" >> "$GITHUB_OUTPUT"
+          echo "magpie=${MAGPIE_TAG#v}" >> "$GITHUB_OUTPUT"
+
       - name: Update addon metadata
         id: update
         env:
@@ -175,6 +179,8 @@ jobs:
           SUB2API_TAG: ${{ steps.upstream.outputs.sub2api_tag }}
           METAPI_VERSION: ${{ steps.upstream.outputs.metapi }}
           METAPI_TAG: ${{ steps.upstream.outputs.metapi_tag }}
+          MAGPIE_VERSION: ${{ steps.upstream.outputs.magpie }}
+          MAGPIE_TAG: ${{ steps.upstream.outputs.magpie_tag }}
           BUMP_WRAPPER: ${{ github.event.inputs.bump_wrapper || 'false' }}
           GH_API_TOKEN: ${{ github.token }}
         run: |

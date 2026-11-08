@@ -37,6 +37,14 @@ UPDATES = [
     AddonUpdate("metacubexd", "ghcr.io/metacubex/metacubexd", "METACUBEXD_VERSION", "METACUBEXD_TAG", "MetaCubeX/metacubexd", "https://github.com/MetaCubeX/metacubexd/pkgs/container/metacubexd"),
     AddonUpdate("sub2api", "weishaw/sub2api", "SUB2API_VERSION", "SUB2API_TAG", "Wei-Shaw/sub2api"),
     AddonUpdate("metapi", "1467078763/metapi", "METAPI_VERSION", "METAPI_TAG", "cita-777/metapi"),
+    AddonUpdate(
+        "magpie",
+        "ghcr.io/yetone/magpie",
+        "MAGPIE_VERSION",
+        "MAGPIE_TAG",
+        "yetone/magpie",
+        "https://github.com/yetone/magpie/pkgs/container/magpie",
+    ),
 ]
 
 

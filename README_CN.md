@@ -39,6 +39,7 @@ https://github.com/Tabstone/Stone_Addons
 | MetaCubeXD | `metacubexd/` | Mihomo 的 Web UI | [MetaCubeX/metacubexd](https://github.com/MetaCubeX/metacubexd) | [ghcr.io/metacubex/metacubexd](https://github.com/MetaCubeX/metacubexd/pkgs/container/metacubexd) |
 | Metapi | `metapi/` | Metapi AI API 聚合管理与统一代理，默认持久化 SQLite 数据目录 | [cita-777/metapi](https://github.com/cita-777/metapi) | [1467078763/metapi](https://hub.docker.com/r/1467078763/metapi) |
 | Sub2API | `sub2api/` | Sub2API 独立网关封装，依赖外部 PostgreSQL 与 Redis | [Wei-Shaw/sub2api](https://github.com/Wei-Shaw/sub2api) | [weishaw/sub2api](https://hub.docker.com/r/weishaw/sub2api) |
+| Magpie | `magpie/` | 面向其他机器上编码 Agent 的模型网关与 Web 管理界面 | [yetone/magpie](https://github.com/yetone/magpie) | [ghcr.io/yetone/magpie](https://github.com/yetone/magpie/pkgs/container/magpie) |
 
 ## 维护方式
 

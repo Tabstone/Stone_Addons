@@ -39,6 +39,7 @@ https://github.com/Tabstone/Stone_Addons
 | MetaCubeXD | `metacubexd/` | Web UI for Mihomo | [MetaCubeX/metacubexd](https://github.com/MetaCubeX/metacubexd) | [ghcr.io/metacubex/metacubexd](https://github.com/MetaCubeX/metacubexd/pkgs/container/metacubexd) |
 | Metapi | `metapi/` | Metapi AI API aggregation and unified proxy with persistent SQLite app data | [cita-777/metapi](https://github.com/cita-777/metapi) | [1467078763/metapi](https://hub.docker.com/r/1467078763/metapi) |
 | Sub2API | `sub2api/` | Standalone Sub2API gateway wrapper using external PostgreSQL and Redis services | [Wei-Shaw/sub2api](https://github.com/Wei-Shaw/sub2api) | [weishaw/sub2api](https://hub.docker.com/r/weishaw/sub2api) |
+| Magpie | `magpie/` | Model gateway and web console for configuring coding agents on other machines | [yetone/magpie](https://github.com/yetone/magpie) | [ghcr.io/yetone/magpie](https://github.com/yetone/magpie/pkgs/container/magpie) |
 
 ## Maintenance
 

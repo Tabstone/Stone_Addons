@@ -1,0 +1,32 @@
+name: Magpie
+version: "0.1.3337-1"
+slug: magpie
+description: Model gateway and web console for configuring coding agents on other machines
+url: https://github.com/Tabstone/Stone_Addons/tree/main/magpie
+arch:
+  - amd64
+  - aarch64
+init: false
+map:
+  - addon_config:rw
+ports:
+  3425/tcp: 3425
+  3430/tcp: 3430
+ports_description:
+  3425/tcp: Magpie gateway for OpenAI, Anthropic and Gemini clients
+  3430/tcp: Magpie web console
+webui: http://[HOST]:[PORT:3430]/
+options:
+  TZ: Asia/Shanghai
+  MAGPIE_PUBLIC_URL: ""
+  MAGPIE_WEB_KEY: ""
+  MAGPIE_ALLOW_IPS: ""
+  env_vars: []
+schema:
+  TZ: str?
+  MAGPIE_PUBLIC_URL: str?
+  MAGPIE_WEB_KEY: password?
+  MAGPIE_ALLOW_IPS: str?
+  env_vars:
+    - name: match(^[A-Za-z_][A-Za-z0-9_]*$)
+      value: str?
