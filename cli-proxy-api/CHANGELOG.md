@@ -1,5 +1,19 @@
 # Changelog
 
+## 8.0.61-1
+
+- Sync upstream image [eceasy/cli-proxy-api:v8.0.61](https://hub.docker.com/r/eceasy/cli-proxy-api).
+- Upstream project: [router-for-me/CLIProxyAPI](https://github.com/router-for-me/CLIProxyAPI).
+- Upstream release: [v8.0.61](https://github.com/router-for-me/CLIProxyAPI/releases/tag/v8.0.61).
+- Upstream changelog summary:
+  - `CLIProxyAPI_<version>_linux_<arch>.tar.gz` is the default Linux build. It supports dynamic library plugins and is built against a GLIBC 2.17 baseline.
+  - `CLIProxyAPI_<version>_linux_<arch>_no-plugin.tar.gz` is the portable Linux build for musl-based or older systems such as OpenWrt. It does not support dynamic library plugins.
+  - `CLIProxyAPI_<version>_freebsd_aarch64_no-plugin.tar.gz` is the FreeBSD arm64 build. It is built without CGO and does not support dynamic library plugins.
+  - docs(readme): mention cpa-status in Hermes entry (418b824c)
+  - docs(readme): add SWE-2 Flash to Devin models (59a2b353)
+  - fix(codex): preserve SIWC rotations and honor renewal windows (80ee739f)
+
+
 ## 8.0.60-1
 
 - Sync upstream image [eceasy/cli-proxy-api:v8.0.60](https://hub.docker.com/r/eceasy/cli-proxy-api).
