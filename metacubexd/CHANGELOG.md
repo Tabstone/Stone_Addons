@@ -1,5 +1,14 @@
 # Changelog
 
+## 1.274.6-1
+
+- Sync upstream image [ghcr.io/metacubex/metacubexd:v1.274.6](https://github.com/MetaCubeX/metacubexd/pkgs/container/metacubexd).
+- Upstream project: [MetaCubeX/metacubexd](https://github.com/MetaCubeX/metacubexd).
+- Upstream release: [v1.274.6](https://github.com/MetaCubeX/metacubexd/releases/tag/v1.274.6).
+- Upstream changelog summary:
+  - **ui:** keep the most recent closed connections ([#2250](https://github.com/MetaCubeX/metacubexd/issues/2250))...
+
+
 ## 1.274.5-1
 
 - Sync upstream image [ghcr.io/metacubex/metacubexd:v1.274.5](https://github.com/MetaCubeX/metacubexd/pkgs/container/metacubexd).
