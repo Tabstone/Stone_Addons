@@ -1,5 +1,19 @@
 # Changelog
 
+## 8.0.63-1
+
+- Sync upstream image [eceasy/cli-proxy-api:v8.0.63](https://hub.docker.com/r/eceasy/cli-proxy-api).
+- Upstream project: [router-for-me/CLIProxyAPI](https://github.com/router-for-me/CLIProxyAPI).
+- Upstream release: [v8.0.63](https://github.com/router-for-me/CLIProxyAPI/releases/tag/v8.0.63).
+- Upstream changelog summary:
+  - `CLIProxyAPI_<version>_linux_<arch>.tar.gz` is the default Linux build. It supports dynamic library plugins and is built against a GLIBC 2.17 baseline.
+  - `CLIProxyAPI_<version>_linux_<arch>_no-plugin.tar.gz` is the portable Linux build for musl-based or older systems such as OpenWrt. It does not support dynamic library plugins.
+  - `CLIProxyAPI_<version>_freebsd_aarch64_no-plugin.tar.gz` is the FreeBSD arm64 build. It is built without CGO and does not support dynamic library plugins.
+  - feat(cmd): add -login-proxy flag for CLI OAuth logins (bebd92c4)
+  - fix(devin): count cache-write tokens in total input (eb6e25ab)
+  - fix(watcher): update active auth directory and fsnotify watch on runtime auth-dir changes (628e54ab)
+
+
 ## 8.0.61-1
 
 - Sync upstream image [eceasy/cli-proxy-api:v8.0.61](https://hub.docker.com/r/eceasy/cli-proxy-api).
