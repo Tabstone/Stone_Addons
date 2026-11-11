@@ -1,5 +1,19 @@
 # Changelog
 
+## 0.2.21-1
+
+- Sync upstream image [weishaw/sub2api:0.2.21](https://hub.docker.com/r/weishaw/sub2api).
+- Upstream project: [Wei-Shaw/sub2api](https://github.com/Wei-Shaw/sub2api).
+- Upstream release: [Sub2API 0.2.21](https://github.com/Wei-Shaw/sub2api/releases/tag/v0.2.21).
+- Upstream changelog summary:
+  - > AI API Gateway Platform - 将 AI 订阅配额分发和管理
+  - 新增 Claude Fable 5.2 与 Mythos 5.2 支持；OpenAI 用量与计费区分 30m/12h 缓存写入 TTL，并根据实例内存上限自动设定请求体内存预算，减少高并发下误报 503 的情况。
+  - 支持 Claude Fable 5.2 与 Mythos 5.2：包括模型目录、Anthropic 预设、Bedrock 映射、OpenCode 配置和兜底定价（$8/$40 每百万 token，Fast 模式 2 倍）
+  - OpenAI 缓存写入计费按 TTL 拆分：渠道、分组、账号统计价卡新增独立的 12h 缓存写入价（GPT-5.6 / GPT-6 系列未配置时默认按输入价 2.5 倍；已配置通用写入价的价卡不受影响），管理员用量详情按实际 TTL 展示
+  - Antigravity 账号用量单元格新增「查询」按钮，可跳过缓存强制刷新用量
+  - EasyPay 支付实例可单独配置退款成功码（默认 1，可选 0），兼容退款以 code=0 表示成功的易支付网关
+
+
 ## 0.2.20-1
 
 - Sync upstream image [weishaw/sub2api:0.2.20](https://hub.docker.com/r/weishaw/sub2api).
