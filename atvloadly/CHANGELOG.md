@@ -1,5 +1,19 @@
 # Changelog
 
+## 0.8.3-1
+
+- Sync upstream image [ghcr.io/bitxeno/atvloadly:v0.8.3](https://github.com/bitxeno/atvloadly/pkgs/container/atvloadly).
+- Upstream project: [bitxeno/atvloadly](https://github.com/bitxeno/atvloadly).
+- Upstream release: [v0.8.3 - tvOS 17.4+](https://github.com/bitxeno/atvloadly/releases/tag/v0.8.3).
+- Upstream changelog summary:
+  - **install**: Add custom app icons for iOS installs &nbsp;-&nbsp; by @bitxeno in https://github.com/bitxeno/atvloadly/issues/260...
+  - **update**: Implement release check and notification system with UI banner &nbsp;-&nbsp; by @Kayull in https://github.com/bitxeno/atvloadly/issues/258...
+  - **home**:
+  - Display custom app icon and downscale large uploads &nbsp;-&nbsp; by @bitxeno [<samp>(a5c85)</samp>](https://github.com/bitxeno/atvloadly/commit/a5c856c)
+  - **install**:
+  - Let /api/install target iPhone and iPad without device_id &nbsp;-&nbsp; by @arditti and **Claude Opus 5.5**...
+
+
 ## 0.8.2-1
 
 - Sync upstream image [ghcr.io/bitxeno/atvloadly:v0.8.2](https://github.com/bitxeno/atvloadly/pkgs/container/atvloadly).

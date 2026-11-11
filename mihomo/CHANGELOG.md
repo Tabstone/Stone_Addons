@@ -1,5 +1,19 @@
 # Changelog
 
+## 1.19.34-1
+
+- Sync upstream image [metacubex/mihomo:v1.19.34](https://hub.docker.com/r/metacubex/mihomo).
+- Upstream project: [MetaCubeX/mihomo](https://github.com/MetaCubeX/mihomo).
+- Upstream release: [v1.19.34](https://github.com/MetaCubeX/mihomo/releases/tag/v1.19.34).
+- Upstream changelog summary:
+  - 2d1a22e3 feat: support multiple users for shadowsocks listener (#3383) by @Romanov Caesar
+  - f1f640b1 feat: add Snell version 6 support (outbound + inbound) (#3410) by @YONG
+  - ff179c43 feat: add ss-password generation functionality to the command line tool (#3372) by @Zephyruso
+  - 478af2a5 fix: auto route rules for tun by @wwqgtxx
+  - 5b79f3c3 fix: tfo-go not working on go1.26.9+ and go1.27.2+ by @wwqgtxx
+  - 6780eeeb fix: prevent SOCKS domain length arithmetic overflow (#3359) by @SaladDay
+
+
 ## 1.19.33-1
 
 - Sync upstream image [metacubex/mihomo:v1.19.33](https://hub.docker.com/r/metacubex/mihomo).
