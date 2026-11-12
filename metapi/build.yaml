@@ -1,4 +1,4 @@
 build_from:
-  amd64: 1467078763/metapi:sha-dda8407
-  aarch64: 1467078763/metapi:sha-dda8407
-  armv7: 1467078763/metapi:sha-dda8407
+  amd64: 1467078763/metapi:sha-63894b7
+  aarch64: 1467078763/metapi:sha-63894b7
+  armv7: 1467078763/metapi:sha-63894b7
