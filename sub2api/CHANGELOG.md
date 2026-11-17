@@ -1,5 +1,19 @@
 # Changelog
 
+## 0.2.22-1
+
+- Sync upstream image [weishaw/sub2api:0.2.22](https://hub.docker.com/r/weishaw/sub2api).
+- Upstream project: [Wei-Shaw/sub2api](https://github.com/Wei-Shaw/sub2api).
+- Upstream release: [Sub2API 0.2.22](https://github.com/Wei-Shaw/sub2api/releases/tag/v0.2.22).
+- Upstream changelog summary:
+  - > AI API Gateway Platform - 将 AI 订阅配额分发和管理
+  - 分组新增强制 OpenAI Ultra Fast 档位，Vertex 账号支持 us/eu 多区域端点；同时大幅优化单用户高并发扣费、调度快照与请求体解析性能。
+  - 分组强制 Ultra Fast：OpenAI / Composite 分组可强制 service_tier=ultrafast，仅对支持的模型（GPT-6 Astra、GPT-6.1 Sol）生效，可与强制 Fast 并存（优先级 Ultra Fast > Fast > 客户端）
+  - Vertex 多区域：Gemini 账号支持 us/eu 多区域端点，不支持的模型自动走 global；发往多区域的请求在默认定价下按 1.1 倍计费（分组/渠道自定义价格不受影响）
+  - 新增 Gemini 4 Carbon 模型支持，补齐 Gemini 4 Hydrogen 计费
+  - OpenAI 透传账号可选按模型白名单过滤调度
+
+
 ## 0.2.21-1
 
 - Sync upstream image [weishaw/sub2api:0.2.21](https://hub.docker.com/r/weishaw/sub2api).
