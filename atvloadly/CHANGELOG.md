@@ -1,5 +1,19 @@
 # Changelog
 
+## 0.8.4-1
+
+- Sync upstream image [ghcr.io/bitxeno/atvloadly:v0.8.4](https://github.com/bitxeno/atvloadly/pkgs/container/atvloadly).
+- Upstream project: [bitxeno/atvloadly](https://github.com/bitxeno/atvloadly).
+- Upstream release: [v0.8.4 - tvOS 17.4+](https://github.com/bitxeno/atvloadly/releases/tag/v0.8.4).
+- Upstream changelog summary:
+  - **install**: Filter devices by type &nbsp;-&nbsp; by @bitxeno [<samp>(8884a)</samp>](https://github.com/bitxeno/atvloadly/commit/8884aba)
+  - **device**:
+  - Load manual devices at startup with zeroconf disabled &nbsp;-&nbsp; by @bitxeno in https://github.com/bitxeno/atvloadly/issues/262...
+  - Bump plumesign to v2.7.1-patch.10 for correct device platform &nbsp;-&nbsp; by @bitxeno [<samp>(159a9)</samp>](https://github.com/bitxeno/atvloadly/commit/159a9b9)
+  - **i18n**:
+  - Preserve the selected UI language across reloads &nbsp;-&nbsp; by @xcy960815 in https://github.com/bitxeno/atvloadly/issues/269...
+
+
 ## 0.8.3-1
 
 - Sync upstream image [ghcr.io/bitxeno/atvloadly:v0.8.3](https://github.com/bitxeno/atvloadly/pkgs/container/atvloadly).
