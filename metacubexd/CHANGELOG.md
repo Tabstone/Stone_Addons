@@ -1,5 +1,14 @@
 # Changelog
 
+## 1.275.2-1
+
+- Sync upstream image [ghcr.io/metacubex/metacubexd:v1.275.2](https://github.com/MetaCubeX/metacubexd/pkgs/container/metacubexd).
+- Upstream project: [MetaCubeX/metacubexd](https://github.com/MetaCubeX/metacubexd).
+- Upstream release: [v1.275.2](https://github.com/MetaCubeX/metacubexd/releases/tag/v1.275.2).
+- Upstream changelog summary:
+  - **ci:** revert h3 to v1 and migrate PWA config to generateSW ([7fddf0c](https://github.com/MetaCubeX/metacubexd/commit/7fddf0c70ef7c02d0c057fde516271d770de7655))
+
+
 ## 1.274.6-1
 
 - Sync upstream image [ghcr.io/metacubex/metacubexd:v1.274.6](https://github.com/MetaCubeX/metacubexd/pkgs/container/metacubexd).
