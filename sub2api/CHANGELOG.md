@@ -1,5 +1,19 @@
 # Changelog
 
+## 0.2.23-1
+
+- Sync upstream image [weishaw/sub2api:0.2.23](https://hub.docker.com/r/weishaw/sub2api).
+- Upstream project: [Wei-Shaw/sub2api](https://github.com/Wei-Shaw/sub2api).
+- Upstream release: [Sub2API 0.2.23](https://github.com/Wei-Shaw/sub2api/releases/tag/v0.2.23).
+- Upstream changelog summary:
+  - > AI API Gateway Platform - 将 AI 订阅配额分发和管理
+  - 接入 GPT-6.2 Sol 和 Astra，支持 Ultra Fast 档位；修正多条协议转换链路上的缓存写入用量和计费。
+  - 支持 GPT-6.2 Sol / Astra 模型：价格与官方一致；上下文超过 272K 时按长上下文计费；Fast 档 2 倍价；Ultra Fast 档在 2027-03-01 00:00（太平洋时间）前是 3 倍促销价，之后自动切为 6 倍
+  - GPT-6.2 Ultra Fast 按订阅套餐放行：Pro 200 只开放 Sol，Pro 500 开放 Sol 和 Astra
+  - 渠道定价新增「Ultra Fast 倍率」，可按渠道覆盖。不填时沿用模型自带倍率，只影响 Ultra Fast 档
+  - OpenAI 流式请求在首次输出前空闲超时，现在会切换账号重试，不再直接报错给客户端。最多切换 1 次，避免一个卡住的请求把超时惩罚扩散到整个账号池
+
+
 ## 0.2.22-1
 
 - Sync upstream image [weishaw/sub2api:0.2.22](https://hub.docker.com/r/weishaw/sub2api).
