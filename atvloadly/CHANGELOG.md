@@ -1,5 +1,19 @@
 # Changelog
 
+## 0.8.5-1
+
+- Sync upstream image [ghcr.io/bitxeno/atvloadly:v0.8.5](https://github.com/bitxeno/atvloadly/pkgs/container/atvloadly).
+- Upstream project: [bitxeno/atvloadly](https://github.com/bitxeno/atvloadly).
+- Upstream release: [v0.8.5 - tvOS 17.4+](https://github.com/bitxeno/atvloadly/releases/tag/v0.8.5).
+- Upstream changelog summary:
+  - **settings**: Add debug mode option &nbsp;-&nbsp; by @bitxeno [<samp>(761c9)</samp>](https://github.com/bitxeno/atvloadly/commit/761c98a)
+  - **auth**: Bump plumesign to v2.7.1-patch.11 for login 403 &nbsp;-&nbsp; by @bitxeno [<samp>(95a81)</samp>](https://github.com/bitxeno/atvloadly/commit/95a81c8)
+  - **discovery**: Stop idle Avahi dispatch on D-Bus disconnect &nbsp;-&nbsp; by @xcy960815 [<samp>(ea13e)</samp>](https://github.com/bitxeno/atvloadly/commit/ea13e19)
+  - **install**: Report timeouts after upload without retrying the transfer &nbsp;-&nbsp; by @xcy960815 and **xcy960815** in https://github.com/bitxeno/atvloadly/issues/276...
+  - **locales**: Align Serbian debug mode label with Latin variant &nbsp;-&nbsp; by @bitxeno [<samp>(80784)</samp>](https://github.com/bitxeno/atvloadly/commit/80784ae)
+  - **login**: Re-enable submission on a new 2FA prompt &nbsp;-&nbsp; by @xcy960815 [<samp>(a015d)</samp>](https://github.com/bitxeno/atvloadly/commit/a015dda)
+
+
 ## 0.8.4-1
 
 - Sync upstream image [ghcr.io/bitxeno/atvloadly:v0.8.4](https://github.com/bitxeno/atvloadly/pkgs/container/atvloadly).
