@@ -1,5 +1,19 @@
 # Changelog
 
+## 8.0.78-1
+
+- Sync upstream image [eceasy/cli-proxy-api:v8.0.78](https://hub.docker.com/r/eceasy/cli-proxy-api).
+- Upstream project: [router-for-me/CLIProxyAPI](https://github.com/router-for-me/CLIProxyAPI).
+- Upstream release: [v8.0.78](https://github.com/router-for-me/CLIProxyAPI/releases/tag/v8.0.78).
+- Upstream changelog summary:
+  - `CLIProxyAPI_<version>_linux_<arch>.tar.gz` is the default Linux build. It supports dynamic library plugins and is built against a GLIBC 2.17 baseline.
+  - `CLIProxyAPI_<version>_linux_<arch>_no-plugin.tar.gz` is the portable Linux build for musl-based or older systems such as OpenWrt. It does not support dynamic library plugins.
+  - `CLIProxyAPI_<version>_freebsd_aarch64_no-plugin.tar.gz` is the FreeBSD arm64 build. It is built without CGO and does not support dynamic library plugins.
+  - fix(claude): defer OAuth token refresh during macOS maintenance wakes (5002fe72)
+  - fix(translator): preserve non-string type schemas when converting Gemini tools to Claude (9b4f3f30)
+  - fix(translator): preserve complete interactions calls in gemini streams (65864c04)
+
+
 ## 8.0.77-1
 
 - Sync upstream image [eceasy/cli-proxy-api:v8.0.77](https://hub.docker.com/r/eceasy/cli-proxy-api).
