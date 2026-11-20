@@ -1,5 +1,19 @@
 # Changelog
 
+## 0.2.24-1
+
+- Sync upstream image [weishaw/sub2api:0.2.24](https://hub.docker.com/r/weishaw/sub2api).
+- Upstream project: [Wei-Shaw/sub2api](https://github.com/Wei-Shaw/sub2api).
+- Upstream release: [Sub2API 0.2.24](https://github.com/Wei-Shaw/sub2api/releases/tag/v0.2.24).
+- Upstream changelog summary:
+  - > AI API Gateway Platform - 将 AI 订阅配额分发和管理
+  - 安全修复：网关拒绝含重复字段的请求，修复利用重复字段使计费模型与实际调用模型不一致的问题；同时修复 Codex 文献检索返回 403 时 OpenAI OAuth 账号被批量停调的问题。
+  - 网页搜索模拟新增 Exa 搜索服务商，web_search 结果块返回搜索来源
+  - Claude Code 上下文压缩请求按 5 分钟缓存 TTL 写入
+  - Claude OAuth / Setup Token 账号显示窗口费用估算
+  - 模型广场支持一键复制模型 ID
+
+
 ## 0.2.23-1
 
 - Sync upstream image [weishaw/sub2api:0.2.23](https://hub.docker.com/r/weishaw/sub2api).
