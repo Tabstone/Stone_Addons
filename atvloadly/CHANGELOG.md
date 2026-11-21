@@ -1,5 +1,19 @@
 # Changelog
 
+## 0.8.6-1
+
+- Sync upstream image [ghcr.io/bitxeno/atvloadly:v0.8.6](https://github.com/bitxeno/atvloadly/pkgs/container/atvloadly).
+- Upstream project: [bitxeno/atvloadly](https://github.com/bitxeno/atvloadly).
+- Upstream release: [v0.8.6 - tvOS 17.4+](https://github.com/bitxeno/atvloadly/releases/tag/v0.8.6).
+- Upstream changelog summary:
+  - **device**: Allow deleting any connected device from a dots menu &nbsp;-&nbsp; by @bitxeno in https://github.com/bitxeno/atvloadly/issues/280...
+  - **home**: Offer certificate selection on refresh &nbsp;-&nbsp; by @bitxeno in https://github.com/bitxeno/atvloadly/issues/281...
+  - **ui**: Add a phone drawer for navigation and device management &nbsp;-&nbsp; by @bitxeno in (#279)
+  - > **macOS install**
+  - >
+  - > Homebrew: `brew install --cask bitxeno/tap/atvloadly`
+
+
 ## 0.8.5-1
 
 - Sync upstream image [ghcr.io/bitxeno/atvloadly:v0.8.5](https://github.com/bitxeno/atvloadly/pkgs/container/atvloadly).
