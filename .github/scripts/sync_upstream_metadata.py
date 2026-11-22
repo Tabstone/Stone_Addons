@@ -32,6 +32,7 @@ UPDATES = [
     AddonUpdate("microsoft-rewards-script", "ghcr.io/thenetsky/microsoft-rewards-script", "MICROSOFT_REWARDS_SCRIPT_VERSION", "MICROSOFT_REWARDS_SCRIPT_TAG", "TheNetsky/Microsoft-Rewards-Script", "https://github.com/TheNetsky/Microsoft-Rewards-Script/pkgs/container/microsoft-rewards-script"),
     AddonUpdate("claude-code-hub", "ghcr.io/ding113/claude-code-hub", "CLAUDE_CODE_HUB_VERSION", "CLAUDE_CODE_HUB_TAG", "ding113/claude-code-hub", "https://github.com/ding113/claude-code-hub/pkgs/container/claude-code-hub"),
     AddonUpdate("tvbox-auxiliary", "ghcr.io/nuu987/tvbox-auxiliary", "TVBOX_AUXILIARY_VERSION", "TVBOX_AUXILIARY_TAG", "nuu987/tvbox-auxiliary", "https://github.com/nuu987/tvbox-auxiliary/pkgs/container/tvbox-auxiliary"),
+    AddonUpdate("workbuddy-manager", "ghcr.io/ithtelab/workbuddy-manager", "WORKBUDDY_MANAGER_VERSION", "WORKBUDDY_MANAGER_TAG", "ithtelab/workbuddy-manager", "https://github.com/ithtelab/workbuddy-manager/pkgs/container/workbuddy-manager"),
     AddonUpdate("cli-proxy-api", "eceasy/cli-proxy-api", "CLI_PROXY_API_VERSION", "CLI_PROXY_API_TAG", "router-for-me/CLIProxyAPI"),
     AddonUpdate("mihomo", "metacubex/mihomo", "MIHOMO_VERSION", "MIHOMO_TAG", "MetaCubeX/mihomo"),
     AddonUpdate("metacubexd", "ghcr.io/metacubex/metacubexd", "METACUBEXD_VERSION", "METACUBEXD_TAG", "MetaCubeX/metacubexd", "https://github.com/MetaCubeX/metacubexd/pkgs/container/metacubexd"),
@@ -121,9 +122,15 @@ def find_tag_url(repo: str, candidates: list[str]) -> tuple[str, str] | None:
 def summarize_release_body(body: str, max_lines: int = 6) -> list[str]:
     lines: list[str] = []
     in_comment = False
+    in_fence = False
     for raw_line in body.splitlines():
         line = raw_line.strip()
         if not line:
+            continue
+        if line.startswith(("```", "~~~")):
+            in_fence = not in_fence
+            continue
+        if in_fence:
             continue
         if line.startswith("<!--"):
             in_comment = not line.endswith("-->")

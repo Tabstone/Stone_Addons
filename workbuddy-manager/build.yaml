@@ -1,0 +1,3 @@
+build_from:
+  amd64: ghcr.io/ithtelab/workbuddy-manager:2.11.23
+  aarch64: ghcr.io/ithtelab/workbuddy-manager:2.11.23

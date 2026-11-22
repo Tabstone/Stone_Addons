@@ -60,7 +60,7 @@ jobs:
               echo ""
               return
             fi
-            curl -fsSL -H "Authorization: Bearer ${token}" "https://ghcr.io/v2/${image}/tags/list" | python3 -c "
+            curl -fsSL -H "Authorization: Bearer ${token}" "https://ghcr.io/v2/${image}/tags/list?n=1000" | python3 -c "
           import sys, json, re
           data = json.load(sys.stdin)
           tags = [
@@ -128,6 +128,10 @@ jobs:
           echo "tvbox_auxiliary_tag=$TVBOX_AUXILIARY_TAG" >> "$GITHUB_OUTPUT"
           echo "tvbox_auxiliary=${TVBOX_AUXILIARY_TAG#v}" >> "$GITHUB_OUTPUT"
 
+          WORKBUDDY_MANAGER_TAG=$(get_ghcr_latest "ithtelab/workbuddy-manager")
+          echo "workbuddy_manager_tag=$WORKBUDDY_MANAGER_TAG" >> "$GITHUB_OUTPUT"
+          echo "workbuddy_manager=${WORKBUDDY_MANAGER_TAG#v}" >> "$GITHUB_OUTPUT"
+
           MIHOMO_TAG=$(get_dockerhub_latest "metacubex/mihomo")
           echo "mihomo_tag=$MIHOMO_TAG" >> "$GITHUB_OUTPUT"
           echo "mihomo=${MIHOMO_TAG#v}" >> "$GITHUB_OUTPUT"
@@ -171,6 +175,8 @@ jobs:
           CLAUDE_CODE_HUB_TAG: ${{ steps.upstream.outputs.claude_code_hub_tag }}
           TVBOX_AUXILIARY_VERSION: ${{ steps.upstream.outputs.tvbox_auxiliary }}
           TVBOX_AUXILIARY_TAG: ${{ steps.upstream.outputs.tvbox_auxiliary_tag }}
+          WORKBUDDY_MANAGER_VERSION: ${{ steps.upstream.outputs.workbuddy_manager }}
+          WORKBUDDY_MANAGER_TAG: ${{ steps.upstream.outputs.workbuddy_manager_tag }}
           MIHOMO_VERSION: ${{ steps.upstream.outputs.mihomo }}
           MIHOMO_TAG: ${{ steps.upstream.outputs.mihomo_tag }}
           METACUBEXD_VERSION: ${{ steps.upstream.outputs.metacubexd }}

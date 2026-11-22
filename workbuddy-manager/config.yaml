@@ -1,0 +1,38 @@
+name: WorkBuddy Manager
+version: "2.11.23-1"
+slug: workbuddy-manager
+description: CodeBuddy account pool manager and OpenAI-compatible gateway console
+url: https://github.com/Tabstone/Stone_Addons/tree/main/workbuddy-manager
+arch:
+  - amd64
+  - aarch64
+init: false
+map:
+  - addon_config:rw
+ports:
+  7864/tcp: 7864
+ports_description:
+  7864/tcp: WorkBuddy Manager web UI
+webui: http://[HOST]:[PORT:7864]/
+options:
+  TZ: Asia/Shanghai
+  WB_ADMIN_PASSWORD: ""
+  WB2API_BASE: http://127.0.0.1:7863
+  WB2API_KEY: ""
+  WB_SECURE_COOKIE: auto
+  WB_CORS_ORIGINS: ""
+  WB_TRUST_PROXY: true
+  WB_KEY_CUSTOM_ENABLED: false
+  env_vars: []
+schema:
+  TZ: str?
+  WB_ADMIN_PASSWORD: password?
+  WB2API_BASE: str
+  WB2API_KEY: password?
+  WB_SECURE_COOKIE: list(auto|true|false)
+  WB_CORS_ORIGINS: str?
+  WB_TRUST_PROXY: bool
+  WB_KEY_CUSTOM_ENABLED: bool
+  env_vars:
+    - name: match(^[A-Za-z0-9_]+$)
+      value: str?
