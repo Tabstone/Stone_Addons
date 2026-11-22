@@ -14,17 +14,39 @@ docker run -d --name workbuddy-manager \
   ghcr.io/ithtelab/workbuddy-manager:latest
 ```
 
-本 add-on 做同样的单容器封装，区别只有 Home Assistant 的持久化位置：
+等价的 Docker Compose 配置如下，在配置所在目录执行 `docker compose up -d`：
+
+```yaml
+services:
+  workbuddy-manager:
+    image: ghcr.io/ithtelab/workbuddy-manager:latest
+    container_name: workbuddy-manager
+    ports:
+      - "127.0.0.1:7864:7864"
+    volumes:
+      - /opt/workbuddy-manager/data:/app/data
+```
+
+这份 Compose 严格对应原命令，只持久化管理端数据。管理端还会在
+`/opt/workbuddy2api` 写入账号凭据和网关配置；普通 Docker 部署如需保留它们，
+应另加 `- /opt/workbuddy-manager/workbuddy2api:/opt/workbuddy2api` 卷映射。
+
+本 add-on 保持单容器封装，同时持久化这两类数据：
 
 ```text
 原始 Docker                  Home Assistant add-on
-/opt/workbuddy-manager/data  /addon_configs/workbuddy-manager/data
+/opt/workbuddy-manager/data  /addon_configs/<完整加载项标识>/data
 /app/data                    /app/data（软链接到 /config/data）
+/opt/workbuddy2api            /config/workbuddy2api（账号凭据、网关配置和状态）
 127.0.0.1:7864               7864/tcp
 ```
 
+`<完整加载项标识>` 通常为 `<仓库ID>_workbuddy-manager`，仓库来源不同会使前缀不同。
+不要仅按未带前缀的 `workbuddy-manager` 创建目录；应以 HA 实际提供的配置目录为准。
+
 迁移已有数据时，先停止 add-on，再把原 `data` 目录内容复制到 Home Assistant
-宿主机的 `/addon_configs/workbuddy-manager/data/`，然后启动 add-on。
+的 `/addon_configs/<完整加载项标识>/data/`。已有上游的 `config.json`、`auths/`
+和 `data/` 则复制到同一级的 `workbuddy2api/` 目录，然后启动 add-on。
 
 ## 上游网关
 
@@ -41,6 +63,10 @@ WB2API_KEY=<网关配置中的 api_key>
 `WB2API_KEY` 留空时，管理端仍会尝试从本地上游配置文件读取密钥。若网关与管理端
 不在同一个容器网络，请填写管理端实际可访问的地址，不要使用容器内的
 `127.0.0.1`。
+
+账号导入和网关设置会保存在 `/config/workbuddy2api`，但这些本地文件不会仅凭
+`WB2API_BASE` 自动同步到远程网关。远程网关需要另行共享或同步 `config.json`
+及 `auths/`；只设置 URL 和密钥不等于完成账号文件共享。
 
 受此部署边界影响，面板里依赖 Docker 的操作（重建上游容器、读取上游容器日志、
 在容器内一键更新上游）会降级为“请到宿主机操作”，这是预期行为。
@@ -75,11 +101,16 @@ WB2API_KEY=<网关配置中的 api_key>
 
 ## 持久化与升级
 
-管理端数据库、用户文件、日志和更新状态保存在 `/config/data`，对应宿主机：
+管理端数据库、用户文件、日志和更新状态保存在 `/config/data`；上游账号凭据、
+网关配置与状态保存在 `/config/workbuddy2api`。对应 HA 配置目录：
 
 ```text
-/addon_configs/workbuddy-manager/data/
+/addon_configs/<完整加载项标识>/data/
+/addon_configs/<完整加载项标识>/workbuddy2api/
 ```
+
+`2.11.23-1` 只持久化了前者。如果旧容器中已有账号凭据或网关配置，应在更新前
+先导出 `/opt/workbuddy2api/`，再按前述路径导入；旧容器已被删除的数据无法自动恢复。
 
 add-on 版本跟随上游镜像，格式为 `上游版本-包装序号`，例如 `2.11.23-1`。仓库的
 `sync-upstream.yml` 会检查 GHCR 标签，自动更新 `build.yaml`、`config.yaml` 的
@@ -87,7 +118,7 @@ add-on 版本跟随上游镜像，格式为 `上游版本-包装序号`，例如
 
 升级请通过 Home Assistant 的加载项更新流程。不要使用面板内的“系统更新”来更新
 本 add-on：它更新的是容器可写层，重新创建加载项后会被上游镜像覆盖。升级前建议
-备份 `/addon_configs/workbuddy-manager/data/`。
+备份整个 `/addon_configs/<完整加载项标识>/`。
 
 ## 安全提示
 
@@ -97,4 +128,4 @@ add-on 版本跟随上游镜像，格式为 `上游版本-包装序号`，例如
 - 设置强管理员密码；
 - 用防火墙限制 `7864` 的访问来源，或放在带 HTTPS 和访问控制的反向代理之后；
 - 不要把管理端直接暴露到公网；
-- 定期备份 `/addon_configs/workbuddy-manager/data/`。
+- 定期备份 `/addon_configs/<完整加载项标识>/`。

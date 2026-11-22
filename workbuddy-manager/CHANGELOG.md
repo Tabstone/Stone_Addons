@@ -1,5 +1,11 @@
 # Changelog
 
+## 2.11.23-2
+
+- Persist upstream account credentials, gateway configuration, and state under `/config/workbuddy2api` so recreating or updating the add-on does not discard them.
+- Translate the `WB_TRUST_PROXY` option to the upstream-required `1`/`0` values.
+- Document the equivalent Docker Compose configuration and repository-prefixed Home Assistant data paths.
+
 ## 2.11.23-1
 
 - Sync upstream image [ghcr.io/ithtelab/workbuddy-manager:2.11.23](https://github.com/ithtelab/workbuddy-manager/pkgs/container/workbuddy-manager).

@@ -12,7 +12,7 @@ export WB2API_BASE='http://127.0.0.1:7863'
 export WB2API_KEY=''
 export WB_SECURE_COOKIE='auto'
 export WB_CORS_ORIGINS=''
-export WB_TRUST_PROXY='true'
+export WB_TRUST_PROXY='1'
 export WB_KEY_CUSTOM_ENABLED='false'
 EOF
 }
@@ -30,7 +30,7 @@ jq -r '
     WB2API_KEY: (.WB2API_KEY // "" | tostring),
     WB_SECURE_COOKIE: (.WB_SECURE_COOKIE // "auto" | tostring),
     WB_CORS_ORIGINS: (.WB_CORS_ORIGINS // "" | tostring),
-    WB_TRUST_PROXY: ((if has("WB_TRUST_PROXY") then .WB_TRUST_PROXY else true end) | tostring),
+    WB_TRUST_PROXY: (if .WB_TRUST_PROXY == false then "0" else "1" end),
     WB_KEY_CUSTOM_ENABLED: ((if has("WB_KEY_CUSTOM_ENABLED") then .WB_KEY_CUSTOM_ENABLED else false end) | tostring)
   }
   | to_entries[]

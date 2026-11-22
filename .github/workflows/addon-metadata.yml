@@ -25,6 +25,7 @@ jobs:
           python3 <<'PY'
           from pathlib import Path
           import re
+          import runpy
           import sys
           import yaml
 
@@ -50,8 +51,42 @@ jobs:
               path for path in Path(".").iterdir()
               if path.is_dir() and (path / "config.yaml").is_file()
           )
+          sync_script = runpy.run_path(".github/scripts/sync_upstream_metadata.py")
+          updates = sync_script["UPDATES"]
+          sync_workflow = load_yaml(Path(".github/workflows/sync-upstream.yml"))
+          sync_steps = {
+              step.get("id"): step
+              for step in (sync_workflow or {}).get("jobs", {}).get("sync", {}).get("steps", [])
+          }
+          sync_env = sync_steps.get("update", {}).get("env", {})
+          upstream_run = sync_steps.get("upstream", {}).get("run", "")
+          synced_names = {update.slug for update in updates}
+          source_built_names = {
+              path.name for path in addon_dirs
+              if not (load_yaml(path / "config.yaml") or {}).get("image")
+          }
+          if source_built_names != synced_names:
+              errors.append(
+                  f"Upstream sync registration mismatch: missing={sorted(source_built_names - synced_names)}, "
+                  f"stale={sorted(synced_names - source_built_names)}"
+              )
+          if len(synced_names) != len(updates):
+              errors.append("Upstream sync contains duplicate add-on registrations")
+
+          for update in updates:
+              for variable in (update.version_env, update.tag_env):
+                  binding = sync_env.get(variable, "")
+                  output = re.fullmatch(r"\$\{\{\s*steps\.upstream\.outputs\.(\w+)\s*\}\}", binding)
+                  if not output or f"{output.group(1)}=" not in upstream_run:
+                      errors.append(f"{update.slug}: {variable} is not wired to an upstream workflow output")
 
           for addon_dir in addon_dirs:
+              for required_file in (
+                  "Dockerfile", "run.sh", "DOCS.md", "CHANGELOG.md", "icon.png", "logo.png",
+                  "rootfs/etc/cont-init.d/20-folders.sh",
+              ):
+                  if not (addon_dir / required_file).is_file():
+                      errors.append(f"{addon_dir / required_file}: missing")
               config_path = addon_dir / "config.yaml"
               build_path = addon_dir / "build.yaml"
               config = load_yaml(config_path)
@@ -62,6 +97,13 @@ jobs:
                   build = None
 
               if config is not None:
+                  for field in ("name", "slug", "description", "url"):
+                      if not isinstance(config.get(field), str) or not config[field]:
+                          errors.append(f"{config_path}: {field} must be a non-empty string")
+                  if config.get("slug") != addon_dir.name:
+                      errors.append(f"{config_path}: slug must match the add-on directory")
+                  if set(config.get("options", {})) != set(config.get("schema", {})):
+                      errors.append(f"{config_path}: option names and schema names do not match")
                   version = config.get("version")
                   if not isinstance(version, str) or not version_re.match(version):
                       errors.append(
@@ -73,6 +115,8 @@ jobs:
                   if not isinstance(build_from, dict) or not build_from:
                       errors.append(f"{build_path}: build_from missing or not a map")
                   else:
+                      if config is not None and set(config.get("arch", [])) != set(build_from):
+                          errors.append(f"{build_path}: build_from architectures do not match config.yaml")
                       for arch, image in build_from.items():
                           if not isinstance(image, str) or ":" not in image:
                               errors.append(

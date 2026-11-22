@@ -104,10 +104,6 @@ jobs:
           echo "cpa_manager_plus_tag=$CPA_MANAGER_PLUS_TAG" >> "$GITHUB_OUTPUT"
           echo "cpa_manager_plus=${CPA_MANAGER_PLUS_TAG#v}" >> "$GITHUB_OUTPUT"
 
-          AXONHUB_TAG=$(get_dockerhub_latest "looplj/axonhub")
-          echo "axonhub_tag=$AXONHUB_TAG" >> "$GITHUB_OUTPUT"
-          echo "axonhub=${AXONHUB_TAG#v}" >> "$GITHUB_OUTPUT"
-
           DRPY_NODE_TAG=$(get_ghcr_latest "hjdhnx/drpy-node")
           echo "drpy_node_tag=$DRPY_NODE_TAG" >> "$GITHUB_OUTPUT"
           echo "drpy_node=${DRPY_NODE_TAG#v}" >> "$GITHUB_OUTPUT"
@@ -119,10 +115,6 @@ jobs:
           MRS_TAG=$(get_ghcr_latest "thenetsky/microsoft-rewards-script")
           echo "microsoft_rewards_script_tag=$MRS_TAG" >> "$GITHUB_OUTPUT"
           echo "microsoft_rewards_script=${MRS_TAG#v}" >> "$GITHUB_OUTPUT"
-
-          CCH_TAG=$(get_ghcr_latest "ding113/claude-code-hub")
-          echo "claude_code_hub_tag=$CCH_TAG" >> "$GITHUB_OUTPUT"
-          echo "claude_code_hub=${CCH_TAG#v}" >> "$GITHUB_OUTPUT"
 
           TVBOX_AUXILIARY_TAG=$(get_ghcr_latest "nuu987/tvbox-auxiliary")
           echo "tvbox_auxiliary_tag=$TVBOX_AUXILIARY_TAG" >> "$GITHUB_OUTPUT"
@@ -144,10 +136,6 @@ jobs:
           echo "sub2api_tag=$SUB2API_TAG" >> "$GITHUB_OUTPUT"
           echo "sub2api=${SUB2API_TAG#v}" >> "$GITHUB_OUTPUT"
 
-          METAPI_TAG=$(get_dockerhub_latest "1467078763/metapi" "sha")
-          echo "metapi_tag=$METAPI_TAG" >> "$GITHUB_OUTPUT"
-          echo "metapi=${METAPI_TAG#v}" >> "$GITHUB_OUTPUT"
-
           MAGPIE_TAG=$(get_ghcr_latest "yetone/magpie")
           echo "magpie_tag=$MAGPIE_TAG" >> "$GITHUB_OUTPUT"
           echo "magpie=${MAGPIE_TAG#v}" >> "$GITHUB_OUTPUT"
@@ -163,16 +151,12 @@ jobs:
           CLI_PROXY_API_TAG: ${{ steps.upstream.outputs.cli_proxy_api_tag }}
           CPA_MANAGER_PLUS_VERSION: ${{ steps.upstream.outputs.cpa_manager_plus }}
           CPA_MANAGER_PLUS_TAG: ${{ steps.upstream.outputs.cpa_manager_plus_tag }}
-          AXONHUB_VERSION: ${{ steps.upstream.outputs.axonhub }}
-          AXONHUB_TAG: ${{ steps.upstream.outputs.axonhub_tag }}
           DRPY_NODE_VERSION: ${{ steps.upstream.outputs.drpy_node }}
           DRPY_NODE_TAG: ${{ steps.upstream.outputs.drpy_node_tag }}
           ATVLOADLY_VERSION: ${{ steps.upstream.outputs.atvloadly }}
           ATVLOADLY_TAG: ${{ steps.upstream.outputs.atvloadly_tag }}
           MICROSOFT_REWARDS_SCRIPT_VERSION: ${{ steps.upstream.outputs.microsoft_rewards_script }}
           MICROSOFT_REWARDS_SCRIPT_TAG: ${{ steps.upstream.outputs.microsoft_rewards_script_tag }}
-          CLAUDE_CODE_HUB_VERSION: ${{ steps.upstream.outputs.claude_code_hub }}
-          CLAUDE_CODE_HUB_TAG: ${{ steps.upstream.outputs.claude_code_hub_tag }}
           TVBOX_AUXILIARY_VERSION: ${{ steps.upstream.outputs.tvbox_auxiliary }}
           TVBOX_AUXILIARY_TAG: ${{ steps.upstream.outputs.tvbox_auxiliary_tag }}
           WORKBUDDY_MANAGER_VERSION: ${{ steps.upstream.outputs.workbuddy_manager }}
@@ -183,8 +167,6 @@ jobs:
           METACUBEXD_TAG: ${{ steps.upstream.outputs.metacubexd_tag }}
           SUB2API_VERSION: ${{ steps.upstream.outputs.sub2api }}
           SUB2API_TAG: ${{ steps.upstream.outputs.sub2api_tag }}
-          METAPI_VERSION: ${{ steps.upstream.outputs.metapi }}
-          METAPI_TAG: ${{ steps.upstream.outputs.metapi_tag }}
           MAGPIE_VERSION: ${{ steps.upstream.outputs.magpie }}
           MAGPIE_TAG: ${{ steps.upstream.outputs.magpie_tag }}
           BUMP_WRAPPER: ${{ github.event.inputs.bump_wrapper || 'false' }}

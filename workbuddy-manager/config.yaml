@@ -1,5 +1,5 @@
 name: WorkBuddy Manager
-version: "2.11.23-1"
+version: "2.11.23-2"
 slug: workbuddy-manager
 description: CodeBuddy account pool manager and OpenAI-compatible gateway console
 url: https://github.com/Tabstone/Stone_Addons/tree/main/workbuddy-manager
