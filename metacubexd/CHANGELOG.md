@@ -1,5 +1,15 @@
 # Changelog
 
+## 1.276.0-1
+
+- Sync upstream image [ghcr.io/metacubex/metacubexd:v1.276.0](https://github.com/MetaCubeX/metacubexd/pkgs/container/metacubexd).
+- Upstream project: [MetaCubeX/metacubexd](https://github.com/MetaCubeX/metacubexd).
+- Upstream release: [v1.276.0](https://github.com/MetaCubeX/metacubexd/releases/tag/v1.276.0).
+- Upstream changelog summary:
+  - **ui:** add InternetData as an IP info provider ([#2261](https://github.com/MetaCubeX/metacubexd/issues/2261))...
+  - **ui:** keep Twemoji flags when a custom font is selected ([#2268](https://github.com/MetaCubeX/metacubexd/issues/2268))...
+
+
 ## 1.275.2-1
 
 - Sync upstream image [ghcr.io/metacubex/metacubexd:v1.275.2](https://github.com/MetaCubeX/metacubexd/pkgs/container/metacubexd).

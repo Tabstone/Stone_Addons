@@ -1,5 +1,19 @@
 # Changelog
 
+## 8.1.0-1
+
+- Sync upstream image [eceasy/cli-proxy-api:v8.1.0](https://hub.docker.com/r/eceasy/cli-proxy-api).
+- Upstream project: [router-for-me/CLIProxyAPI](https://github.com/router-for-me/CLIProxyAPI).
+- Upstream release: [v8.1.0](https://github.com/router-for-me/CLIProxyAPI/releases/tag/v8.1.0).
+- Upstream changelog summary:
+  - `CLIProxyAPI_<version>_linux_<arch>.tar.gz` is the default Linux build. It supports dynamic library plugins and is built against a GLIBC 2.17 baseline.
+  - `CLIProxyAPI_<version>_linux_<arch>_no-plugin.tar.gz` is the portable Linux build for musl-based or older systems such as OpenWrt. It does not support dynamic library plugins.
+  - `CLIProxyAPI_<version>_freebsd_aarch64_no-plugin.tar.gz` is the FreeBSD arm64 build. It is built without CGO and does not support dynamic library plugins.
+  - feat(copilot): add GitHub Copilot provider support (7ae771fc)
+  - feat(copilot): support OAuth model aliases and exact route-aware selection (5dff8b67)
+  - fix(codex): sync temp file before close and rename in WriteJSONFileAtomic (6d703fdf)
+
+
 ## 8.0.80-1
 
 - Sync upstream image [eceasy/cli-proxy-api:v8.0.80](https://hub.docker.com/r/eceasy/cli-proxy-api).
