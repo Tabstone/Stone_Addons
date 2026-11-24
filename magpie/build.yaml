@@ -1,3 +1,3 @@
 build_from:
-  amd64: ghcr.io/yetone/magpie:0.1.453
-  aarch64: ghcr.io/yetone/magpie:0.1.453
+  amd64: ghcr.io/yetone/magpie:0.1.701
+  aarch64: ghcr.io/yetone/magpie:0.1.701

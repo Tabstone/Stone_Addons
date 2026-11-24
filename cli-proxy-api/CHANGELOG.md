@@ -1,5 +1,19 @@
 # Changelog
 
+## 8.1.1-1
+
+- Sync upstream image [eceasy/cli-proxy-api:v8.1.1](https://hub.docker.com/r/eceasy/cli-proxy-api).
+- Upstream project: [router-for-me/CLIProxyAPI](https://github.com/router-for-me/CLIProxyAPI).
+- Upstream release: [v8.1.1](https://github.com/router-for-me/CLIProxyAPI/releases/tag/v8.1.1).
+- Upstream changelog summary:
+  - `CLIProxyAPI_<version>_linux_<arch>.tar.gz` is the default Linux build. It supports dynamic library plugins and is built against a GLIBC 2.17 baseline.
+  - `CLIProxyAPI_<version>_linux_<arch>_no-plugin.tar.gz` is the portable Linux build for musl-based or older systems such as OpenWrt. It does not support dynamic library plugins.
+  - `CLIProxyAPI_<version>_freebsd_aarch64_no-plugin.tar.gz` is the FreeBSD arm64 build. It is built without CGO and does not support dynamic library plugins.
+  - fix(util): guard const, enum, and additionalProperties schema passes with isPropertyDefinition (cad3ae5d)
+  - fix(util): normalize tuple and non-object array items for native Gemini schemas (c9e6e2e3)
+  - fix(xai): evict ephemeral and 24h idle websocket ID states (679166b8)
+
+
 ## 8.1.0-1
 
 - Sync upstream image [eceasy/cli-proxy-api:v8.1.0](https://hub.docker.com/r/eceasy/cli-proxy-api).
