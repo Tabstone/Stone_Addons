@@ -1,5 +1,19 @@
 # Changelog
 
+## 0.2.25-1
+
+- Sync upstream image [weishaw/sub2api:0.2.25](https://hub.docker.com/r/weishaw/sub2api).
+- Upstream project: [Wei-Shaw/sub2api](https://github.com/Wei-Shaw/sub2api).
+- Upstream release: [Sub2API 0.2.25](https://github.com/Wei-Shaw/sub2api/releases/tag/v0.2.25).
+- Upstream changelog summary:
+  - > AI API Gateway Platform - 将 AI 订阅配额分发和管理
+  - API Key 账号的请求头覆写支持身份上报变量，可把本次请求的用户、密钥、分组等网关身份带给上游；账号名称与备注支持从上游分组一键或自动同步。
+  - 请求头覆写身份上报变量：API Key 账号的覆写值可使用 {{user_id}} / {{api_key_id}} / {{group_id}} / {{request_id}}，转发时替换为本次请求的网关身份；编辑器新增变量面板、发送示例预览与行内错误提示
+  - 错误详情新增「身份上报请求头」区块，展示该次请求实际上报给上游的身份头
+  - 上游分组名称与备注同步：创建/编辑账号及账号列表可一键把上游分组名称、描述同步为账号名称与备注
+  - 自动同步上游分组名称与备注：每个 API Key 账号可单独开启（默认关闭），随上游倍率探测一并更新
+
+
 ## 0.2.24-1
 
 - Sync upstream image [weishaw/sub2api:0.2.24](https://hub.docker.com/r/weishaw/sub2api).
