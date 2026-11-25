@@ -1,5 +1,17 @@
 # Changelog
 
+## 1.277.0-1
+
+- Sync upstream image [ghcr.io/metacubex/metacubexd:v1.277.0](https://github.com/MetaCubeX/metacubexd/pkgs/container/metacubexd).
+- Upstream project: [MetaCubeX/metacubexd](https://github.com/MetaCubeX/metacubexd).
+- Upstream release: [v1.277.0](https://github.com/MetaCubeX/metacubexd/releases/tag/v1.277.0).
+- Upstream changelog summary:
+  - cache github request ([#2274](https://github.com/MetaCubeX/metacubexd/issues/2274))...
+  - allow HTTP clipboard ([#2272](https://github.com/MetaCubeX/metacubexd/issues/2272))...
+  - remove topProxies label ([#2273](https://github.com/MetaCubeX/metacubexd/issues/2273))...
+  - **ui:** let the connections table columns be resized by dragging ([#2270](https://github.com/MetaCubeX/metacubexd/issues/2270))...
+
+
 ## 1.276.0-1
 
 - Sync upstream image [ghcr.io/metacubex/metacubexd:v1.276.0](https://github.com/MetaCubeX/metacubexd/pkgs/container/metacubexd).
