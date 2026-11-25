@@ -1,5 +1,19 @@
 # Changelog
 
+## 8.1.3-1
+
+- Sync upstream image [eceasy/cli-proxy-api:v8.1.3](https://hub.docker.com/r/eceasy/cli-proxy-api).
+- Upstream project: [router-for-me/CLIProxyAPI](https://github.com/router-for-me/CLIProxyAPI).
+- Upstream release: [v8.1.3](https://github.com/router-for-me/CLIProxyAPI/releases/tag/v8.1.3).
+- Upstream changelog summary:
+  - `CLIProxyAPI_<version>_linux_<arch>.tar.gz` is the default Linux build. It supports dynamic library plugins and is built against a GLIBC 2.17 baseline.
+  - `CLIProxyAPI_<version>_linux_<arch>_no-plugin.tar.gz` is the portable Linux build for musl-based or older systems such as OpenWrt. It does not support dynamic library plugins.
+  - `CLIProxyAPI_<version>_freebsd_aarch64_no-plugin.tar.gz` is the FreeBSD arm64 build. It is built without CGO and does not support dynamic library plugins.
+  - fix(claude): stabilize advisor system prompt placement (f73b8132)
+  - fix(translator): preserve Claude generation constraints (32842348)
+  - fix(translator,executor): harden Claude generation constraints and Vertex max output token cap (ac415c08)
+
+
 ## 8.1.2-1
 
 - Sync upstream image [eceasy/cli-proxy-api:v8.1.2](https://hub.docker.com/r/eceasy/cli-proxy-api).
