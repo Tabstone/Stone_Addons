@@ -1,5 +1,14 @@
 # Changelog
 
+## 1.277.1-1
+
+- Sync upstream image [ghcr.io/metacubex/metacubexd:v1.277.1](https://github.com/MetaCubeX/metacubexd/pkgs/container/metacubexd).
+- Upstream project: [MetaCubeX/metacubexd](https://github.com/MetaCubeX/metacubexd).
+- Upstream release: [v1.277.1](https://github.com/MetaCubeX/metacubexd/releases/tag/v1.277.1).
+- Upstream changelog summary:
+  - **agent:** stop re-fetching a failing subscription on every scheduler tick ([#2279](https://github.com/MetaCubeX/metacubexd/issues/2279))...
+
+
 ## 1.277.0-1
 
 - Sync upstream image [ghcr.io/metacubex/metacubexd:v1.277.0](https://github.com/MetaCubeX/metacubexd/pkgs/container/metacubexd).
