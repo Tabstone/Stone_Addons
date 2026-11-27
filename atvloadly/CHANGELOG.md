@@ -1,5 +1,19 @@
 # Changelog
 
+## 0.8.7-1
+
+- Sync upstream image [ghcr.io/bitxeno/atvloadly:v0.8.7](https://github.com/bitxeno/atvloadly/pkgs/container/atvloadly).
+- Upstream project: [bitxeno/atvloadly](https://github.com/bitxeno/atvloadly).
+- Upstream release: [v0.8.7 - tvOS 17.4+](https://github.com/bitxeno/atvloadly/releases/tag/v0.8.7).
+- Upstream changelog summary:
+  - Reset home view after pairing &nbsp;-&nbsp; by @dnicolson in https://github.com/bitxeno/atvloadly/issues/287...
+  - Height of service status &nbsp;-&nbsp; by @dnicolson in https://github.com/bitxeno/atvloadly/pull/282 [<samp>(831e7)</samp>](https://github.com/bitxeno/atvloadly/commit/831e7a5)
+  - **docker**: Bump plumesign to v2.7.1-patch.12 to process the s2k_fo SRP password &nbsp;-&nbsp; by @bitxeno...
+  - **login**: Link to login error help after a failed login &nbsp;-&nbsp; by @bitxeno [<samp>(d4b93)</samp>](https://github.com/bitxeno/atvloadly/commit/d4b936c)
+  - **device**: Log device forget requests &nbsp;-&nbsp; by @bitxeno [<samp>(9e073)</samp>](https://github.com/bitxeno/atvloadly/commit/9e073a3)
+  - > **macOS install**
+
+
 ## 0.8.6-1
 
 - Sync upstream image [ghcr.io/bitxeno/atvloadly:v0.8.6](https://github.com/bitxeno/atvloadly/pkgs/container/atvloadly).
