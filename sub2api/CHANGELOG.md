@@ -1,5 +1,19 @@
 # Changelog
 
+## 0.2.26-1
+
+- Sync upstream image [weishaw/sub2api:0.2.26](https://hub.docker.com/r/weishaw/sub2api).
+- Upstream project: [Wei-Shaw/sub2api](https://github.com/Wei-Shaw/sub2api).
+- Upstream release: [Sub2API 0.2.26](https://github.com/Wei-Shaw/sub2api/releases/tag/v0.2.26).
+- Upstream changelog summary:
+  - > AI API Gateway Platform - 将 AI 订阅配额分发和管理
+  - 集中修复 Chat / Responses / Anthropic 协议互转中的工具调用、截断收尾与用量统计问题；新增渠道显示实际响应模型、Codex 账号声明图片输入模型等能力。
+  - Codex：同步 v0.172.0 内置基础提示词，补齐 GPT-5.6 / 6.0 模板
+  - Codex 账号：支持声明哪些模型可接收图片输入
+  - Kimi：支持 K3.1 Pro 路由、Codex 推理强度，并内置参考定价
+  - 渠道：新增「向用户显示实际响应模型」开关（默认关闭），开启后用户使用记录展示最终响应模型
+
+
 ## 0.2.25-1
 
 - Sync upstream image [weishaw/sub2api:0.2.25](https://hub.docker.com/r/weishaw/sub2api).
